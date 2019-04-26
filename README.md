@@ -4,5 +4,8 @@ The system uses point cloud data rendered from a 3D CAD model and describes its 
 The system uses FPFH (Fast Point Feature Histogram) for describing the local region and a hypothesize-and-test paradigm, e.g. RANSAC in the matching process.
 In contrast to several approaches those whose rely on Point Pair Features as feature descriptors and a geometry hashing, e.g. voting-scheme as the matching process.
 
-
+<p align="center">
+<img src="https://github.com/Sinchiguano/Ms-Thesis-CVUT/blob/master/tmp/yumi1.gif", width="720">
+</p>
 By:Casch
+
