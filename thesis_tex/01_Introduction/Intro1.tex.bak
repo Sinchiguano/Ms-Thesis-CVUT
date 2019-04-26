@@ -1,0 +1,16 @@
+\chapter{Introduction}
+\label{chap:intro}
+
+Within this chapter, the reader receives an outline of the general context which surrounds this thesis. Starting with the motivation section and the ultimate goal to be accomplished, and a summary of the thesis' structure follow. 
+%And finally, an overview of related work is presented.
+
+\section{Motivation}
+For years. The industrial robot has undergoes through enormous development. Robot nowadays not only receives command from the computer. But also has the ability to make decision itself. Such abilities are well known in the world of the computer vision as recognizing and determining 6D pose of a rigid body (3D translation and 3D rotation). However, finding the object of interest or determining its pose in either 2D or 3D scenes is still a challenging task for computer vision. There are many researchers working on it with method that goes from state-of-the-art to deep learning means where the object is usually represented with a CAD model or object's 3D reconstruction and typical task is detection of this particular object in the scene captured with RBGD or depth camera. Detection consider determining the location of the object in the input image. This is typical in robotics and machine vision applications where the robot usually does task like pick and place objects. However, localization and pose estimation is much more challenging task due to the high dimensionality of the search in the workspace. In addition, the object of interest is usually sought in cluttered scenes under occlusion with requirement of real-time performance which make the the whole task even much more harder.
+
+\section{Goal}
+We attempt to provide an algorithm for determining the pose of a known parts similar to following pipeline "6D object pose estimation using RGBD data" \cite{intro2}. In addition, a robot-camera calibration needs to be done, and a main requirement a 3D object model needed.
+
+\section{Thesis structure}
+The thesis consists of 5 chapters, \nameref{appendix} and \nameref{chap:cd}. The current chapter briefly describes the motivation and the goal for the pose estfor the task of web extraction. 
+Chapter 2 gives a background to camera calibration, openCV, open3D, ROS, prepossessing algorithm for segmenting the 3D image and related work about 6D pose estimation of the rigid body on which this work is building on. Chapter 3 describes the algorithms and the implementation for creating and collective ground data.  Chapter 4 metric pair with the ground truth data. Chapter 5 concludes the thesis and showcase possible future works.
+

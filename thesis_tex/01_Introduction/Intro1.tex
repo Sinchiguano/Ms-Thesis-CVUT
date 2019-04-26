@@ -1,0 +1,27 @@
+\chapter{Introduction}
+\label{chap:intro}
+
+Within this chapter, the reader receives an outline of the general context which surrounds this thesis. Starting with the motivation section and the ultimate goal to be accomplished, and a summary of the thesis' structure follows. 
+%And finally, an overview of related work is presented.
+
+\section{Motivation}
+
+For years, the industrial robot has undergone enormous development. Robot nowadays not only receives a command from the computer. But also has the ability to make decisions itself. Such abilities are well known in the world of the computer vision as recognizing and determining the 6D pose of a rigid body (3D translation and 3D rotation). \\
+However, finding the object of interest or determining its pose in either 2D or 3D scenes is still a challenging task for computer vision. There are many researchers working on it with methods that go from state-of-the-art to deep learning ones where the object is usually represented with a CAD model or object's 3D reconstruction and typical task is the detection of this particular object in the scene captured with RBGD or depth camera. Detection considers determining the location of the object in the input image. This is typical in robotics and machine vision applications where the robot usually does a task like pick-and-place objects. However, localization and pose estimation is a much more challenging task due to the high dimensionality of the search in the workspace. In addition, the object of interest is usually sought in cluttered scenes under occlusion with the requirement of real-time performance which makes the entire task much more difficult.
+
+\section{Goal}
+\iffalse
+We attempt to provide a pipeline system for 6-DoF pose estimation of a 3D object model by using depth images from the RGB-D sensor which is converted into point cloud data for better subsequent use in the system (pipeline or system is used interchangebly in this master thesis). In addition to, a camera-robot calibration needs to be solved with the use a chessboard target.
+
+The goal is to develop a suitable pipeline for localizing an aisolatid object where it can be suitable for future work such as bin-picking system which is out of the scope for this master thesis.
+\fi
+
+We attempt to provide a system or pipeline for pose estimation of a rigid object in point cloud design for random picking of an isolated object by using depth images acquired from an RGB-D sensor. In addition, the development of a system that can help with the extrinsic calibration of a camera-robot
+
+The goal is just to develop a suitable pipeline for localizing an isolated object where it can be suitable for future work such as a bin-picking system which is out of the scope for this master thesis.
+
+
+\section{Thesis structure}
+
+The thesis consists of 7 chapters, References and Appendix. The current chapter 1 briefly describes the motivation and the goal of thesis called "Part localization for Robotic Manipulation" which for convenience we refer as 6D pose estimation of a rigid body or pipeline pose estimation interchangeably. Chapter 2 gives a brief introduction to related work, Chapter 3 gives a theoretical background to camera calibration and a gentle description to the main tools used in this thesis such as openCV, open3D, ROS, and software where the CAD model is rendered. Chapter 4 presents the theory as well as every individual step in details of the Robot-camera calibration. Chapter 5 presents the theory as well as every individual step in details of the implemented system, and chapter 6 describes the evaluation of the system. Chapter 7 concludes the thesis and showcases possible future works.
+

@@ -1,0 +1,89 @@
+\documentclass{ctuthesis}
+\ctusetup{
+xdoctype = M,
+xfaculty = F3,
+mainlanguage = english,
+titlelanguage = english,
+title-english = {Part localization for robotic manipulation},
+title-czech = {},
+department-english = {},
+author = {C\'esar Sinchiguano},
+supervisor = {Dr Gaël Pierre Écorchard.},
+supervisor-address = {Czech Institute of Informatics, Robotics, and Cybernetics,
+Office B-323,Jugoslávských partyzánů 3,
+160 00  Prague 6},
+month = 5,
+year = 2019,
+keywords-czech = {manuál, závěrečnná práce, \LaTeX},
+keywords-english = {manual, degree project, \LaTeX},
+pkg-hyperref=true
+}
+\ctusetup{ pkg-amsthm = false }
+\ctuprocess
+
+% Acknowledgements
+\begin{thanks}
+I would like to express my sincere gratitude to my supervisor, Dr Gaël Pierre Écorchard for his patient guidance and good predisposition to help me with my thesis.
+\end{thanks}
+
+% Declaration
+\begin{declaration}
+I hereby declare that the presented work was developed independently and that I have listed
+all sources of information used within it in accordance with methodical instructions for
+observing the ethical principles in the preparation of university theses.
+Prague, \ctufield{day}.~\monthinlanguage{title}~\ctufield{year}
+
+\end{declaration}
+
+\begin{abstract-english}
+The new generation of the collaborative robots allow the use of small robot arms working in an asynchronous or synchronous fashion with human workers.  Such an example of the collaborative robot is the YuMi robot, dual 7-DOF robot arms designed for precise manipulation of small parts better known in computer vision as rigid body. For further acceptance of such robots in the industry, some methods and sensors systems have to be developed to allow them to pick parts without the position of the part being known in advance, just as humans do.
+This thesis is focused on the implementation of an algorithm for determing the positition of the known parts. We first deal with a robot-camera calibration, then  we propose a method to obtain the ground truth position of known parts. As step in between a 3D model of the known part needs to be created.
+
+\end{abstract-english}
+
+
+
+\begin{abstract-czech}
+Nová generace takzvaných spolupracujících robotů umožňuje použití malých robotických zbraní bez toho, aby byli izolováni od lidských pracovníků. Takovým příkladem spolupracujícího robota je robot YuMi, dvojitý 7-osý robot robotů určený pro přesnou manipulaci s malými částmi a dostupný v laboratoři Inteligentní a mobilní robotika CIIRC.
+Pro další přijetí takových robotů v průmyslu je třeba vyvinout některé metody a systémy snímačů, které by jim umožnily vybírat části bez předchozího znát umístění části, stejně jako lidé.
+Práce je zaměřena na implementaci algoritmu pro lokalizaci známých částí. Vedle lokalizace se část práce skládá z kalibrace kamery relativeley k robotovým a devolopingovým metodám pro získání pozemské pravdivé pozici dílů. \ldots
+\end{abstract-czech}
+
+
+%##########################
+%Default package loading
+\usepackage{import}
+%\usepackage{biblatex}
+%\addbibresource{mybib.bib}
+%for graphics
+\usepackage{graphicx}
+\usepackage{subfig}
+
+
+%//////////////_START BODY_////////////////////////
+\begin{document}
+\maketitle
+
+
+% Introduction-->>Chapter one
+\import{01_Introduction/}{Intro1.tex}
+
+% Background-->>Chapter two
+\import{02_Background/}{Background2.tex}
+
+% Theory-->>Chapter three
+\import{03_Theory/}{Theory3.tex}
+
+
+
+
+%\chapter{Conclusion}
+Lorep ipsum \cite{intro1}
+
+
+\import{References/}{reference1.tex}
+
+
+\end{document}
+%//////////////_END BODY_////////////////////////
+

@@ -1,0 +1,32 @@
+
+\chapter{Related work}
+\label{chap:relwork}
+
+Most of the literature tackle the problem of 3D Object Recognition(object detection and 3D pose estimation) by dividing into two broad categories as follow:
+\begin{enumerate}
+\item Global Feature-Based Methods
+\item Local Feature-Based Methods
+\end{enumerate}
+
+The global feature base methods process the object as a whole for recognition. They define a set of global features which describe the entire 3D object.
+On the other hand, the local feature based methods extract only local surfaces around specific keypoints. They can handle occlusion and clutter bettere when compared to the global feature-based methods.
+
+
+\section{Global Feature-Based Methods} \label{global}
+
+The global feature-based methods define a set of global features which effectively and concisely describe the entire model. Examples of the global feature approach include shape distribution \cite{shapedist}, and viewpoint feature histogram \cite{vfh}.
+The global feature method ignores all details when it comes to the shape of the object and requires a priori segmentation of the object from the scene. 
+Therefore, they are not suitable for recognition of a partially visible object from cluttered scenes. 
+
+\section{Local Feature-Based Methods}
+
+The second class of method, the local feature based methods extract only local surfaces around specific keypoint. Yulan Guo et al. \cite{survey} presents a survey of local feature descriptors and cluster them into the three main groups which follow:
+\begin{enumerate}
+\item signature-based,
+\item histogram-based, and
+\item transform-based methods.
+\end{enumerate}
+
+Yulan Guo et al. \cite{survey} in his survey claims that local features are much better than global features \ref{global} for object recognition in occlusion and clutter scenes. 
+This type of features has also proven to perform better in the area of 2D object recognition. That is why it has been extended to the area of 3D object recognition. Most articles such as \cite{algFpfh} and \cite{repMatching} follow this pipeline and compare this with other local descriptors.
+
