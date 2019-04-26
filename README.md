@@ -15,7 +15,7 @@ In contrast to several approaches those whose rely on Point Pair Features as fea
 ## Citation
 Please cite the work in your publications if it helps your research:
    
-    @inproceedings{cao2017realtime,
+    @inproceedings{casch2019cv,
       author = {Cesar Sinchiguano},
       booktitle = {Master_Thesis},
       title = {Part localization for robotic manipulation},
