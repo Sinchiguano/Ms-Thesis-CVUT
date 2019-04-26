@@ -1,8 +1,6 @@
 # Ms-Thesis-CVUT
-<p align="right">
-<img src="https://github.com/Sinchiguano/Ms-Thesis-CVUT/blob/master/tmp/yumi1.gif", width="400">
-</p>
 <p align="left">
+<img src="https://github.com/Sinchiguano/Ms-Thesis-CVUT/blob/master/tmp/yumi1.gif", width="400">
 <img src="https://github.com/Sinchiguano/Ms-Thesis-CVUT/blob/master/tmp/yumi2.gif", width="400">
 </p>
 The new generation of the collaborative robots allows the use of small robot arms working with human workers, e.g. the YuMi robot, a dual 7-DOF robot arms designed for precise manipulation of small objects. For the further acceptance of such a robot in the industry, some methods and sensors systems have to be developed to allow them to perform a task such as grasping a specific object. If the robot wants to grasp an object, it has to localize the object relative to itself. This is a task of object recognition in computer vision, the art of localizing predefined objects in image sensor data. This master thesis presents a pipeline for object recognition of a single isolated model in point cloud.
