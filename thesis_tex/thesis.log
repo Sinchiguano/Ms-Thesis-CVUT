@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.3.25)  26 APR 2019 18:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.3.25)  27 APR 2019 21:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1805,26 +1805,40 @@ Package pdftex.def Info: 04_CamRob/figures03/target1.png used on input line 98.
 (pdftex.def)             Requested size: 289.07999pt x 222.27759pt.
  [19 <./04_CamRob/figures03/fiducials.png> <./04_CamRob/figures03/target1.png>]
 
-<04_CamRob/figures03/calibrationtarget1.png, id=551, 632.3625pt x 478.78876pt>
+Overfull \hbox (11.2pt too wide) detected at line 136
+[][] 
+ []
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 141.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 142.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 143.
+
+[20]
+<04_CamRob/figures03/calibrationtarget1.png, id=563, 632.3625pt x 478.78876pt>
 File: 04_CamRob/figures03/calibrationtarget1.png Graphic file (type png)
 
 <use 04_CamRob/figures03/calibrationtarget1.png>
 Package pdftex.def Info: 04_CamRob/figures03/calibrationtarget1.png used on inp
-ut line 113.
+ut line 153.
 (pdftex.def)             Requested size: 289.07999pt x 218.87932pt.
- [20 <./04_CamRob/figures03/calibrationtarget1.png>]
-<04_CamRob/figures03/rviz1.png, id=565, 1696.3375pt x 1140.26pt>
+ [21 <./04_CamRob/figures03/calibrationtarget1.png>]
+<04_CamRob/figures03/rviz1.png, id=577, 1696.3375pt x 1140.26pt>
 File: 04_CamRob/figures03/rviz1.png Graphic file (type png)
 
 <use 04_CamRob/figures03/rviz1.png>
-Package pdftex.def Info: 04_CamRob/figures03/rviz1.png used on input line 144.
+Package pdftex.def Info: 04_CamRob/figures03/rviz1.png used on input line 184.
 (pdftex.def)             Requested size: 289.07999pt x 194.3114pt.
-) (./05_PoseObject/PoseObject5.tex [21 <./04_CamRob/figures03/rviz1.png>] [22
+) (./05_PoseObject/PoseObject5.tex [22 <./04_CamRob/figures03/rviz1.png>]
+Chapter 5.
+[23
 
 ]
-Chapter 5.
-[23]
-<05_PoseObject/diagrams/pipelineend.png, id=592, 755.82375pt x 399.4925pt>
+<05_PoseObject/diagrams/pipelineend.png, id=600, 755.82375pt x 399.4925pt>
 File: 05_PoseObject/diagrams/pipelineend.png Graphic file (type png)
 
 <use 05_PoseObject/diagrams/pipelineend.png>
@@ -1832,7 +1846,7 @@ Package pdftex.def Info: 05_PoseObject/diagrams/pipelineend.png used on input l
 ine 15.
 (pdftex.def)             Requested size: 289.0728pt x 144.53648pt.
  [24 <./05_PoseObject/diagrams/pipelineend.png>]
-<05_PoseObject/diagrams/passthrough.png, id=601, 397.485pt x 112.42pt>
+<05_PoseObject/diagrams/passthrough.png, id=609, 397.485pt x 112.42pt>
 File: 05_PoseObject/diagrams/passthrough.png Graphic file (type png)
 
 <use 05_PoseObject/diagrams/passthrough.png>
@@ -1840,7 +1854,7 @@ Package pdftex.def Info: 05_PoseObject/diagrams/passthrough.png used on input l
 ine 39.
 (pdftex.def)             Requested size: 216.81pt x 61.32172pt.
 
-<05_PoseObject/diagrams/planesegmentation.png, id=606, 505.89pt x 99.37125pt>
+<05_PoseObject/diagrams/planesegmentation.png, id=614, 505.89pt x 99.37125pt>
 File: 05_PoseObject/diagrams/planesegmentation.png Graphic file (type png)
 
 <use 05_PoseObject/diagrams/planesegmentation.png>
@@ -1851,7 +1865,7 @@ nput line 83.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25 <./05_PoseObject/diagrams/passthrough.png>]
-<05_PoseObject/figures03/voxelcloud1.png, id=621, 1499.6025pt x 653.44125pt>
+<05_PoseObject/figures03/voxelcloud1.png, id=629, 1499.6025pt x 653.44125pt>
 File: 05_PoseObject/figures03/voxelcloud1.png Graphic file (type png)
 
 <use 05_PoseObject/figures03/voxelcloud1.png>
@@ -1862,7 +1876,7 @@ line 99.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<05_PoseObject/diagrams/keypoints.png, id=622, 265.99374pt x 352.31625pt>
+<05_PoseObject/diagrams/keypoints.png, id=630, 265.99374pt x 352.31625pt>
 File: 05_PoseObject/diagrams/keypoints.png Graphic file (type png)
 
 <use 05_PoseObject/diagrams/keypoints.png>
@@ -1874,7 +1888,7 @@ e 107.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [26 <./05_PoseObject/diagrams/planesegmentation.png>]
-<05_PoseObject/diagrams/vertexnormal.png, id=634, 262.9825pt x 349.305pt>
+<05_PoseObject/diagrams/vertexnormal.png, id=641, 262.9825pt x 349.305pt>
 File: 05_PoseObject/diagrams/vertexnormal.png Graphic file (type png)
 
 <use 05_PoseObject/diagrams/vertexnormal.png>
@@ -1883,7 +1897,7 @@ line 122.
 (pdftex.def)             Requested size: 144.5445pt x 144.5378pt.
  [27 <./05_PoseObject/figures03/voxelcloud1.png> <./05_PoseObject/diagrams/keyp
 oints.png> <./05_PoseObject/diagrams/vertexnormal.png>]
-<05_PoseObject/diagrams/fpfh.png, id=644, 419.5675pt x 99.37125pt>
+<05_PoseObject/diagrams/fpfh.png, id=651, 419.5675pt x 99.37125pt>
 File: 05_PoseObject/diagrams/fpfh.png Graphic file (type png)
 
 <use 05_PoseObject/diagrams/fpfh.png>
@@ -1891,7 +1905,7 @@ Package pdftex.def Info: 05_PoseObject/diagrams/fpfh.png used on input line 133
 .
 (pdftex.def)             Requested size: 216.81pt x 51.34885pt.
 
-<05_PoseObject/figures03/fpfh1.png, id=647, 367.3725pt x 251.94125pt>
+<05_PoseObject/figures03/fpfh1.png, id=654, 367.3725pt x 251.94125pt>
 File: 05_PoseObject/figures03/fpfh1.png Graphic file (type png)
 
 <use 05_PoseObject/figures03/fpfh1.png>
@@ -1903,7 +1917,7 @@ Package pdftex.def Info: 05_PoseObject/figures03/fpfh1.png used on input line 1
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [28 <./05_PoseObject/diagrams/fpfh.png>] [29 <./05_PoseObject/figures03/fpfh1.p
-ng>] <05_PoseObject/diagrams/ransac.png, id=674, 484.81125pt x 96.36pt>
+ng>] <05_PoseObject/diagrams/ransac.png, id=681, 484.81125pt x 96.36pt>
 File: 05_PoseObject/diagrams/ransac.png Graphic file (type png)
 
 <use 05_PoseObject/diagrams/ransac.png>
@@ -1915,7 +1929,7 @@ Overfull \hbox (11.2pt too wide) detected at line 239
 [][] 
  []
 
-<05_PoseObject/diagrams/endpipeline.png, id=680, 713.66624pt x 136.51pt>
+<05_PoseObject/diagrams/endpipeline.png, id=687, 713.66624pt x 136.51pt>
 File: 05_PoseObject/diagrams/endpipeline.png Graphic file (type png)
 
 <use 05_PoseObject/diagrams/endpipeline.png>
@@ -2083,7 +2097,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 111.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 111.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 111.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 9D919987AFFC19C8EB89FC11704B4B18;3215.
+(rerunfilecheck)             Checksum: 604495F7758926AC3772849670B87FB0;3237.
 
 
 LaTeX Warning: There were undefined references.
@@ -2094,11 +2108,11 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 111.
  ) 
 Here is how much of TeX's memory you used:
- 21310 strings out of 493029
- 367226 string characters out of 6136234
- 492846 words of memory out of 5000000
- 24110 multiletter control sequences out of 15000+600000
- 114010 words of font info for 141 fonts, out of 8000000 for 9000
+ 21314 strings out of 493029
+ 367258 string characters out of 6136234
+ 492935 words of memory out of 5000000
+ 24111 multiletter control sequences out of 15000+600000
+ 113927 words of font info for 140 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,17n,58p,10357b,784s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
@@ -2114,10 +2128,10 @@ hare/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/publ
 ic/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (51 pages, 4300848 bytes).
+Output written on thesis.pdf (51 pages, 4307218 bytes).
 PDF statistics:
- 913 PDF objects out of 1000 (max. 8388607)
- 780 compressed objects within 8 object streams
- 215 named destinations out of 1000 (max. 500000)
+ 924 PDF objects out of 1000 (max. 8388607)
+ 791 compressed objects within 8 object streams
+ 220 named destinations out of 1000 (max. 500000)
  32279 words of extra memory for PDF output out of 35830 (max. 10000000)
 

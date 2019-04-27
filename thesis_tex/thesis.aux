@@ -210,21 +210,23 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Overview of a 7X9 checkerboard calibration grid \relax }}{18}{figure.4.4}}
 \newlabel{fig:target1}{{4.4}{18}{Overview of a 7X9 checkerboard calibration grid \relax }{figure.4.4}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.3.3}Augmented Reality (AR)}{18}{subsection.4.3.3}}
-\citation{pnp}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces ARTag, AprilTag and CALTag markers example. Image from \cite  {fiducialTargets}\relax }}{19}{figure.4.5}}
 \newlabel{fig:fiducial}{{4.5}{19}{ARTag, AprilTag and CALTag markers example. Image from \cite {fiducialTargets}\relax }{figure.4.5}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.3.4}Selection}{19}{subsection.4.3.4}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces An 8X9 Checkerboard Calibration Target fixed on a custom-made plate\relax }}{19}{figure.4.6}}
 \newlabel{fig:target2}{{4.6}{19}{An 8X9 Checkerboard Calibration Target fixed on a custom-made plate\relax }{figure.4.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.5}Checkerboard Estimator}{19}{subsection.4.3.5}}
-\newlabel{pose1}{{4.3.5}{19}{Checkerboard Estimator}{subsection.4.3.5}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Visualization of the 3D world coordinates system projeted onto the 2D image plane\relax }}{20}{figure.4.7}}
-\newlabel{fig:target3}{{4.7}{20}{Visualization of the 3D world coordinates system projeted onto the 2D image plane\relax }{figure.4.7}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.6}Coordinate Transformation From Robot Base To Camera Frame}{20}{subsection.4.3.6}}
-\newlabel{t}{{4.1}{20}{Coordinate Transformation From Robot Base To Camera Frame}{equation.4.3.1}{}}
-\newlabel{t4}{{4.2}{21}{Coordinate Transformation From Robot Base To Camera Frame}{equation.4.3.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Right: Visualization of the transform (camera and target) relative to the robot base frame using ROS Rviz package. Left: Show an image used in the camera pose estimation.\relax }}{21}{figure.4.8}}
-\newlabel{fig:tf6}{{4.8}{21}{Right: Visualization of the transform (camera and target) relative to the robot base frame using ROS Rviz package. Left: Show an image used in the camera pose estimation.\relax }{figure.4.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.5}Pose Estimation Using A Checkerboard Pattern}{19}{subsection.4.3.5}}
+\newlabel{pose1}{{4.3.5}{19}{Pose Estimation Using A Checkerboard Pattern}{subsection.4.3.5}{}}
+\citation{pnp}
+\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces Pose Estimation Using A Checkerboard Pattern\relax }}{20}{algocf.1}}
+\newlabel{alg:algPOSE}{{1}{20}{Pose Estimation Using A Checkerboard Pattern}{algocf.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Visualization of the 3D world coordinates system projeted onto the 2D image plane\relax }}{21}{figure.4.7}}
+\newlabel{fig:target3}{{4.7}{21}{Visualization of the 3D world coordinates system projeted onto the 2D image plane\relax }{figure.4.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.6}Coordinate Transformation From Robot Base To Camera Frame}{21}{subsection.4.3.6}}
+\newlabel{t}{{4.1}{21}{Coordinate Transformation From Robot Base To Camera Frame}{equation.4.3.1}{}}
+\newlabel{t4}{{4.2}{22}{Coordinate Transformation From Robot Base To Camera Frame}{equation.4.3.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Right: Visualization of the transform (camera and target) relative to the robot base frame using ROS Rviz package. Left: Show an image used in the camera pose estimation.\relax }}{22}{figure.4.8}}
+\newlabel{fig:tf6}{{4.8}{22}{Right: Visualization of the transform (camera and target) relative to the robot base frame using ROS Rviz package. Left: Show an image used in the camera pose estimation.\relax }{figure.4.8}{}}
 \citation{cadPipeline1}
 \citation{cadPipeline2}
 \citation{cadPipeline3}
@@ -254,8 +256,8 @@
 \citation{algFiltering}
 \citation{algDownsampling}
 \citation{open3d}
-\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces RANSAC for plane segmentation  \cite  {cadPipeline3}\relax }}{26}{algocf.1}}
-\newlabel{alg:algPlane}{{1}{26}{Plane Segmentation}{algocf.1}{}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {2}{\ignorespaces RANSAC for plane segmentation  \cite  {cadPipeline3}\relax }}{26}{algocf.2}}
+\newlabel{alg:algPlane}{{2}{26}{Plane Segmentation}{algocf.2}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Flow Chart of Point Cloud Processing For Plane Segmentation\relax }}{26}{figure.5.3}}
 \newlabel{fig:planesegmentation}{{5.3}{26}{Flow Chart of Point Cloud Processing For Plane Segmentation\relax }{figure.5.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1.3}Extract geometric feature}{26}{subsection.5.1.3}}
@@ -295,8 +297,8 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1.5}Local refinement}{30}{subsection.5.1.5}}
 \@writefile{toc}{\contentsline {subsubsection}{Iterative Closest Point}{30}{subsubsection*.13}}
 \@writefile{toc}{\contentsline {subsubsection}{Iterative Closest Point}{30}{subsubsection*.13}}
-\@writefile{loa}{\contentsline {algocf}{\numberline {2}{\ignorespaces Standar ICP\relax }}{31}{algocf.2}}
-\newlabel{alg:algICP}{{2}{31}{Iterative Closest Point}{algocf.2}{}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {3}{\ignorespaces Standar ICP\relax }}{31}{algocf.3}}
+\newlabel{alg:algICP}{{3}{31}{Iterative Closest Point}{algocf.3}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5.10}{\ignorespaces Flow Chart of The Pose Estimation Pipeline\relax }}{31}{figure.5.10}}
 \newlabel{fig:icp}{{5.10}{31}{Flow Chart of The Pose Estimation Pipeline\relax }{figure.5.10}{}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {6}Experiments}{33}{chapter.6}}

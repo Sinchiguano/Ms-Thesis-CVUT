@@ -101,11 +101,51 @@ In this thesis, the checkerboard pattern is used.  This pattern is simple to pro
 \end{center}
 \end{figure}
 
-\subsection{Checkerboard Estimator}\label{pose1}
+\subsection{Pose Estimation Using A Checkerboard Pattern}\label{pose1}
 
-The task of estimating the pose of a calibrated camera given a set of n 3D points in the world and their corresponding 2D projections in the image is a fundamental and well-understood topic in computer vision, and it is referred to as the Perspective-n-Point problem in most of the literature. OpenCV provides solution to solve the Perspective-n-Point problem which return R (rotation) and t(translation).  
+The task of estimating the pose of a calibrated camera given a set of n 3D points relative to a world and their corresponding 2D projections on the image plane is a fundamental and well-understood topic in computer vision, and it is referred to as a Perspective-n-Point problem in most of the literature. OpenCV provides several methods to solve the Perspective-n-Point problem which returns R (rotation) and t(translation). In order to use the OpenCV capabilities, the image needs to have a suitable format that OpenCV can use. In this thesis, the Robot Operative System is used, which is a suitable platform due to its modular design and rapid integration for a large amount of robot and sensor types.
+With the help of ROS, the system is split into two nodes also called scripts. The first one which deals with the image acquisition and converting into the right format that OpenCV can use. As to the second part, an algorithm for the pose estimation is implemented taking into account the modified image done in the first part. 
+Since a ROS system is modular and each node communicates one another with pass-through messages. The algorithm can be seen in the Algorithm \ref{alg:algPOSE}.
 
-A solution to the problem exists for $n = 3$ called P3P, and many solutions are available for the general case of $n\geq 3$. In this thesis, the solution Perspective-n-point(PnP) \cite{pnp} is used, which is already available and well tested in OpenCV a open source communitive. A projection of 3D points expressed in world frame onto the 2D image plane is shown in Figure \ref{fig:target3}.
+\begin{algorithm}[H]
+\SetAlgoLined
+\KwData{
+\begin{enumerate}
+\item RGB image data
+\item Intrinsic parameters
+\end{enumerate}
+ }
+\KwResult{
+\begin{enumerate}
+\item A $R \in \mathbb{R}^{3}$ and $t \in \mathbb{R}^{3}$
+\end{enumerate}
+}
+ $T \leftarrow T_{0}$  \;
+ \While{$ros::ok()$}
+ {
+     \eIf{image}{
+     Corners are searched in the image scene where a checkerboard is placed with corner detector algorithm already available in OpenCV.\;
+     The pose of the camera is calculated with the OpenCV algorithm such as solvepnp()\;
+     Publish T, pose, to the ROS network.\;
+    }{
+    continue\;
+    }
+}
+\caption{Pose Estimation Using A Checkerboard Pattern}
+\label{alg:algPOSE}
+\end{algorithm}
+
+As seen in the \ref{alg:algPOSE} the solution to the Perspective-N-Point problem is solved by the OpenCV solvepnp() or solvePnPRansac() functions. Both methods solved the problem by matching a predefined grid of corner locations in the checkerboard to the grid of detected corners in the image plane. These functions need to know the camera matrix and the distortion coefficients in advance. TAs a main feature of the solvePnPRansac function, is that it uses a RANdom SAmple Consensus (RANSAC) method to minimize the error between correspondence points. Both functions can use the following methods to solve the PnP problem:
+
+\begin{itemize}
+\item $CV \textunderscore ITERATIVE (default).$
+\item $CV \textunderscore P3P.$
+\item $CV \textunderscore EPNP.$
+\end{itemize}
+
+In this thesis, the default one is used. The function outputs a translation and rotation of the object in the camera coordinate system. The rotation is given as 3x1 Rodrigues rotation vector. This later is converted first
+into a rotation matrix, then to a quaternion which is the
+standard representation for rotation in ROS. The resulting transformation is published over ROS network for subsequent use. A projection of 3D points expressed in world frame onto the 2D image plane is shown in Figure \ref{fig:target3}. For more details about the solution Perspective-n-point(PnP) refer to \cite{pnp}
 
 
 \begin{figure}[!h]
@@ -127,7 +167,7 @@ R & t \\ \label{t}
 0 & 1
 \end{pmatrix}
 \end{equation}
-
+\\
 Eq. \ref{t} is called the Euclidean transformation, also known as transform. Where $R \in \mathbb{R}^{3}$ is the rotation matrix and $t \in \mathbb{R}^{3}$ is the translation vector, altogether representing the pose of the camera frame relative to the calibration target frame.\\
 It is assumed that the transform between the end-effector(or tool centre point) and the robot base, $ ^{R}T_{TCP}$, is known from the forward kinematics of the robot. In addition to that, the transform from the end-effector frame relative to the calibration target frame, $ ^{TCP}T_{T}$, was defined according to our need when the custom-made plate \ref{fig:target3} was designed.
 

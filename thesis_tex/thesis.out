@@ -32,7 +32,7 @@
 \BOOKMARK [2][-]{subsection.4.3.2}{Checkerboard Patterns}{section.4.3}% 32
 \BOOKMARK [2][-]{subsection.4.3.3}{Augmented Reality \(AR\)}{section.4.3}% 33
 \BOOKMARK [2][-]{subsection.4.3.4}{Selection}{section.4.3}% 34
-\BOOKMARK [2][-]{subsection.4.3.5}{Checkerboard Estimator}{section.4.3}% 35
+\BOOKMARK [2][-]{subsection.4.3.5}{Pose Estimation Using A Checkerboard Pattern}{section.4.3}% 35
 \BOOKMARK [2][-]{subsection.4.3.6}{Coordinate Transformation From Robot Base To Camera Frame}{section.4.3}% 36
 \BOOKMARK [0][-]{chapter.5}{A 3D Object Pose Estimation Pipeline}{}% 37
 \BOOKMARK [1][-]{section.5.1}{Pose estimation pipeline}{chapter.5}% 38

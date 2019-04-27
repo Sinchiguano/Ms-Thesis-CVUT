@@ -57,8 +57,8 @@
 \contentsline {subsection}{\numberline {4.3.2}Checkerboard Patterns}{18}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}Augmented Reality (AR)}{18}{subsection.4.3.3}
 \contentsline {subsection}{\numberline {4.3.4}Selection}{19}{subsection.4.3.4}
-\contentsline {subsection}{\numberline {4.3.5}Checkerboard Estimator}{19}{subsection.4.3.5}
-\contentsline {subsection}{\numberline {4.3.6}Coordinate Transformation From Robot Base To Camera Frame}{20}{subsection.4.3.6}
+\contentsline {subsection}{\numberline {4.3.5}Pose Estimation Using A Checkerboard Pattern}{19}{subsection.4.3.5}
+\contentsline {subsection}{\numberline {4.3.6}Coordinate Transformation From Robot Base To Camera Frame}{21}{subsection.4.3.6}
 \contentsline {chapter}{\numberline {5}A 3D Object Pose Estimation Pipeline}{23}{chapter.5}
 \contentsline {section}{\numberline {5.1}Pose estimation pipeline}{23}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Preprocessing stage}{24}{subsection.5.1.1}
