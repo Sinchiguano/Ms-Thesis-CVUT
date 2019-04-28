@@ -85,3 +85,4 @@
 \contentsline {chapter}{\numberline {8}Conclusions}{37}{chapter.8}
 \contentsline {chapter}{Bibliography}{39}{chapter*.14}
 \contentsline {chapter}{\numberline {A}List of Notation}{43}{appendix.A}
+\contentsline {chapter}{\numberline {B}Assignment of this thesis}{45}{appendix.B}
