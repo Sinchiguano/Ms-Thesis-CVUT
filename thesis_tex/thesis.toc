@@ -19,70 +19,14 @@
 \select@language {english}
 \select@language {english}
 \select@language {english}
-\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Goal}{1}{section.1.2}
-\contentsline {section}{\numberline {1.3}Thesis structure}{2}{section.1.3}
-\contentsline {chapter}{\numberline {2}Related work}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Global Feature-Based Methods}{3}{section.2.1}
-\contentsline {section}{\numberline {2.2}Local Feature-Based Methods}{3}{section.2.2}
-\contentsline {chapter}{\numberline {3}Background}{5}{chapter.3}
-\contentsline {section}{\numberline {3.1} Mathematical Tools}{5}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Rigid Transformations}{5}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Rotation Matrices}{5}{subsection.3.1.2}
-\contentsline {subsubsection}{Rotation Representations}{6}{subsubsection*.5}
-\contentsline {subsubsection}{Rotation Representations}{6}{subsubsection*.5}
-\contentsline {section}{\numberline {3.2}Basics of 3D Computer Vision}{6}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1} RGB-D sensors}{6}{subsection.3.2.1}
-\contentsline {subsubsection}{Point Cloud}{6}{subsubsection*.6}
-\contentsline {subsubsection}{Point Cloud}{6}{subsubsection*.6}
-\contentsline {subsection}{\numberline {3.2.2} Camera Pinhole Model}{7}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Parameters of camera model}{7}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Camera's Intrinsic Parameters}{8}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Camera's Extrinsic Parameters}{9}{subsection.3.2.5}
-\contentsline {section}{\numberline {3.3}Robotic Operating System}{9}{section.3.3}
-\contentsline {section}{\numberline {3.4}Open-source Libraries}{10}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}PCL}{10}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Open3D}{11}{subsection.3.4.2}
-\contentsline {section}{\numberline {3.5}Software tools}{12}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}CloudCompare}{12}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}MeshLab}{12}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}FreeCAD}{12}{subsection.3.5.3}
-\contentsline {chapter}{\numberline {4}Robot-Camera Calibration}{15}{chapter.4}
-\contentsline {section}{\numberline {4.1}Camera Calibration}{15}{section.4.1}
-\contentsline {section}{\numberline {4.2}Sensor internal parameter calibration}{16}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Camera Model}{16}{subsection.4.2.1}
-\contentsline {section}{\numberline {4.3}Eye-to-Hand Calibration}{17}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Calibration Targets}{18}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Checkerboard Patterns}{18}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Augmented Reality (AR)}{18}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}Selection}{19}{subsection.4.3.4}
-\contentsline {subsection}{\numberline {4.3.5}Pose Estimation Using A Checkerboard Pattern}{19}{subsection.4.3.5}
-\contentsline {subsection}{\numberline {4.3.6}Coordinate Transformation From Robot Base To Camera Frame}{21}{subsection.4.3.6}
-\contentsline {chapter}{\numberline {5}A 3D Object Pose Estimation Pipeline}{23}{chapter.5}
-\contentsline {section}{\numberline {5.1}Pose estimation pipeline}{23}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Preprocessing stage}{24}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Filtering a Point cloud}{24}{subsection.5.1.2}
-\contentsline {subsubsection}{Filtering a PointCloud using a PassThrough filter}{25}{subsubsection*.7}
-\contentsline {subsubsection}{Filtering a PointCloud using a PassThrough filter}{25}{subsubsection*.7}
-\contentsline {subsubsection}{Plane Segmentation}{25}{subsubsection*.8}
-\contentsline {subsubsection}{Plane Segmentation}{25}{subsubsection*.8}
-\contentsline {subsection}{\numberline {5.1.3}Extract geometric feature}{26}{subsection.5.1.3}
-\contentsline {subsubsection}{3D keypoint Detection}{26}{subsubsection*.9}
-\contentsline {subsubsection}{3D keypoint Detection}{26}{subsubsection*.9}
-\contentsline {subsubsection}{Local surface feature description}{26}{subsubsection*.10}
-\contentsline {subsubsection}{Local surface feature description}{26}{subsubsection*.10}
-\contentsline {subsubsection}{Local surface feature description}{28}{subsubsection*.11}
-\contentsline {subsubsection}{Local surface feature description}{28}{subsubsection*.11}
-\contentsline {subsection}{\numberline {5.1.4}Searching Strategies}{28}{subsection.5.1.4}
-\contentsline {subsubsection}{RANSAC-based method}{29}{subsubsection*.12}
-\contentsline {subsubsection}{RANSAC-based method}{29}{subsubsection*.12}
-\contentsline {subsection}{\numberline {5.1.5}Local refinement}{30}{subsection.5.1.5}
-\contentsline {subsubsection}{Iterative Closest Point}{30}{subsubsection*.13}
-\contentsline {subsubsection}{Iterative Closest Point}{30}{subsubsection*.13}
-\contentsline {chapter}{\numberline {6}Experiments}{33}{chapter.6}
-\contentsline {chapter}{\numberline {7}Future Work}{35}{chapter.7}
-\contentsline {chapter}{\numberline {8}Conclusions}{37}{chapter.8}
-\contentsline {chapter}{Bibliography}{39}{chapter*.14}
-\contentsline {chapter}{\numberline {A}List of Notation}{43}{appendix.A}
-\contentsline {chapter}{\numberline {B}Assignment of this thesis}{45}{appendix.B}
+\contentsline {chapter}{\numberline {1}Experimental Results}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Robot-Camera Calibration}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Internal Camera Calibration}{1}{subsection.1.1.1}
+\contentsline {subsubsection}{Reprojection Errors}{1}{subsubsection*.5}
+\contentsline {subsubsection}{Reprojection Errors}{1}{subsubsection*.5}
+\contentsline {subsection}{\numberline {1.1.2}External Camera Calibration}{3}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}Eye-To-Hand Calibration}{3}{subsection.1.1.3}
+\contentsline {section}{\numberline {1.2}Pose Estimation Pipeline}{3}{section.1.2}
+\contentsline {chapter}{Bibliography}{5}{chapter*.6}
+\contentsline {chapter}{\numberline {A}List of Notation}{9}{appendix.A}
+\contentsline {chapter}{\numberline {B}Assignment of this thesis}{11}{appendix.B}

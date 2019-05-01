@@ -1,49 +1,9 @@
-\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.1.1}{Motivation}{chapter.1}% 2
-\BOOKMARK [1][-]{section.1.2}{Goal}{chapter.1}% 3
-\BOOKMARK [1][-]{section.1.3}{Thesis structure}{chapter.1}% 4
-\BOOKMARK [0][-]{chapter.2}{Related work}{}% 5
-\BOOKMARK [1][-]{section.2.1}{Global Feature-Based Methods}{chapter.2}% 6
-\BOOKMARK [1][-]{section.2.2}{Local Feature-Based Methods}{chapter.2}% 7
-\BOOKMARK [0][-]{chapter.3}{Background}{}% 8
-\BOOKMARK [1][-]{section.3.1}{ Mathematical Tools}{chapter.3}% 9
-\BOOKMARK [2][-]{subsection.3.1.1}{Rigid Transformations}{section.3.1}% 10
-\BOOKMARK [2][-]{subsection.3.1.2}{Rotation Matrices}{section.3.1}% 11
-\BOOKMARK [1][-]{section.3.2}{Basics of 3D Computer Vision}{chapter.3}% 12
-\BOOKMARK [2][-]{subsection.3.2.1}{ RGB-D sensors}{section.3.2}% 13
-\BOOKMARK [2][-]{subsection.3.2.2}{ Camera Pinhole Model}{section.3.2}% 14
-\BOOKMARK [2][-]{subsection.3.2.3}{Parameters of camera model}{section.3.2}% 15
-\BOOKMARK [2][-]{subsection.3.2.4}{Camera's Intrinsic Parameters}{section.3.2}% 16
-\BOOKMARK [2][-]{subsection.3.2.5}{Camera's Extrinsic Parameters}{section.3.2}% 17
-\BOOKMARK [1][-]{section.3.3}{Robotic Operating System}{chapter.3}% 18
-\BOOKMARK [1][-]{section.3.4}{Open-source Libraries}{chapter.3}% 19
-\BOOKMARK [2][-]{subsection.3.4.1}{PCL}{section.3.4}% 20
-\BOOKMARK [2][-]{subsection.3.4.2}{Open3D}{section.3.4}% 21
-\BOOKMARK [1][-]{section.3.5}{Software tools}{chapter.3}% 22
-\BOOKMARK [2][-]{subsection.3.5.1}{CloudCompare}{section.3.5}% 23
-\BOOKMARK [2][-]{subsection.3.5.2}{MeshLab}{section.3.5}% 24
-\BOOKMARK [2][-]{subsection.3.5.3}{FreeCAD}{section.3.5}% 25
-\BOOKMARK [0][-]{chapter.4}{Robot-Camera Calibration}{}% 26
-\BOOKMARK [1][-]{section.4.1}{Camera Calibration}{chapter.4}% 27
-\BOOKMARK [1][-]{section.4.2}{Sensor internal parameter calibration}{chapter.4}% 28
-\BOOKMARK [2][-]{subsection.4.2.1}{Camera Model}{section.4.2}% 29
-\BOOKMARK [1][-]{section.4.3}{Eye-to-Hand Calibration}{chapter.4}% 30
-\BOOKMARK [2][-]{subsection.4.3.1}{Calibration Targets}{section.4.3}% 31
-\BOOKMARK [2][-]{subsection.4.3.2}{Checkerboard Patterns}{section.4.3}% 32
-\BOOKMARK [2][-]{subsection.4.3.3}{Augmented Reality \(AR\)}{section.4.3}% 33
-\BOOKMARK [2][-]{subsection.4.3.4}{Selection}{section.4.3}% 34
-\BOOKMARK [2][-]{subsection.4.3.5}{Pose Estimation Using A Checkerboard Pattern}{section.4.3}% 35
-\BOOKMARK [2][-]{subsection.4.3.6}{Coordinate Transformation From Robot Base To Camera Frame}{section.4.3}% 36
-\BOOKMARK [0][-]{chapter.5}{A 3D Object Pose Estimation Pipeline}{}% 37
-\BOOKMARK [1][-]{section.5.1}{Pose estimation pipeline}{chapter.5}% 38
-\BOOKMARK [2][-]{subsection.5.1.1}{Preprocessing stage}{section.5.1}% 39
-\BOOKMARK [2][-]{subsection.5.1.2}{Filtering a Point cloud}{section.5.1}% 40
-\BOOKMARK [2][-]{subsection.5.1.3}{Extract geometric feature}{section.5.1}% 41
-\BOOKMARK [2][-]{subsection.5.1.4}{Searching Strategies}{section.5.1}% 42
-\BOOKMARK [2][-]{subsection.5.1.5}{Local refinement}{section.5.1}% 43
-\BOOKMARK [0][-]{chapter.6}{Experiments}{}% 44
-\BOOKMARK [0][-]{chapter.7}{Future Work}{}% 45
-\BOOKMARK [0][-]{chapter.8}{Conclusions}{}% 46
-\BOOKMARK [0][-]{chapter*.14}{Bibliography}{}% 47
-\BOOKMARK [0][-]{appendix.A}{List of Notation}{}% 48
-\BOOKMARK [0][-]{appendix.B}{Assignment of this thesis}{}% 49
+\BOOKMARK [0][-]{chapter.1}{Experimental Results}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Robot-Camera Calibration}{chapter.1}% 2
+\BOOKMARK [2][-]{subsection.1.1.1}{Internal Camera Calibration}{section.1.1}% 3
+\BOOKMARK [2][-]{subsection.1.1.2}{External Camera Calibration}{section.1.1}% 4
+\BOOKMARK [2][-]{subsection.1.1.3}{Eye-To-Hand Calibration}{section.1.1}% 5
+\BOOKMARK [1][-]{section.1.2}{Pose Estimation Pipeline}{chapter.1}% 6
+\BOOKMARK [0][-]{chapter*.6}{Bibliography}{}% 7
+\BOOKMARK [0][-]{appendix.A}{List of Notation}{}% 8
+\BOOKMARK [0][-]{appendix.B}{Assignment of this thesis}{}% 9
