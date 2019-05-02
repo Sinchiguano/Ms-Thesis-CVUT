@@ -1,0 +1,15 @@
+<launch>
+
+  <group ns="communication">
+    <include file="$(find yumi_support)/launch/robot_interface.launch"/>
+  </group>
+
+  <group ns="robot">
+    <include file="$(find yumi_moveit_config)/launch/demo_online.launch"/>
+  </group>
+
+  <group ns="tftf">
+    <include file="$(find tf_turtles)/launch/wholetf2.launch"/>
+  </group>
+
+</launch>
