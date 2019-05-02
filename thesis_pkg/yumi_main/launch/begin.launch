@@ -1,0 +1,12 @@
+<launch>
+
+  <group ns="camera">
+    <include file="$(find astra_launch)/launch/astra.launch"/>
+  </group>
+
+
+  <group ns="tftf">
+    <include file="$(find tf_turtles)/launch/target_cam_world.launch"/>
+  </group>
+
+</launch>
