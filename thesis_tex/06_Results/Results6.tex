@@ -44,10 +44,11 @@ The reprojection error is the distance between a pattern keypoint detected in a 
 \end{figure}
 
 To find the average error we calculate the arithmetical mean of the errors calculates for all the calibration images. This should be as close to zero as possible. 
-Table \ref{astra1} and Table \ref{real1} show the mean reprojection error for both camera used in this thesis.
-As it can be seen in Table \ref{astra1}, the reprojection error for the Astra camera applying both methods, the OpenCV and Astra, are under 0.5 pixels, which it means a good estimation of the intrinsic parameters so far. As to the reprojection errors of its counterpart the RealSense D-435, are shown in the Table \ref{real1}, those values are reasonable and we can determine that both cameras under the same condition were performing good estimates of the internal parameters of the cameras.  The intrinsic parameters are shown in the Appendix \ref{pppppppp}
 
-The reason about using two methods for estimating the intrinsic parameters of both cameras, is the one that we have a clear idea what those values are.  A third method was appied. It was with the use of kalibr, a ros package available in the open source community. The results were not satisfatory, and it is not shown in this thesis. But it is mention as a remark in order to let reader know about its existence for future studies. 
+\subsubsection{Result Analysis}
+After computing the average error for both cameras, the results are shown in Table \ref{astra1} related to the Astra camera and Table \ref{real1} which corresponds to the RealSense D-435. It can be seen that the overall mean error representing the Astra camera is quite correlated to one another method (OpenCV or camera \textunderscore industrial calibration). The difference is acceptable since it is under the standard specified in most of the literature of computer vision as it is that the error should as close as possible to 0, or under the 0.5 pixels.\\
+On the other hand, the results for the RealSense camera are not quite correlated at all. There exists a difference that can affect the eye-to-hand calibration process, and therefore, the pose estimation system can be affected also. Even when the overall mean error meets the requirements of being under the 0,5 pixels, it is difficult to conclude that the RealSense camera is or is not a good choice for solving the main problem of this thesis as it is the pose estimation system. But, it is a good insight to know in advance for future conclusions where there might exist potential issues in the development of this master thesis.
+As a remark, both cameras were calibrated with same light conditions, with the same calibration target and with an equal number of images. Considering, all in all, it can be concluded that the Astra camera seems to perform well and it can be our final choice for the pose estimation system.
 
 \begin{table}[b]
 % increase table row spacing, adjust to taste
@@ -85,9 +86,71 @@ ROS &  0.122868849\\
 \end{tabular}
 \end{table}
 
-With the evalution of the accuracy of the camera by analizing the reprojection error. The determination and evaluation of the camera pose relative to the robot coordinate follow.
-
 \subsection{Eye-To-Hand Calibration}
+The second experiment in this chapter is the one related to the eye-to-hand calibration. In this experiment, both cameras were using also. But with the only difference that each one of them uses the most accurate estimation of its internal parameters of the camera mentioned previously. With the known intrinsic parameters of each one of the camera, two types of experiments are performed.\\
+The aim is to estimate the pose of the camera relative to the robot base frame as described in \ref{lllll}. The first type of experiment is done with the calibration plate kept parallel to the XY plane of the robot frame as it is shown in Figure \ref{fig:parallelplane}. With that setup, several movements will be executed with small displacement in a different direction in order to guarantee that the checkerboard can be detected by the 3D camera to be calibrated. 
+As to the second type of experiment, tilting the calibration plate is performed. 
+Both experiments have the same number of movement and the principle to retrieve the pose of the camera relative to the robot is the same. The principle is that the checkerboard is detected, the pose of camera relative to the chessboard frame and the pose of the checkerboard relative to the robot frame is being streamed through the tf topic of  the ROS network, then a pose of the camera relative to the robot frame is retrieved with by using tf listening transform. This transformation is saved. The cycle repeats for each one of the movement the robot has to execute. The number of successful detection of the checkerboard is saved also. When the robot has completed all the movements, an average of all poses is computed. 
+
+
+\subsubsection{Calibration results}
+
+
+%%%%%%%%%%%%% astra 
+\begin{itemize}
+\item The following eye-to-hand transform was obtained for the Astra Camera with the calibration plate parallel to the XY plane in robot frame:
+\begin{equation}
+^{R}T_{C}=\begin{bmatrix} -2.26051005e-02 & 7.30112611e-01 & -6.82952842e-01 & 1.18282265\\9.99481127e-01 & 8.25583772e-04 & -3.21992981e-02 & 0.11970625\\ -2.29452788e-02 & -6.83326345e-01 & -7.29752438e-01 & 0.53631511 \end{bmatrix}
+\end{equation}
+
+\item The following eye-to-hand transform was obtained for the Astra Camera with tilting the calibration plate:
+\begin{equation}
+^{R}T_{C}=\begin{bmatrix} -0.01440125 & 0.72431469 & -0.68931911 & 1.19416679\\0.99970886 & -0.00291747 & -0.02395149 & 0.1134242\\ -0.01935949 & -0.68946336 & -0.7240618 & 0.53810017 \end{bmatrix}
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%% realsense
+
+\item The following eye-to-hand transform was obtained for the RealSense D-435 camera with the calibration plate parallel to the XY plane in robot frame:
+\begin{equation}
+^{R}T_{C}=\begin{bmatrix} -2.23312402e-02 & 2.94145863e-01 & -9.55499622e-01 &1.22253213\\9.99723971e-01 & -4.09078692e-04 & -2.34907523e-02 & 0.11776472 \\ -7.30058216e-03 & -9.55760453e-01 & -2.94055535e-01 & 0.32424239  \end{bmatrix}
+\end{equation}
+
+
+
+\item The following eye-to-hand transform was obtained for the RealSense D-435 camera with with tilting the calibration plate:
+\begin{equation}
+^{R}T_{C}=\begin{bmatrix} -0.01833338  0.30085851 -0.95349255 & 1.21972025\\0.99978158 -0.00405373 -0.02050249& 0.09386797\\ -0.01003355 -0.95366017 -0.30071848& 0.33192816\end{bmatrix}
+\end{equation}
+
+
+
+
+
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+\subsubsection{Result Analysis}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -98,11 +161,12 @@ With the evalution of the accuracy of the camera by analizing the reprojection e
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \iffalse
 
-
-
 \begin{itemize}
 \item Internal camera calibration where a data collection is requiring.
+
+\end{equation}
 \item Eye-to-hand calibration where a robot move is requiring. 
+
 \end{itemize}
 
 The propose robot-camera calibration method was successfully performed provided that the checkerboard was detected by the 3D camera to be calibrated.
@@ -126,8 +190,6 @@ In this thesis two standard metrics are used in order to evaluate the performanc
 \item Precision:
 \item point clouds, captured in real environment. 
 \end{itemize}
-
-
 
 \subsection{Testing environment}
 The robot-camera calibration method as well as the pose estimation system were implemented in Python within ROS enviornment, making use of highly optimized libraries for 3D point cloud processing and tools. 
