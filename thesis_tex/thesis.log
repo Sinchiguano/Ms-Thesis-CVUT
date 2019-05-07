@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.3.25)  6 MAY 2019 20:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.3.25)  7 MAY 2019 16:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2002,31 +2002,35 @@ LaTeX Warning: Text page 35 contains only floats.
 [35 <./06_Results/figures05/opencv_int_cal_astra.png (PNG copy)> <./06_Results/
 figures05/opencv_int_cal_real.png (PNG copy)>]
 
-LaTeX Warning: Reference `lllll' on page 36 undefined on input line 91.
+LaTeX Warning: Reference `iiiii' on page 36 undefined on input line 92.
 
 
-LaTeX Warning: Reference `fig:parallelplane' on page 36 undefined on input line
- 91.
+Underfull \hbox (badness 10000) in paragraph at lines 90--94
+
+ []
+
+
+LaTeX Warning: Reference `jjjjjj' on page 36 undefined on input line 95.
 
 [36]
-Overfull \hbox (60.71927pt too wide) detected at line 104
+Overfull \hbox (60.71927pt too wide) detected at line 110
 [][]\OML/lmm/m/it/10.95 T[] \OT1/lmr/m/n/10.95 = []
  []
 
 
-Overfull \hbox (60.71927pt too wide) detected at line 117
+Overfull \hbox (60.71927pt too wide) detected at line 123
 [][]\OML/lmm/m/it/10.95 T[] \OT1/lmr/m/n/10.95 = []
  []
 
-) (./07_FutureWork/FutureWork7.tex [37] [38]
+[37]) (./07_FutureWork/FutureWork7.tex [38] [39] [40
+
+]
 Chapter 7.
-) (./08_Conclusions/Conclusions8.tex [39
-
-] [40
+) (./08_Conclusions/Conclusions8.tex [41] [42
 
 ]
 Chapter 8.
-) (./ZReferences/reference.tex [41] [42
+) (./ZReferences/reference.tex [43] [44
 
 ]
 Underfull \hbox (badness 2293) in paragraph at lines 8--10
@@ -2040,7 +2044,7 @@ Underfull \hbox (badness 6332) in paragraph at lines 21--23
  http : / / graphics . stanford . edu /
  []
 
-[43]
+[45]
 Underfull \hbox (badness 10000) in paragraph at lines 65--67
 \T1/lmr/m/n/10.95 (+20) ,[]$\T1/lmtt/m/n/10.95 https : / / www . researchgate .
  net / publication / 238495425 _ Tsai %
@@ -2070,7 +2074,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--79
 516 .
  []
 
-[44]
+[46]
 Underfull \hbox (badness 10000) in paragraph at lines 88--90
 \T1/lmr/m/n/10.95 (+20) 2014, []$\T1/lmtt/m/n/10.95 https : / / www . researchg
 ate . net / publication / 289587273 _
@@ -2135,7 +2139,7 @@ Overfull \hbox (20.07874pt too wide) in paragraph at lines 107--109
 ]A-[]Guo-[]Bennamoun /
  []
 
-[45]
+[47]
 Underfull \hbox (badness 1596) in paragraph at lines 113--116
 []\T1/lmr/m/n/10.95 (+20) Sebastian Thrun,Dirk Haehnel,Aleksandr V. Se-gal, "Ge
 neralized-
@@ -2158,7 +2162,7 @@ x . ac . uk / ~avsegal / resources / papers /
 . 
 . Redefining command \appendix with sig. 'ss' on line 3.
 .................................................
- [46]
+ [48]
 Appendix A.
 ) (./ZAppendixA/AppendixB.tex
 Underfull \hbox (badness 10000) in paragraph at lines 22--1
@@ -2170,9 +2174,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--1
 * 
 * The macro \appendix should be used only once. Silently ignoring.
 *************************************************
-[47
+[49
 
-] [48
+] [50
 
 ]
 Appendix B.
@@ -2181,7 +2185,7 @@ Package pdfpages Warning: Option `page' is unknow to \includepdf.
 (pdfpages)                Did you mean `pages'? (Note the `s'!)
 (pdfpages)                OK, I'll proceed as if it were `pages'.
 
-<ZAppendixA/assignment.pdf, id=892, 597.50829pt x 845.0471pt>
+<ZAppendixA/assignment.pdf, id=900, 597.50829pt x 845.0471pt>
 File: ZAppendixA/assignment.pdf Graphic file (type pdf)
 
 <use ZAppendixA/assignment.pdf>
@@ -2197,7 +2201,7 @@ File: ZAppendixA/assignment.pdf Graphic file (type pdf)
 Package pdftex.def Info: ZAppendixA/assignment.pdf used on input line 6.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 
-<ZAppendixA/assignment.pdf, id=896, page=1, 597.50829pt x 845.0471pt>
+<ZAppendixA/assignment.pdf, id=904, page=1, 597.50829pt x 845.0471pt>
 File: ZAppendixA/assignment.pdf Graphic file (type pdf)
 
 <use ZAppendixA/assignment.pdf, page 1>
@@ -2210,7 +2214,7 @@ File: ZAppendixA/assignment.pdf Graphic file (type pdf)
 Package pdftex.def Info: ZAppendixA/assignment.pdf, page1 used on input line 6.
 
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
- [49]
+ [51]
 File: ZAppendixA/assignment.pdf Graphic file (type pdf)
 
 <use ZAppendixA/assignment.pdf, page 1>
@@ -2229,8 +2233,8 @@ File: ZAppendixA/assignment.pdf Graphic file (type pdf)
 Package pdftex.def Info: ZAppendixA/assignment.pdf, page1 used on input line 6.
 
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
- [50 <./ZAppendixA/assignment.pdf>]
-<ZAppendixA/assignment.pdf, id=933, page=2, 597.50829pt x 845.0471pt>
+ [52 <./ZAppendixA/assignment.pdf>]
+<ZAppendixA/assignment.pdf, id=941, page=2, 597.50829pt x 845.0471pt>
 File: ZAppendixA/assignment.pdf Graphic file (type pdf)
 
 <use ZAppendixA/assignment.pdf, page 2>
@@ -2249,7 +2253,7 @@ File: ZAppendixA/assignment.pdf Graphic file (type pdf)
 Package pdftex.def Info: ZAppendixA/assignment.pdf, page2 used on input line 6.
 
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
- [51 <./ZAppendixA/assignment.pdf>])
+ [53 <./ZAppendixA/assignment.pdf>])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 118.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 118.
 
@@ -2268,8 +2272,8 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 118.
  ) 
 Here is how much of TeX's memory you used:
- 21391 strings out of 493029
- 369012 string characters out of 6136234
+ 21393 strings out of 493029
+ 369015 string characters out of 6136234
  493555 words of memory out of 5000000
  24152 multiletter control sequences out of 15000+600000
  113927 words of font info for 140 fonts, out of 8000000 for 9000
@@ -2288,10 +2292,10 @@ hare/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/publ
 ic/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (59 pages, 4724101 bytes).
+Output written on thesis.pdf (61 pages, 4726171 bytes).
 PDF statistics:
- 1049 PDF objects out of 1200 (max. 8388607)
- 889 compressed objects within 9 object streams
- 246 named destinations out of 1000 (max. 500000)
+ 1059 PDF objects out of 1200 (max. 8388607)
+ 897 compressed objects within 9 object streams
+ 248 named destinations out of 1000 (max. 500000)
  32361 words of extra memory for PDF output out of 35830 (max. 10000000)
 

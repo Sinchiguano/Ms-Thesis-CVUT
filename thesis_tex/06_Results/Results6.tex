@@ -87,10 +87,16 @@ ROS &  0.122868849\\
 \end{table}
 
 \subsection{Eye-To-Hand Calibration}
-The second experiment in this chapter is the one related to the eye-to-hand calibration. In this experiment, both cameras were using also. But with the only difference that each one of them uses the most accurate estimation of its internal parameters of the camera mentioned previously. With the known intrinsic parameters of each one of the camera, two types of experiments are performed.\\
-The aim is to estimate the pose of the camera relative to the robot base frame as described in \ref{lllll}. The first type of experiment is done with the calibration plate kept parallel to the XY plane of the robot frame as it is shown in Figure \ref{fig:parallelplane}. With that setup, several movements will be executed with small displacement in a different direction in order to guarantee that the checkerboard can be detected by the 3D camera to be calibrated. 
-As to the second type of experiment, tilting the calibration plate is performed. 
-Both experiments have the same number of movement and the principle to retrieve the pose of the camera relative to the robot is the same. The principle is that the checkerboard is detected, the pose of camera relative to the chessboard frame and the pose of the checkerboard relative to the robot frame is being streamed through the tf topic of  the ROS network, then a pose of the camera relative to the robot frame is retrieved with by using tf listening transform. This transformation is saved. The cycle repeats for each one of the movement the robot has to execute. The number of successful detection of the checkerboard is saved also. When the robot has completed all the movements, an average of all poses is computed. 
+The second experiment in this chapter is related to the eye-to-hand calibration. In this experiment, the Astra and RealSense cameras were used. Since, the quality of the extrinsic parameters depends on how good the estimation of the intrinsic parameters are, the internal parameters were selected carefully by analizing the reprojection error of each individual camera as mentioned previously. The less reprojection error the camera produces, the more accurate the camera is. \\
+By defining the most accurate internal parameter for each one of the camera respectively. The experiment to be performed are divided in two types.
+In the first type of experiment, where the calibration plate is kept at a constant angle, parallel to the XY plane of the robot coordinate system as it is shown in Figure \ref{iiiii}, the robot proceed with execution of several predefined set of movements (translation) around the XY plane of itself.\\ 
+As to the second experiment, where the calibration plate is   tilting with predefined orientations and small translation around the XY plane of the robot frame, provided that the checkboard is always detected by the camera to be calibrated.\\
+
+In order to excute the movement of the robot arm and compute the estimation of the camera frame relative to the robot frame, three nodes were developed as described in \ref{jjjjjj}, where one of the node is controlling the robot movement and publishing the transformation from the robot base frame to TCP (Tool Center Point) frame in the ROS network (tf topic to be specific). While the other node is publishing the transformation between the calibration target frame and camera frame. As to the last node, it is responsible for keeping track of the all coordinate frames over time, querying for the transformation of the camera relative to the robot frame and recording each transformation for later use, where an average of all transformations is computed. To cancel the effects of possible vibrations from movement the node that controls the movement of the robot, paused the program for several seconds before executing the next movement, this is in order to avoid taking wrong measurements due to vibrations of the robot arm. In addition to that, the node who is listening the relationship between coordinates system skip recording any empty transformation. 
+
+
+%%% not yet
+ The principle is that the checkerboard is detected, the pose of camera relative to the chessboard frame and the pose of the checkerboard relative to the robot frame is being streamed through the tf topic of  the ROS network, then a pose of the camera relative to the robot frame is retrieved with by using tf listening transform. This transformation is saved. The cycle repeats for each one of the movement the robot has to execute. The number of successful detection of the checkerboard is saved also. When the robot has completed all the movements, an average of all poses is computed. 
 
 
 \subsubsection{Calibration results}
@@ -160,6 +166,20 @@ Both experiments have the same number of movement and the principle to retrieve 
 \section{Pose Estimation Pipeline}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \iffalse
+
+
+
+
+
+
+
+done by keeping the XY plane of the calibration target calibration plate kept parallel to the XY plane of the robot frame as it is shown in Figure \ref{fig:parallelplane}. By keeping constant the orientation and making small displacement around the XY plane of the calibation plate with the help of a the left robot arm. The small discplacement  different direction in order to guarantee that the checkerboard can be detected by the 3D camera to be calibrated. 
+
+As to the second type of experiment, tilting the calibration plate is performed, this is type it is realized in order to compare the result wiht the first one and see the robustnet of the method. 
+Both experiments have the same number of poses for the end-effector and the method to estimate the pose of the camera relative to the robot is by querying the required transform to the tf tree.  the done by solving a multiplication of transform with the tf package. In order words, 
+
+
+
 
 \begin{itemize}
 \item Internal camera calibration where a data collection is requiring.
