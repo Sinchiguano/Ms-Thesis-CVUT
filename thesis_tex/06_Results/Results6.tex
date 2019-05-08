@@ -89,29 +89,32 @@ ROS &  0.122868849\\
 \subsection{Eye-To-Hand Calibration}
 The second experiment in this chapter is related to the eye-to-hand calibration. In this experiment, the Astra and RealSense cameras were used. Since, the quality of the extrinsic parameters depends on how good the estimation of the intrinsic parameters are, the internal parameters were selected carefully by analizing the reprojection error of each individual camera as mentioned previously. The less reprojection error the camera produces, the more accurate the camera is. \\
 By defining the most accurate internal parameter for each one of the camera respectively. The experiment to be performed are divided in two types.
-In the first type of experiment, where the calibration plate is kept at a constant angle, parallel to the XY plane of the robot coordinate system as it is shown in Figure \ref{iiiii}, the robot proceed with execution of several predefined set of movements (translation) around the XY plane of itself.\\ 
-As to the second experiment, where the calibration plate is   tilting with predefined orientations and small translation around the XY plane of the robot frame, provided that the checkboard is always detected by the camera to be calibrated.\\
+In the first type of experiment, where the calibration plate is kept at a constant angle, parallel to the XY plane of the robot coordinate system as it is shown in Figure \ref{iiiii}, the robot proceed with execution of several predefined set of movements (translation) around the XY plane.\\ 
+As to the second experiment, where the calibration plate is   tilting with predefined orientations and small translation around the XY plane of the robot frame, provided that the checkboard is always detected by the camera to be calibrated the robot execute the movement. In between of the movements, a pause is set in order to let the camera take a good quality of 2D image that later is used for the pose estimation of the camera.\\
 
-In order to excute the movement of the robot arm and compute the estimation of the camera frame relative to the robot frame, three nodes were developed as described in \ref{jjjjjj}, where one of the node is controlling the robot movement and publishing the transformation from the robot base frame to TCP (Tool Center Point) frame in the ROS network (tf topic to be specific). While the other node is publishing the transformation between the calibration target frame and camera frame. As to the last node, it is responsible for keeping track of the all coordinate frames over time, querying for the transformation of the camera relative to the robot frame and recording each transformation for later use, where an average of all transformations is computed. To cancel the effects of possible vibrations from movement the node that controls the movement of the robot, paused the program for several seconds before executing the next movement, this is in order to avoid taking wrong measurements due to vibrations of the robot arm. In addition to that, the node who is listening the relationship between coordinates system skip recording any empty transformation. 
+In order to excute the movement of the robot arm and compute the estimation of the camera frame relative to the robot frame, three nodes were developed as described in \ref{jjjjjj}, where one of the node is for controlling the robot movement and publishing the transformation from the robot base frame to TCP (Tool Center Point) frame in the ROS network (tf topic to be specific). While the other node is for estimating the pose of the camera relative the to the calibration target frame and braodcasting this pose in the ROS networke. When it comes to the last node, which is responsible for keeping track of the all coordinate frames over time, and querying for the transformation of the camera frame relative to the robot frame. In addition to that, an average transformation is computed after each executed movement of the robot arm. Since the quality of robot-camera pose depends on the quality of the image taken, a pause of few seconds between movements in the robot control node is set in order to cancel the effects of possible vibrations that the robot can produce, so that wrong measurements are avoided.
 
-
-%%% not yet
- The principle is that the checkerboard is detected, the pose of camera relative to the chessboard frame and the pose of the checkerboard relative to the robot frame is being streamed through the tf topic of  the ROS network, then a pose of the camera relative to the robot frame is retrieved with by using tf listening transform. This transformation is saved. The cycle repeats for each one of the movement the robot has to execute. The number of successful detection of the checkerboard is saved also. When the robot has completed all the movements, an average of all poses is computed. 
 
 
 \subsubsection{Calibration results}
 
 
 %%%%%%%%%%%%% astra 
+
+
+
+
 \begin{itemize}
 \item The following eye-to-hand transform was obtained for the Astra Camera with the calibration plate parallel to the XY plane in robot frame:
 \begin{equation}
-^{R}T_{C}=\begin{bmatrix} -2.26051005e-02 & 7.30112611e-01 & -6.82952842e-01 & 1.18282265\\9.99481127e-01 & 8.25583772e-04 & -3.21992981e-02 & 0.11970625\\ -2.29452788e-02 & -6.83326345e-01 & -7.29752438e-01 & 0.53631511 \end{bmatrix}
+^{R}T_{C}=\begin{bmatrix} -2.26051005e-02 & 7.30112611e-01 & -6.82952842e-01 & 1.19260379\\9.99481127e-01 & 8.25583772e-04 & -3.21992981e-02 & 0.12098781\\ -2.29452788e-02 & -6.83326345e-01 & -7.29752438e-01 & 0.53569317 \end{bmatrix}
 \end{equation}
 
-\item The following eye-to-hand transform was obtained for the Astra Camera with tilting the calibration plate:
+
+				
+\item The following eye-to-hand transform was obtained for the Astra Camera by tilting the calibration plate:
 \begin{equation}
-^{R}T_{C}=\begin{bmatrix} -0.01440125 & 0.72431469 & -0.68931911 & 1.19416679\\0.99970886 & -0.00291747 & -0.02395149 & 0.1134242\\ -0.01935949 & -0.68946336 & -0.7240618 & 0.53810017 \end{bmatrix}
+^{R}T_{C}=\begin{bmatrix} -0.01440125 & 0.72431469 & -0.68931911 & 1.19518608\\0.99970886 & -0.00291747 & -0.02395149 & 0.11374275\\ -0.01935949 & -0.68946336 & -0.7240618 & 0.53606583 \end{bmatrix}
 \end{equation}
 
 
@@ -124,34 +127,97 @@ In order to excute the movement of the robot arm and compute the estimation of t
 
 
 
-\item The following eye-to-hand transform was obtained for the RealSense D-435 camera with with tilting the calibration plate:
+\item The following eye-to-hand transform was obtained for the RealSense D-435 camera by tilting the calibration plate:
 \begin{equation}
 ^{R}T_{C}=\begin{bmatrix} -0.01833338  0.30085851 -0.95349255 & 1.21972025\\0.99978158 -0.00405373 -0.02050249& 0.09386797\\ -0.01003355 -0.95366017 -0.30071848& 0.33192816\end{bmatrix}
 \end{equation}
-
-
-
-
-
 \end{itemize}
-
-
-
-
-
-
-
-
-
 
 
 \subsubsection{Result Analysis}
 
+The propose robot-camera calibration method was successfully performed provided that the calibration target was detected by the 3D camera to be calibrated. In order to validate whether the propose method is accurate enough for the pose estimation system discribed in \ref{oooooo} or not, a ground truth is neccesary to know in advance. But it was a challenging task to meassure an exact orientation and translation of the camera with respect to the robot frame. One of the several diffulties encounter was that the housing of the camera (namely the RealSense camera) is rounded which makes it hard to get good measurement of the mounting point to the camera. Another issue, the robot and the set of cameras were mounting on different tables such that a simple meassurement of distance was not possible to do it with a reasonable accuracy. In addition to that, the rotation of the sensor in the housing is also not known. A simple solution would be to use an industrial camera where knowing transformations are available. But this was not available. \\
+The propuse solution needed to be evaluated somehow. Since a traditional error estimation for evalution is not possible, in this thesis a repeatability test is taken into account for the evalutation. The repeatability test consiste of run again the robot but with the major difference that the number of movements is increased. In addition that, the orientation and displacement of the calibration target are modified for each individual movement also. By doing the repeatability test an average translation and orientation is presented in \ref{uuu}.
 
 
 
 
+%For astra camera
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\begin{table}[b]
+% increase table row spacing, adjust to taste
+\renewcommand{\arraystretch}{1.3}
+\caption{Mean Values of The Repeatability Test With a Constant Orientation of the Calibration Plate(Astra Camera).}
+\label{real1}
+\centering
+\begin{tabular}{|c||c||c||c||c||c||c|}
+\hline
+$x[m]$ & $y[m]$ & $z[m]$ & $q_{x}$ & $q_{y}$ & $q_{z}$ &$q_{\omega}$ \\
+\hline
+1.1926 & 0.1245 & 0.5368 & 3.0992939&-0.7519546&-1.60088 & \\
+\hline
+\hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[b]
+% increase table row spacing, adjust to taste
+\renewcommand{\arraystretch}{1.3}
+\caption{Mean Values of The Repeatability Test With Tilting Motion of the Calibration Plate(Astra Camera).}
+\label{real1}
+\centering
+\begin{tabular}{|c||c||c||c||c||c||c|}
+\hline
+$x[m]$ & $y[m]$ & $z[m]$ & $q_{x}$ & $q_{y}$ & $q_{z}$ &$q_{\omega}$ \\
+\hline
+1.1970885638 & 0.1165706889 & 0.5395085367 & 3.1042422&-0.7573089&-1.5959978 & \\
+\hline
+\hline
+\end{tabular}
+\end{table}
+
+
+%For real sense
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		
+		
+\begin{table}[b]
+% increase table row spacing, adjust to taste
+\renewcommand{\arraystretch}{1.3}
+\caption{Mean Values of The Repeatability Test With a Constant Orientation of the Calibration Plate(Astra Camera).}
+\label{real1}
+\centering
+\begin{tabular}{|c||c||c||c||c||c||c|}
+\hline
+$x[m]$ & $y[m]$ & $z[m]$ & $q_{x}$ & $q_{y}$ & $q_{z}$ &$q_{\omega}$ \\
+\hline
+1.1926043293 & 0.1244785302 & 0.5367988515 & 3.0992939&-0.7519546&-1.60088 & \\
+\hline
+\hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[b]
+% increase table row spacing, adjust to taste
+\renewcommand{\arraystretch}{1.3}
+\caption{Mean Values of The Repeatability Test With Tilting Motion of the Calibration Plate(Astra Camera).}
+\label{real1}
+\centering
+\begin{tabular}{|c||c||c||c||c||c||c|}
+\hline
+$x[m]$ & $y[m]$ & $z[m]$ & $q_{x}$ & $q_{y}$ & $q_{z}$ &$q_{\omega}$ \\
+\hline
+1.1970885638 & 0.1165706889 & 0.5395085367 & 3.1042422&-0.7573089&-1.5959978  \\
+\hline
+\hline
+\end{tabular}
+\end{table}
+
+
+		
 
 
 
@@ -166,19 +232,11 @@ In order to excute the movement of the robot arm and compute the estimation of t
 \section{Pose Estimation Pipeline}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \iffalse
+%%% not yet
+ The principle is that the checkerboard is detected, the pose of camera relative to the chessboard frame and the pose of the checkerboard relative to the robot frame is being streamed through the tf topic of  the ROS network, then a pose of the camera relative to the robot frame is retrieved with by using tf listening transform. This transformation is saved. The cycle repeats for each one of the movement the robot has to execute. The number of successful detection of the checkerboard is saved also. When the robot has completed all the movements, an average of all poses is computed. 
 
-
-
-
-
-
-
-done by keeping the XY plane of the calibration target calibration plate kept parallel to the XY plane of the robot frame as it is shown in Figure \ref{fig:parallelplane}. By keeping constant the orientation and making small displacement around the XY plane of the calibation plate with the help of a the left robot arm. The small discplacement  different direction in order to guarantee that the checkerboard can be detected by the 3D camera to be calibrated. 
-
-As to the second type of experiment, tilting the calibration plate is performed, this is type it is realized in order to compare the result wiht the first one and see the robustnet of the method. 
-Both experiments have the same number of poses for the end-effector and the method to estimate the pose of the camera relative to the robot is by querying the required transform to the tf tree.  the done by solving a multiplication of transform with the tf package. In order words, 
-
-
+As to, the robot control, several packages from the open source community were tested with the idea in mind to interface the robot with a ros node.  Since the whole system was developed in ROS, which offers huge support to most of the sensors and robots, a rapid development can be done. 
+With the two types of experiment to handle and how the communication with the robot is hold. 
 
 
 \begin{itemize}
@@ -193,8 +251,6 @@ The propose robot-camera calibration method was successfully performed provided 
 
 
  Results are divided in two sections, each one requiring an independent set. For an intrinsic calibration, since the extrinsic calibration depends on the known intrinsic parameteres of the camera.  it is not required that the calibration plate be attached to the robot gripper. As to, the extrinsic calibration, the calibration target which is fixed on the customed-made plate is attached to the gripper of the robot.
-
-
 
 \subsection{Dataset}
 
