@@ -2,7 +2,9 @@
 \chapter{Experimental Results}
 \label{chap:exp}
 
-This chapter presents the experiments and the results of the evaluations to the propose robot-camera calibration method as well as to the pose estimation system. In addition to those, an evaluation of the accuracy of the cameras used in this thesis is presented. In order to make such evaluation, the reprojection error, a well understood and known metric in the field of computer vision is used. The reprojection error is an import and crucial step which can determine how accurate the robot-camera calibration can be, for that reason it is performed first, followed by the evaluation of the robot-camera calibration which is essential and determinant step to have a good performance in the pose estimation system, which is the last one to undergo an evaluation process as well.
+This chapter presents the experiments and the results when it comes to the evaluation of the following methods. A propose robot-camera calibration method and the 3D object pose estimation method. As to the robot-camera calibration method, the internal parameters of the camera to be calibrated need to be estimated. Methods for estimating the internal parameters also known as intrinsic parameters of the camera already exists and two of the most popular methods available in the open source community were selected. A detail description of those methods is in \ref{chap:robot}. In order to validate the output of the methods, a reprojection error as standar metric is selected in this thesis. Then, with the most accurate internal parameters, the camera-robot calibration proceeds. A repeattability test, as validation test for the result of the robot-camera calibration  follows. And finally, with the most accurate result of the robot-camera calibration, experiments for testing the 3D pose estimation system follows. For the purpose of testing, an industrial object is required as well as its CAD model. The later is accomplised with use of the FreeCAD software \ref{freecadb}, then, a suitable scaling undergoes with the use of CluodCompare software \ref{cloudcompareb}, where a point cloud is generated. As to the validation of the method, a ground truth of the object needs to be known in advance. For such a requirement. A checkboard is used as described in Figure \ref{setupsystem}. Then, by placing the robot TCP to the specific points (three points in totally), the checkerboard can be localized. With that, a new workspace is produced.By analizing the translation and rotation erros the system is evaluated.\\
+The checkboard workspace is used for a roughly estimation of the object's pose wich is compare with 3D object pose estimation system described in \ref{chap:theo}.  
+
 
 \section{Robot-Camera Calibration on the Yumi robot}
 In order to get an accurate estimation of the robot-camera pose depends on how well the estimation of the intrinsic parameters related to the camera can be. Such estimation of those parameters was accomplished as described in section \ref{pppp}, where those existing algorithms were used for checkerboard detection in both colour and depth data. With those parameter knowing in advance, a reprojection error is calculated for both cameras. 
@@ -155,7 +157,7 @@ The propuse solution needed to be evaluated somehow. Since a traditional error e
 \begin{table}[b]
 \renewcommand{\arraystretch}{1.3}
 \caption{Mean Values of The Repeatability Test With a Constant Orientation of the Calibration Plate(Astra Camera).}
-\label{real1}
+\label{meanastra1}
 \centering
 \begin{tabular}{|c||c||c||c||c||c||c|}
 \hline
@@ -170,7 +172,7 @@ $x[m]$ & $y[m]$ & $z[m]$ & $q_{x}$ & $q_{y}$ & $q_{z}$ &$q_{\omega}$ \\
 \begin{table}[b]
 \renewcommand{\arraystretch}{1.3}
 \caption{Standar Deviation from The Repeatability Test With a Constant Orientation of the Calibration Plate(Astra Camera).}
-\label{real1}
+\label{standarastra1}
 \centering
 \begin{tabular}{|c||c||c||c||c||c||c|}
 \hline
@@ -186,7 +188,7 @@ $\sigma_{x[m]}$ & $\sigma_{y[m]}$ & $\sigma_{z[m]}$ & $\sigma_{q_{x}}$ & $\sigma
 \begin{table}[b]
 \renewcommand{\arraystretch}{1.3}
 \caption{Mean Values of The Repeatability Test With Tilting Motion of the Calibration Plate(Astra Camera).}
-\label{real1}
+\label{meanastra2}
 \centering
 \begin{tabular}{|c||c||c||c||c||c||c|}
 \hline
@@ -203,7 +205,7 @@ $x[m]$ & $y[m]$ & $z[m]$ & $q_{x}$ & $q_{y}$ & $q_{z}$ &$q_{\omega}$ \\
 \begin{table}[b]
 \renewcommand{\arraystretch}{1.3}
 \caption{Standar Deviation from The Repeatability Test With Tilting Orientation of the Calibration Plate(Astra Camera).}
-\label{real1}
+\label{standarastra2}
 \centering
 \begin{tabular}{|c||c||c||c||c||c||c|}
 \hline
@@ -221,7 +223,7 @@ $\sigma_{x[m]}$ & $\sigma_{y[m]}$ & $\sigma_{z[m]}$ & $\sigma_{q_{x}}$ & $\sigma
 \begin{table}[b]
 \renewcommand{\arraystretch}{1.3}
 \caption{Mean Values of The Repeatability Test With a Constant Orientation of the Calibration Plate(RealSense Camera).}
-\label{real1}
+\label{meanreal1}
 \centering
 \begin{tabular}{|c||c||c||c||c||c||c|}
 \hline
@@ -237,7 +239,7 @@ $x[m]$ & $y[m]$ & $z[m]$ & $q_{x}$ & $q_{y}$ & $q_{z}$ &$q_{\omega}$ \\
 \begin{table}[b]
 \renewcommand{\arraystretch}{1.3}
 \caption{Standar Deviation from The Repeatability Test With a Constant Orientation of the Calibration Plate(RealSense).}
-\label{real1}
+\label{standarreal1}
 \centering
 \begin{tabular}{|c||c||c||c||c||c||c|}
 \hline
@@ -253,7 +255,7 @@ $\sigma_{x[m]}$ & $\sigma_{y[m]}$ & $\sigma_{z[m]}$ & $\sigma_{q_{x}}$ & $\sigma
 \begin{table}[b]
 \renewcommand{\arraystretch}{1.3}
 \caption{Mean Values of The Repeatability Test With Tilting Motion of the Calibration Plate(Real Sense).}
-\label{real1}
+\label{meanreal2}
 \centering
 \begin{tabular}{|c||c||c||c||c||c||c|}
 \hline
@@ -268,7 +270,7 @@ $x[m]$ & $y[m]$ & $z[m]$ & $q_{x}$ & $q_{y}$ & $q_{z}$ &$q_{\omega}$ \\
 \begin{table}[b]
 \renewcommand{\arraystretch}{1.3}
 \caption{Standar Deviation from The Repeatability Test With Tilting Orientation of the Calibration Plate(RealSense Camera).}
-\label{real1}
+\label{standarreal2}
 \centering
 \begin{tabular}{|c||c||c||c||c||c||c|}
 \hline
