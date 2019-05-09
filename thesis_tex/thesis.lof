@@ -59,3 +59,8 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Eye-To-Hand Result with a Constant Orientation of the Calibration Plate(Astra Camera)\relax }}{55}{figure.C.1}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Eye-To-Hand Result with Tilting Motion of the Calibration Plate(Astra Camera)\relax }}{56}{figure.C.2}
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Eye-To-Hand Result with a Constant Orientation of the Calibration Plate(RealSense)\relax }}{57}{figure.C.3}
+\contentsline {figure}{\numberline {C.4}{\ignorespaces Eye-To-Hand Result with Tilting Motion of the Calibration Plate(RealSense Camera)\relax }}{58}{figure.C.4}

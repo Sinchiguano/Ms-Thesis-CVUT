@@ -31,4 +31,48 @@ In \ref{caltar} methods to estimate the position of the camera relative to a cal
 In Figure \ref{fig:setup} an example setup is given of a robot arm with a gripper holding a calibration plate with a the 6x9  checkerboard sticks on it. The robot arm can move the calibration plate around the robot workspace where a camera is fixed and takes a sequence of pictures from different movement.
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\iffalse
+%%% not yet
+ The principle is that the checkerboard is detected, the pose of camera relative to the chessboard frame and the pose of the checkerboard relative to the robot frame is being streamed through the tf topic of  the ROS network, then a pose of the camera relative to the robot frame is retrieved with by using tf listening transform. This transformation is saved. The cycle repeats for each one of the movement the robot has to execute. The number of successful detection of the checkerboard is saved also. When the robot has completed all the movements, an average of all poses is computed. 
 
+As to, the robot control, several packages from the open source community were tested with the idea in mind to interface the robot with a ros node.  Since the whole system was developed in ROS, which offers huge support to most of the sensors and robots, a rapid development can be done. 
+With the two types of experiment to handle and how the communication with the robot is hold. 
+
+
+\begin{itemize}
+\item Internal camera calibration where a data collection is requiring.
+
+\end{equation}
+\item Eye-to-hand calibration where a robot move is requiring. 
+
+\end{itemize}
+
+The propose robot-camera calibration method was successfully performed provided that the checkerboard was detected by the 3D camera to be calibrated.
+
+
+ Results are divided in two sections, each one requiring an independent set. For an intrinsic calibration, since the extrinsic calibration depends on the known intrinsic parameteres of the camera.  it is not required that the calibration plate be attached to the robot gripper. As to, the extrinsic calibration, the calibration target which is fixed on the customed-made plate is attached to the gripper of the robot.
+
+\subsection{Dataset}
+
+For the performance evaluation, a dataset of scenes was collected. It contains 60 point clouds wich can be classified as:
+\begin{itemize}
+\item point clouds, captured in a synthetic environment.
+\item point clouds, captured in real environment. 
+\end{itemize}
+
+\subsection{Metrics}
+In this thesis two standard metrics are used in order to evaluate the performance of the pose estimation algorithms.
+\begin{itemize}
+\item Precision:
+\item point clouds, captured in real environment. 
+\end{itemize}
+
+\subsection{Testing environment}
+The robot-camera calibration method as well as the pose estimation system were implemented in Python within ROS enviornment, making use of highly optimized libraries for 3D point cloud processing and tools. 
+
+\subsection{Hardware}
+All tests for which we report the expirements and result have been made using a personal computer Lenovo ThinkPad T430, Intel Core i5-3320 CPU 2.60GHz x 4, 7.8GB RAM, Ubuntu 16.04 64-bit OS
+and ROS Kinetic release.
+
+\fi

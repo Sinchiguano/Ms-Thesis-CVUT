@@ -142,11 +142,17 @@ The propuse solution needed to be evaluated somehow. Since a traditional error e
 
 
 
-%For astra camera
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+%For Astra Camera
 
 \begin{table}[b]
-% increase table row spacing, adjust to taste
 \renewcommand{\arraystretch}{1.3}
 \caption{Mean Values of The Repeatability Test With a Constant Orientation of the Calibration Plate(Astra Camera).}
 \label{real1}
@@ -155,7 +161,22 @@ The propuse solution needed to be evaluated somehow. Since a traditional error e
 \hline
 $x[m]$ & $y[m]$ & $z[m]$ & $q_{x}$ & $q_{y}$ & $q_{z}$ &$q_{\omega}$ \\
 \hline
-1.1926 & 0.1245 & 0.5368 & 3.0992939&-0.7519546&-1.60088 & \\
+1.1926 & 0.1245 & 0.5368& 0.653175&	0.661978&	-0.269761&	-0.249755 \\
+\hline
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[b]
+\renewcommand{\arraystretch}{1.3}
+\caption{Standar Deviation from The Repeatability Test With a Constant Orientation of the Calibration Plate(Astra Camera).}
+\label{real1}
+\centering
+\begin{tabular}{|c||c||c||c||c||c||c|}
+\hline
+$\sigma_{x[m]}$ & $\sigma_{y[m]}$ & $\sigma_{z[m]}$ & $\sigma_{q_{x}}$ & $\sigma_{q_{y}}$ & $\sigma_{q_{z}}$ &$\sigma_{q_{\omega}}$ \\
+\hline
+0.011012&	0.009877	&0.000906&0.000243&	8.45E-05&	0.000446&	0.000976\\
 \hline
 \hline
 \end{tabular}
@@ -163,7 +184,6 @@ $x[m]$ & $y[m]$ & $z[m]$ & $q_{x}$ & $q_{y}$ & $q_{z}$ &$q_{\omega}$ \\
 
 
 \begin{table}[b]
-% increase table row spacing, adjust to taste
 \renewcommand{\arraystretch}{1.3}
 \caption{Mean Values of The Repeatability Test With Tilting Motion of the Calibration Plate(Astra Camera).}
 \label{real1}
@@ -172,28 +192,8 @@ $x[m]$ & $y[m]$ & $z[m]$ & $q_{x}$ & $q_{y}$ & $q_{z}$ &$q_{\omega}$ \\
 \hline
 $x[m]$ & $y[m]$ & $z[m]$ & $q_{x}$ & $q_{y}$ & $q_{z}$ &$q_{\omega}$ \\
 \hline
-1.1970885638 & 0.1165706889 & 0.5395085367 & 3.1042422&-0.7573089&-1.5959978 & \\
-\hline
-\hline
-\end{tabular}
-\end{table}
-
-
-%For real sense
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		
-		
-\begin{table}[b]
-% increase table row spacing, adjust to taste
-\renewcommand{\arraystretch}{1.3}
-\caption{Mean Values of The Repeatability Test With a Constant Orientation of the Calibration Plate(Astra Camera).}
-\label{real1}
-\centering
-\begin{tabular}{|c||c||c||c||c||c||c|}
-\hline
-$x[m]$ & $y[m]$ & $z[m]$ & $q_{x}$ & $q_{y}$ & $q_{z}$ &$q_{\omega}$ \\
-\hline
-1.1926043293 & 0.1244785302 & 0.5367988515 & 3.0992939&-0.7519546&-1.60088 & \\
+1.197089&	0.116571&	0.539509&
+0.653488&	0.660281&	-0.270449&	-0.252499 \\
 \hline
 \hline
 \end{tabular}
@@ -201,77 +201,84 @@ $x[m]$ & $y[m]$ & $z[m]$ & $q_{x}$ & $q_{y}$ & $q_{z}$ &$q_{\omega}$ \\
 
 
 \begin{table}[b]
-% increase table row spacing, adjust to taste
 \renewcommand{\arraystretch}{1.3}
-\caption{Mean Values of The Repeatability Test With Tilting Motion of the Calibration Plate(Astra Camera).}
+\caption{Standar Deviation from The Repeatability Test With Tilting Orientation of the Calibration Plate(Astra Camera).}
 \label{real1}
 \centering
 \begin{tabular}{|c||c||c||c||c||c||c|}
 \hline
-$x[m]$ & $y[m]$ & $z[m]$ & $q_{x}$ & $q_{y}$ & $q_{z}$ &$q_{\omega}$ \\
-\hline
-1.1970885638 & 0.1165706889 & 0.5395085367 & 3.1042422&-0.7573089&-1.5959978  \\
+$\sigma_{x[m]}$ & $\sigma_{y[m]}$ & $\sigma_{z[m]}$ & $\sigma_{q_{x}}$ & $\sigma_{q_{y}}$ & $\sigma_{q_{z}}$ &$\sigma_{q_{\omega}}$ \\
+0.012046&	0.010473&	0.008465& 0.000837&	0.002155&	0.000920&	0.002450
+\\
 \hline
 \hline
 \end{tabular}
 \end{table}
 
 
-		
+
+%For Real Sense Camera
+\begin{table}[b]
+\renewcommand{\arraystretch}{1.3}
+\caption{Mean Values of The Repeatability Test With a Constant Orientation of the Calibration Plate(RealSense Camera).}
+\label{real1}
+\centering
+\begin{tabular}{|c||c||c||c||c||c||c|}
+\hline
+$x[m]$ & $y[m]$ & $z[m]$ & $q_{x}$ & $q_{y}$ & $q_{z}$ &$q_{\omega}$ \\
+\hline
+1.222425&	0.112532&	0.324441&0.564006&	0.573552&	-0.426780&	-0.413272 \\
+\hline
+\hline
+\end{tabular}
+\end{table}
 
 
+\begin{table}[b]
+\renewcommand{\arraystretch}{1.3}
+\caption{Standar Deviation from The Repeatability Test With a Constant Orientation of the Calibration Plate(RealSense).}
+\label{real1}
+\centering
+\begin{tabular}{|c||c||c||c||c||c||c|}
+\hline
+$\sigma_{x[m]}$ & $\sigma_{y[m]}$ & $\sigma_{z[m]}$ & $\sigma_{q_{x}}$ & $\sigma_{q_{y}}$ & $\sigma_{q_{z}}$ &$\sigma_{q_{\omega}}$ \\
+\hline
+0.000160&	0.007729&	0.000294&9.20E-05&	4.19E-05&	5.26E-05&	1.31E-05\\
+\hline
+\hline
+\end{tabular}
+\end{table}
 
 
+\begin{table}[b]
+\renewcommand{\arraystretch}{1.3}
+\caption{Mean Values of The Repeatability Test With Tilting Motion of the Calibration Plate(Real Sense).}
+\label{real1}
+\centering
+\begin{tabular}{|c||c||c||c||c||c||c|}
+\hline
+$x[m]$ & $y[m]$ & $z[m]$ & $q_{x}$ & $q_{y}$ & $q_{z}$ &$q_{\omega}$ \\
+\hline
+1.198174&	0.114574&	0.530653& 0.653669&	0.660107&-0.270259&	-0.252684 \\
+\hline
+\hline
+\end{tabular}
+\end{table}
 
-
-
-
+\begin{table}[b]
+\renewcommand{\arraystretch}{1.3}
+\caption{Standar Deviation from The Repeatability Test With Tilting Orientation of the Calibration Plate(RealSense Camera).}
+\label{real1}
+\centering
+\begin{tabular}{|c||c||c||c||c||c||c|}
+\hline
+$\sigma_{x[m]}$ & $\sigma_{y[m]}$ & $\sigma_{z[m]}$ & $\sigma_{q_{x}}$ & $\sigma_{q_{y}}$ & $\sigma_{q_{z}}$ &$\sigma_{q_{\omega}}$ \\
+0.010322&	0.012213&	0.020068&			0.000893&	0.002086&	0.000676&	0.002326\\
+\hline
+\hline
+\end{tabular}
+\end{table}
 
 
 
 \section{Pose Estimation Pipeline}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\iffalse
-%%% not yet
- The principle is that the checkerboard is detected, the pose of camera relative to the chessboard frame and the pose of the checkerboard relative to the robot frame is being streamed through the tf topic of  the ROS network, then a pose of the camera relative to the robot frame is retrieved with by using tf listening transform. This transformation is saved. The cycle repeats for each one of the movement the robot has to execute. The number of successful detection of the checkerboard is saved also. When the robot has completed all the movements, an average of all poses is computed. 
-
-As to, the robot control, several packages from the open source community were tested with the idea in mind to interface the robot with a ros node.  Since the whole system was developed in ROS, which offers huge support to most of the sensors and robots, a rapid development can be done. 
-With the two types of experiment to handle and how the communication with the robot is hold. 
-
-
-\begin{itemize}
-\item Internal camera calibration where a data collection is requiring.
-
-\end{equation}
-\item Eye-to-hand calibration where a robot move is requiring. 
-
-\end{itemize}
-
-The propose robot-camera calibration method was successfully performed provided that the checkerboard was detected by the 3D camera to be calibrated.
-
-
- Results are divided in two sections, each one requiring an independent set. For an intrinsic calibration, since the extrinsic calibration depends on the known intrinsic parameteres of the camera.  it is not required that the calibration plate be attached to the robot gripper. As to, the extrinsic calibration, the calibration target which is fixed on the customed-made plate is attached to the gripper of the robot.
-
-\subsection{Dataset}
-
-For the performance evaluation, a dataset of scenes was collected. It contains 60 point clouds wich can be classified as:
-\begin{itemize}
-\item point clouds, captured in a synthetic environment.
-\item point clouds, captured in real environment. 
-\end{itemize}
-
-\subsection{Metrics}
-In this thesis two standard metrics are used in order to evaluate the performance of the pose estimation algorithms.
-\begin{itemize}
-\item Precision:
-\item point clouds, captured in real environment. 
-\end{itemize}
-
-\subsection{Testing environment}
-The robot-camera calibration method as well as the pose estimation system were implemented in Python within ROS enviornment, making use of highly optimized libraries for 3D point cloud processing and tools. 
-
-\subsection{Hardware}
-All tests for which we report the expirements and result have been made using a personal computer Lenovo ThinkPad T430, Intel Core i5-3320 CPU 2.60GHz x 4, 7.8GB RAM, Ubuntu 16.04 64-bit OS
-and ROS Kinetic release.
-
-\fi
