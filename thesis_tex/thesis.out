@@ -45,10 +45,11 @@
 \BOOKMARK [1][-]{section.6.1}{Robot-Camera Calibration on the Yumi robot}{chapter.6}% 45
 \BOOKMARK [2][-]{subsection.6.1.1}{Eye-To-Hand Calibration}{section.6.1}% 46
 \BOOKMARK [1][-]{section.6.2}{Pose Estimation Pipeline}{chapter.6}% 47
-\BOOKMARK [0][-]{chapter.7}{Future Work}{}% 48
-\BOOKMARK [0][-]{chapter.8}{Conclusions}{}% 49
-\BOOKMARK [0][-]{chapter*.18}{Bibliography}{}% 50
-\BOOKMARK [0][-]{appendix.A}{List of Notation}{}% 51
-\BOOKMARK [0][-]{appendix.B}{Assignment of this thesis}{}% 52
-\BOOKMARK [0][-]{appendix.C}{Eye-To-Hand Calibration Results}{}% 53
-\BOOKMARK [0][-]{appendix.D}{Images}{}% 54
+\BOOKMARK [2][-]{subsection.6.2.1}{Experiments}{section.6.2}% 48
+\BOOKMARK [0][-]{chapter.7}{Future Work}{}% 49
+\BOOKMARK [0][-]{chapter.8}{Conclusions}{}% 50
+\BOOKMARK [0][-]{chapter*.18}{Bibliography}{}% 51
+\BOOKMARK [0][-]{appendix.A}{List of Notation}{}% 52
+\BOOKMARK [0][-]{appendix.B}{Assignment of this thesis}{}% 53
+\BOOKMARK [0][-]{appendix.C}{Eye-To-Hand Calibration Results}{}% 54
+\BOOKMARK [0][-]{appendix.D}{Images}{}% 55
