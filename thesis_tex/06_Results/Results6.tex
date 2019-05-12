@@ -9,7 +9,7 @@ The checkboard workspace is used for a rough estimation of the object's pose whi
 \section{Robot-Camera Calibration on the Yumi robot}
 In order to get the best and accurate estimation of the robot-camera pose, careful attention must be given to the internal parameters of the camera which is a determinant factor of how accurate the extrinsic parameters are. For such estimation of those parameters, two methods were selected and the whole detail to both of them is shown in \ref{chap:robot}. The Astra camera and the RealSense camera are used in this thesis.  The cameras are calibrated with the methods previously mention and their results are shown in \ref{-------------------}. As to the validation process, a reprojection error is used. Since it is one of the most used metrics,  it is used in this thesis. 
 
-\subsubsection{Reprojection Error}
+\subsection{Reprojection Error}
 
 The reprojection error is the distance between a pattern keypoint detected in a calibration image, and a corresponding world point projected into the same image. Figure \ref{fig:realopen} and Figure \ref{fig:realros} show the calibration results by analyzing the reprojection error per image when the camera is a RealSense with the OpenCV and camera \textunderscore industrial calibration methods. As to, Figure \ref{fig:astraopen} and Figure \ref{fig:astraros} show the calibration results when the case is with an Astra camera, with the same procedure, by analyzing the reprojection error per image with both methods, the OpenCV and camera \textunderscore industrial calibration.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -47,11 +47,12 @@ The reprojection error is the distance between a pattern keypoint detected in a 
 
 In order to discuss the result for each case, an average error is calculated for each case. This is done by computing the arithmetical mean of the errors calculated for all the calibration images. And that result should be as close to zero as possible according to the literature in computer vision.
 
-\subsubsection{Result Analysis}
+\subsection{Result Analysis}
 After computing the average error for both cameras, the results are shown in Table \ref{astra1} related to the Astra camera and Table \ref{real1} which corresponds to the RealSense D-435.\\
  It can be seen that the overall mean error representing the Astra camera is quite correlated to one another. by that we meant, the reprojection error obtained from OpenCV and camera \textunderscore industrial calibration is very similar with a small offset. But that difference is acceptable due to it holds the requirement to be under the 0.5 pixels, a specified value in the literature for determining how accurate a device sensor is. \\
 On the other hand, the results for the RealSense camera are not quite correlated. Several thoughts can be drawn from that result. The sensor might be quite sensitive to changes in the calibration target resulting in taking wrong measurements. In addition to that, the light condition can also affect the sensory device since the data taken is an RGB image. Such difference presented in the mean reprojection error can hugely affect the good accurate the output of the estimation of the camera frame relative to the robot frame by applying the eye-to-hand calibration. In order to confirm that this different holds. We proceeded to take new measurements, with the careful attention of not moving the calibration target when the sensory device is taken its sample. Then the whole process is evaluated again. The difference holds between methods, but meet the requirements of being under the 0,5 pixels. With the result in hand is quite early to conclude that the RealSense camera is or is not a good choice for solving the main problem of this master Part localization for robotic manipulation. By keeping that difference in mind, we proceed with the next experiment for validating the robot-camera calibration.  \\
 As a remark, both cameras were calibrated with same light conditions, with the same calibration target and with an equal number of images. Considering, all in all, it can be concluded that the Astra camera seems to perform well and it can be our final choice for the pose estimation system evaluation. 
+
 
 \begin{table}[b]
 % increase table row spacing, adjust to taste
@@ -89,6 +90,7 @@ ROS &  0.122868849\\
 \end{tabular}
 \end{table}
 
+
 \subsection{Eye-To-Hand Calibration}
 
 The second experiment in this chapter is related to the eye-to-hand calibration. In this experiment, both cameras, the Astra and RealSense again, are taken into account for the validation test. Since the quality of the extrinsic calibration depends on how good the estimation of the internal parameters is, we proceed with taking the best accurate internal parameters based on the reprojection error as described previously, where the less reprojection error the camera has, the more accurate the camera is. \\
@@ -98,7 +100,7 @@ As to the second experiment, where the calibration plate is tilting with predefi
 With the types of experiments knowing in advance, and main criteria to consider for each one of them. The execution of the robot movement follows. To be able to control the robot arm, interface one of both camera at each test, and estimate the pose of the camera relative to the robot base, three nodes were developed as described in \ref{chap:robot}. The node named as $publishingTF.py$ is responsible for controlling the robot move and publishing the transformation from the robot frame to TCP (Tool Center Point) frame into the ROS network (tf topic to be specific). \\
 The second node named as $target\textunderscore locator \textunderscore astra.py$ or $target\textunderscore locator \textunderscore rsense.py$  which depends on the camera used, is responsible  for computing the estimation of the camera pose relative to the calibration target (checkerboard) frame. In addition to that, it broadcast that estimation of camera pose into the ROS network. A third node named $listeningTF.py$ is responsible for keeping track of the all coordinate frames over time, and querying for the transformation of the camera frame relative to the robot frame, as well as the computation of the average of the transformation it queries after each executed robot move. 
 
-\subsubsection{Calibration results}
+\subsection{Calibration results}
 
 
 %%%%%%%%%%%%% astra 
@@ -133,7 +135,7 @@ The second node named as $target\textunderscore locator \textunderscore astra.py
 \end{itemize}
 
 
-\subsubsection{Result Analysis}
+\subsection{Result Analysis}
 
 The propose robot-camera calibration method was successfully performed provided that the calibration target was detected by the 3D camera to be calibrated. In order to validate whether the proposed method is accurate enough for the pose estimation system described in \ref{chap:robot} or not, ground truth is necessary to know in advance. But it was a challenging task to measure an exact orientation and translation of the camera with respect to the robot frame. Given that the housing of the camera (namely the RealSense camera) is rounded which makes it hard to get a good measurement from the mounting point to the camera. In addition to that, the orientation and the translation from the sensor to the housing is not known. It was proved that such difficulty is normal to encounter since the cameras used in this thesis are not suitable for the problem to be solved in this master thesis. Suitable cameras to work with, for the assignment of this thesis are the so-called industrial cameras where the camera frame is given. But that camera was not available.  
 For the given conditions, a validation test is still considered. A rough estimation of the camera pose relative to the robot is measured. The measuring tape was used for the rough estimation but it is not considered as ground truth to evaluate the result of the robot-camera calibration but rather a good idea of what the result should be. \\
@@ -260,9 +262,6 @@ $x[m]$ & $y[m]$ & $z[m]$ & $q_{x}$ & $q_{y}$ & $q_{z}$ &$q_{\omega}$ \\
 \end{table}
 
 
-
-
-
 \begin{table}[b]
 \renewcommand{\arraystretch}{1.3}
 \caption{Standard Deviation from The Repeatability Test With Tilting Orientation of the Calibration Plate(RealSense Camera).}
@@ -290,11 +289,44 @@ In this section two type of experiments is taken place. The ultimate goal is to 
 In order to validate the first experiment, displacements and angles applied to the industrial object are executed. As to displacement, there are three types related to it, one in the x-axis, the other one in the y-axis and the last one in the XY plane of the chekerboard. The distance of such a displacement is 2cm each. Since the transformation of the checkboard is known in advance plus the displacement applied to the object, the rough object pose can be known by visul inspection of the author of this thesis. When it comes to the validation test for the angle, a digital angle ruler is used, and the orientation is applied on the z-axis, namely a clockwise rotation. For the validation of the second experiment, the same principle is applied as described above when it comes to change the pose of the objec around the XY plane of the checkerboard. But a major difference exists for the source point cloud (CAD model). The CAD model is substitute for a partially view point cloud generated the camera used. The change was applied in order to see whether exist or not an improvement. Since the pose estimation system from time to time failed for the given conditions in the first experiment.
 
 
-\subsubsection{Calibration results}
+\subsection{Calibration results}
+
+\begin{itemize}
+\item cad
+%%%%%%%%%% cloud from CAD and astra
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=5in, height=3.5in]{figures05/1_x_validation.png}
+\caption{Ground Truth vs Pose Estimation: x-axis (1st Experiment)}
+\label{fig:errorx_2nd}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=5in, height=3.5in]{figures05/1_y_validation.png}
+\caption{Ground Truth vs Pose Estimation: y-axis (1st Experiment)}
+\label{fig:errory_2nd}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=5in, height=3.5in]{figures05/1_yaw_validation.png}
+\caption{Ground Truth vs Pose Estimation: yaw angle (1st Experiment)}
+\label{fig:erroryaw_2nd}
+\end{center}
+\end{figure}
 
 
 
 
+%%%% cloud from the same source
+
+\item cloud from astra....
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=5in, height=3.5in]{figures05/2_x_validation.png}
@@ -322,11 +354,14 @@ In order to validate the first experiment, displacements and angles applied to t
 \end{figure}
 
 
+\end{itemize}
 
 
 
 
-\subsubsection{Result Analysis}
+
+
+\subsection{Result Analysis}
 
 lll
 
