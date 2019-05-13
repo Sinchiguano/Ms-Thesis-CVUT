@@ -12,6 +12,9 @@ In order to get the best and accurate estimation of the robot-camera pose, caref
 \subsection{Reprojection Error}
 
 The reprojection error is the distance between a pattern keypoint detected in a calibration image, and a corresponding world point projected into the same image. Figure \ref{fig:realopen} and Figure \ref{fig:realros} show the calibration results by analyzing the reprojection error per image when the camera is a RealSense with the OpenCV and camera \textunderscore industrial calibration methods. As to, Figure \ref{fig:astraopen} and Figure \ref{fig:astraros} show the calibration results when the case is with an Astra camera, with the same procedure, by analyzing the reprojection error per image with both methods, the OpenCV and camera \textunderscore industrial calibration.
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[!h]
 \begin{center}
@@ -53,9 +56,7 @@ After computing the average error for both cameras, the results are shown in Tab
 On the other hand, the results for the RealSense camera are not quite correlated. Several thoughts can be drawn from that result. The sensor might be quite sensitive to changes in the calibration target resulting in taking wrong measurements. In addition to that, the light condition can also affect the sensory device since the data taken is an RGB image. Such difference presented in the mean reprojection error can hugely affect the good accurate the output of the estimation of the camera frame relative to the robot frame by applying the eye-to-hand calibration. In order to confirm that this different holds. We proceeded to take new measurements, with the careful attention of not moving the calibration target when the sensory device is taken its sample. Then the whole process is evaluated again. The difference holds between methods, but meet the requirements of being under the 0,5 pixels. With the result in hand is quite early to conclude that the RealSense camera is or is not a good choice for solving the main problem of this master Part localization for robotic manipulation. By keeping that difference in mind, we proceed with the next experiment for validating the robot-camera calibration.  \\
 As a remark, both cameras were calibrated with same light conditions, with the same calibration target and with an equal number of images. Considering, all in all, it can be concluded that the Astra camera seems to perform well and it can be our final choice for the pose estimation system evaluation. 
 
-
-\begin{table}[b]
-% increase table row spacing, adjust to taste
+\begin{table}[ht]
 \renewcommand{\arraystretch}{1.3}
 \caption{Experiment data for internal Astra sensor calibration.}
 \label{astra1}
@@ -72,8 +73,7 @@ ROS &  0.1081118023\\
 \end{tabular}
 \end{table}
 
-\begin{table}[b]
-% increase table row spacing, adjust to taste
+\begin{table}[ht]
 \renewcommand{\arraystretch}{1.3}
 \caption{Experiment data for internal RealSense sensor calibration.}
 \label{real1}
@@ -90,7 +90,6 @@ ROS &  0.122868849\\
 \end{tabular}
 \end{table}
 
-
 \subsection{Eye-To-Hand Calibration}
 
 The second experiment in this chapter is related to the eye-to-hand calibration. In this experiment, both cameras, the Astra and RealSense again, are taken into account for the validation test. Since the quality of the extrinsic calibration depends on how good the estimation of the internal parameters is, we proceed with taking the best accurate internal parameters based on the reprojection error as described previously, where the less reprojection error the camera has, the more accurate the camera is. \\
@@ -102,38 +101,30 @@ The second node named as $target\textunderscore locator \textunderscore astra.py
 
 \subsection{Calibration results}
 
-
-%%%%%%%%%%%%% astra 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% astra 
 \begin{itemize}
 \item The following eye-to-hand transform was obtained for the Astra Camera with the calibration plate parallel to the XY plane in robot frame:
 \begin{equation}
 ^{R}T_{C}=\begin{bmatrix} -2.26051005e-02 & 7.30112611e-01 & -6.82952842e-01 & 1.19260379\\9.99481127e-01 & 8.25583772e-04 & -3.21992981e-02 & 0.12098781\\ -2.29452788e-02 & -6.83326345e-01 & -7.29752438e-01 & 0.53569317 \end{bmatrix}
 \end{equation}
 
-
-				
 \item The following eye-to-hand transform was obtained for the Astra Camera by tilting the calibration plate:
 \begin{equation}
 ^{R}T_{C}=\begin{bmatrix} -0.01440125 & 0.72431469 & -0.68931911 & 1.19518608\\0.99970886 & -0.00291747 & -0.02395149 & 0.11374275\\ -0.01935949 & -0.68946336 & -0.7240618 & 0.53606583 \end{bmatrix}
 \end{equation}
 
-
-%%%%%%%%%%%%%%%%% realsense
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% realsense
 
 \item The following eye-to-hand transform was obtained for the RealSense D-435 camera with the calibration plate parallel to the XY plane in robot frame:
 \begin{equation}
 ^{R}T_{C}=\begin{bmatrix} -2.23312402e-02 & 2.94145863e-01 & -9.55499622e-01 &1.22253213\\9.99723971e-01 & -4.09078692e-04 & -2.34907523e-02 & 0.11776472 \\ -7.30058216e-03 & -9.55760453e-01 & -2.94055535e-01 & 0.32424239  \end{bmatrix}
 \end{equation}
 
-
-
 \item The following eye-to-hand transform was obtained for the RealSense D-435 camera by tilting the calibration plate:
 \begin{equation}
 ^{R}T_{C}=\begin{bmatrix} -0.01833338  0.30085851 -0.95349255 & 1.21972025\\0.99978158 -0.00405373 -0.02050249& 0.09386797\\ -0.01003355 -0.95366017 -0.30071848& 0.33192816\end{bmatrix}
 \end{equation}
 \end{itemize}
-
 
 \subsection{Result Analysis}
 
@@ -146,9 +137,8 @@ As to the RealSense Camera, where the standard deviation and mean values are sho
 From the values, it can be seen that the external parameters differ approximately 1cm for the x-axis, 2cm for the y-axis and 1cm  when it comes to vertical displacement.  It can be concluded that the Astra is performed constant values in the repeatability test, compare to the RealSense camera. But a new validation test should be applied. 
 By doing intrinsic calibration and the eye-to-hand calibration, the next and final validation test takes place for the 3D pose estimation system.
 
-%For Astra Camera
-
-\begin{table}[b]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%For Astra Camera
+\begin{table}[ht]
 \renewcommand{\arraystretch}{1.3}
 \caption{Mean Values of The Repeatability Test With a Constant Orientation of the Calibration Plate(Astra Camera).}
 \label{meanastra1}
@@ -162,8 +152,7 @@ $x[m]$ & $y[m]$ & $z[m]$ & $q_{x}$ & $q_{y}$ & $q_{z}$ &$q_{\omega}$ \\
 \hline
 \end{tabular}
 \end{table}
-
-\begin{table}[b]
+\begin{table}[ht]
 \renewcommand{\arraystretch}{1.3}
 \caption{Standard Deviation from The Repeatability Test With a Constant Orientation of the Calibration Plate(Astra Camera).}
 \label{standardastra1}
@@ -177,9 +166,7 @@ $\sigma_{x[m]}$ & $\sigma_{y[m]}$ & $\sigma_{z[m]}$ & $\sigma_{q_{x}}$ & $\sigma
 \hline
 \end{tabular}
 \end{table}
-
-
-\begin{table}[b]
+\begin{table}[ht]
 \renewcommand{\arraystretch}{1.3}
 \caption{Mean Values of The Repeatability Test With Tilting Motion of the Calibration Plate(Astra Camera).}
 \label{meanastra2}
@@ -194,9 +181,7 @@ $x[m]$ & $y[m]$ & $z[m]$ & $q_{x}$ & $q_{y}$ & $q_{z}$ &$q_{\omega}$ \\
 \hline
 \end{tabular}
 \end{table}
-
-
-\begin{table}[b]
+\begin{table}[ht]
 \renewcommand{\arraystretch}{1.3}
 \caption{Standard Deviation from The Repeatability Test With Tilting Orientation of the Calibration Plate(Astra Camera).}
 \label{standardastra2}
@@ -210,11 +195,8 @@ $\sigma_{x[m]}$ & $\sigma_{y[m]}$ & $\sigma_{z[m]}$ & $\sigma_{q_{x}}$ & $\sigma
 \hline
 \end{tabular}
 \end{table}
-
-
-
-%For Real Sense Camera
-\begin{table}[b]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%For Real Sense Camera
+\begin{table}[ht]
 \renewcommand{\arraystretch}{1.3}
 \caption{Mean Values of The Repeatability Test With a Constant Orientation of the Calibration Plate(RealSense Camera).}
 \label{meanreal1}
@@ -228,9 +210,7 @@ $x[m]$ & $y[m]$ & $z[m]$ & $q_{x}$ & $q_{y}$ & $q_{z}$ &$q_{\omega}$ \\
 \hline
 \end{tabular}
 \end{table}
-
-
-\begin{table}[b]
+\begin{table}[ht]
 \renewcommand{\arraystretch}{1.3}
 \caption{Standard Deviation from The Repeatability Test With a Constant Orientation of the Calibration Plate(RealSense).}
 \label{standardreal1}
@@ -244,9 +224,7 @@ $\sigma_{x[m]}$ & $\sigma_{y[m]}$ & $\sigma_{z[m]}$ & $\sigma_{q_{x}}$ & $\sigma
 \hline
 \end{tabular}
 \end{table}
-
-
-\begin{table}[b]
+\begin{table}[ht]
 \renewcommand{\arraystretch}{1.3}
 \caption{Mean Values of The Repeatability Test With Tilting Motion of the Calibration Plate(Real Sense).}
 \label{meanreal2}
@@ -260,9 +238,7 @@ $x[m]$ & $y[m]$ & $z[m]$ & $q_{x}$ & $q_{y}$ & $q_{z}$ &$q_{\omega}$ \\
 \hline
 \end{tabular}
 \end{table}
-
-
-\begin{table}[b]
+\begin{table}[ht]
 \renewcommand{\arraystretch}{1.3}
 \caption{Standard Deviation from The Repeatability Test With Tilting Orientation of the Calibration Plate(RealSense Camera).}
 \label{standardreal2}
@@ -276,8 +252,6 @@ $\sigma_{x[m]}$ & $\sigma_{y[m]}$ & $\sigma_{z[m]}$ & $\sigma_{q_{x}}$ & $\sigma
 \end{tabular}
 \end{table}
 
-
-
 \section{Pose Estimation Pipeline}
 
 This section presents the experiments and the results and how the validation test was performed for the 3D object pose estimation system. But first of all, for executing such an experiment, few requirements need to be met. The first requirement, a 3D industrial object, namely a textured object is available. As the second requirement, its CAD model is also available since it was created by the author of this thesis with the use of the FreeCAD software \ref{freecadb}. And last but not least, a third requirement, which is related to the pose of the object to be known in advance. This pose should be computed in a different fashion so that the result can be compared with the output of the pose estimation pipeline.\\
@@ -288,12 +262,9 @@ With the output from the pose estimation pipeline and the available pose which i
 In this section two type of experiments is taken place. The ultimate goal is to validate the pose estimation pipeline in terms of robustness and accuracy by the means of a distance error and an angle error. The pose estimation pipeline is described in \ref{chap:theo}, where it said that two 3D datas are required. One of them, a point cloud generated from the CAD model, and the other one, a point cloud generated from the scene, which was adquired from the output of the sensory device used, Astra or RealSense camera. The point cloud generated from the CAD model is called source cloud and the point cloud generated from the depth image is called the target cloud in this thesis.\\
 In order to validate the first experiment, displacements and angles applied to the industrial object are executed. As to displacement, there are three types related to it, one in the x-axis, the other one in the y-axis and the last one in the XY plane of the chekerboard. The distance of such a displacement is 2cm each. Since the transformation of the checkboard is known in advance plus the displacement applied to the object, the rough object pose can be known by visul inspection of the author of this thesis. When it comes to the validation test for the angle, a digital angle ruler is used, and the orientation is applied on the z-axis, namely a clockwise rotation. For the validation of the second experiment, the same principle is applied as described above when it comes to change the pose of the objec around the XY plane of the checkerboard. But a major difference exists for the source point cloud (CAD model). The CAD model is substitute for a partially view point cloud generated the camera used. The change was applied in order to see whether exist or not an improvement. Since the pose estimation system from time to time failed for the given conditions in the first experiment.
 
-
 \subsection{Pose Estimation Results}
-
  
-\begin{itemize}
-\item  For the case when when the source cloud is generated from CAD model and the target cloud from the sensory device as described in \ref{valitest}. The following Figure \ref{fig:errorx_1nd}, \ref{fig:errory_1nd}, and \ref{fig:erroryaw_1nd} where obtained for such experiment. It can bee seen that the estimated pose deviates slightly from its ground values.
+For the case when when the source cloud is generated from CAD model and the target cloud from the sensory device as described in \ref{valitest}. The following Figure \ref{fig:errorx_1nd}, \ref{fig:errory_1nd}, and \ref{fig:erroryaw_1nd} where obtained for such experiment. It can bee seen that the estimated pose deviates slightly from its ground values.
 %%%%%%%%%%%%%%%%%%%%%%%%%%% cloud from CAD and astra
 \begin{figure}[!h]
 \begin{center}
@@ -317,9 +288,8 @@ In order to validate the first experiment, displacements and angles applied to t
 \end{center}
 \end{figure}
 
-\item  For the case when when the source cloud as well as the target cloud are generated from the sensory device as described in \ref{valitest}. The Figure \ref{fig:errorx_2nd}, \ref{fig:errory_2nd}, and \ref{fig:erroryaw_2nd} where obtained for such experiment. It can bee seen that the estimated pose deviates slightly from its ground values.
+For the case when when the source cloud as well as the target cloud are generated from the sensory device as described in \ref{valitest}. The Figure \ref{fig:errorx_2nd}, \ref{fig:errory_2nd}, and \ref{fig:erroryaw_2nd} where obtained for such experiment. It can bee seen that the estimated pose deviates slightly from its ground values.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% cloud from the same source
-
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=5in, height=3.5in]{figures05/2_x_validation.png}
@@ -342,8 +312,8 @@ In order to validate the first experiment, displacements and angles applied to t
 \end{center}
 \end{figure}
 
-
-\item From the deviation graph an absolute error can be calculated. Figure \ref{absx}, \ref{absy} and \ref{absyaw} show the error calculated for both experiments.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+From the deviation graph an absolute error can be calculated. Figure \ref{fig:absx}, \ref{fig:absy} and \ref{fig:absw} show the error calculated for both experiments.
 
 \begin{figure}[!h]
 \begin{center}
@@ -352,42 +322,44 @@ In order to validate the first experiment, displacements and angles applied to t
 \label{fig:absx}
 \end{center}
 \end{figure}
+
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=5in, height=3.5in]{figures05/abs_error_y.png}
 \caption{Absolute Error: y-axis}
-\label{fig:absx}
+\label{fig:absy}
 \end{center}
 \end{figure}
+
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=5in, height=3.5in]{figures05/abs_error_yaw.png}
 \caption{Absolute Error: yaw angle}
-\label{fig:absx}
+\label{fig:absw}
 \end{center}
 \end{figure}
-\end{itemize}
-
-
-
-
 
 \subsection{Result Analysis}
+
 The pose estimation system did not performed well in the first experiment where a point cloud generated from the CAD model was used. To some extent, that result was expecting to happen. Since the point cloud that represents the CAD model is free of noise and outliars compared to the point cloud generated from the sensory device where noise, and outliars are presented mostly. The results report that the differences between the minimum and maximum are: for x-axis. 3.01 cm, y-axis approx 1.1 cm and 3 degrees for rotation angle around z. The values reported are not far from the reality given the condition that matching an cloud from the CAD model, free of outliar and noise presented on it, with a partially view cloud which reprents one side reprenting the scene is a chanllenging task. Although the pose estimation report reasonable estimation, during the whole experiment often time the pipeline system did not report values at all. The reason to have no estimation is due to the fact that in the matching process of the pipeline system fail to find correspondeces between the source cloud and target cloud. Therefore, no translation and no rotation were given.  \\
 
 As to the second experiment, where the source cloud as well as the target cloud were generated from the sensory device(Astra camera). 
 
+\begin{table}[ht]
+\renewcommand{\arraystretch}{1.3}
+\caption{Experiment data for internal RealSense sensor calibration.}
+\label{real1}
+\centering
+\begin{tabular}{|c||c|}
+\hline
+Method & Overall Mean Error\\
+\hline
+OpenCV &  0.1684388411\\
+\hline
+ROS &  0.122868849\\
+\hline
+\hline
+\end{tabular}
+\end{table}
 
 
-
-
-\iffalse
-
-valuations of the system when using only one model point cloud of the LS5
-were also performed, and are presented in table 4.3. The single point cloud was
-rendered from the side, so no top nor bottom were captured. Otherwise the same
-parameters as in table 4.2 were used.
-
-, then, a suitable scaling undergoes with the use of CluodCompare software \ref{cloudcompareb}, where a point cloud is generated. As to the validation of the method, a ground truth of the object needs to be known in advance. For such a requirement. A checkboard is used as described in Figure \ref{setupsystem}. Then, by placing the robot TCP to the specific points (three points in totally), the checkerboard can be localized. With that, a new workspace is produced. By analyzing the translation and rotation errors, the system is evaluated.\\
-The checkboard workspace is used for a rough estimation of the object's pose which is compared with 3D object pose estimation system described in \ref{chap:theo}
-\fi

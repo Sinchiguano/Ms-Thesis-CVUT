@@ -55,15 +55,15 @@
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Mean Reprojection Error per image with a ROS method (RealSense D-435)\relax }}{35}{figure.6.2}
 \contentsline {figure}{\numberline {6.3}{\ignorespaces Mean Reprojection Error per image with a OpenCV method (Astra Orbbec Camera)\relax }}{35}{figure.6.3}
 \contentsline {figure}{\numberline {6.4}{\ignorespaces Mean Reprojection Error per image with a OpenCV method (RealSense D-435)\relax }}{36}{figure.6.4}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Ground Truth vs Pose Estimation: x-axis (1st Experiment)\relax }}{41}{figure.6.5}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Ground Truth vs Pose Estimation: y-axis (1st Experiment)\relax }}{42}{figure.6.6}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Ground Truth vs Pose Estimation: yaw angle (1st Experiment)\relax }}{42}{figure.6.7}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Ground Truth vs Pose Estimation: x-axis (2nd Experiment)\relax }}{43}{figure.6.8}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Ground Truth vs Pose Estimation: y-axis (2nd Experiment)\relax }}{44}{figure.6.9}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Ground Truth vs Pose Estimation: yaw angle (2nd Experiment)\relax }}{44}{figure.6.10}
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Absolute Error: x-axis\relax }}{45}{figure.6.11}
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Absolute Error: y-axis\relax }}{45}{figure.6.12}
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Absolute Error: yaw angle\relax }}{46}{figure.6.13}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Ground Truth vs Pose Estimation: x-axis (1st Experiment)\relax }}{43}{figure.6.5}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Ground Truth vs Pose Estimation: y-axis (1st Experiment)\relax }}{43}{figure.6.6}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Ground Truth vs Pose Estimation: yaw angle (1st Experiment)\relax }}{44}{figure.6.7}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Ground Truth vs Pose Estimation: x-axis (2nd Experiment)\relax }}{44}{figure.6.8}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Ground Truth vs Pose Estimation: y-axis (2nd Experiment)\relax }}{45}{figure.6.9}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Ground Truth vs Pose Estimation: yaw angle (2nd Experiment)\relax }}{45}{figure.6.10}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Absolute Error: x-axis\relax }}{46}{figure.6.11}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Absolute Error: y-axis\relax }}{46}{figure.6.12}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Absolute Error: yaw angle\relax }}{47}{figure.6.13}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
