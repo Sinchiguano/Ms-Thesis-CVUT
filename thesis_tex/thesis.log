@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.3.25)  12 MAY 2019 22:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.3.25)  13 MAY 2019 09:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1997,13 +1997,16 @@ nput line 42.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[34 <./06_Results/figures05/ros_int_cal_astra.png (PNG copy)>]
+
+Underfull \vbox (badness 4699) has occurred while \output is active []
+
+ [34 <./06_Results/figures05/ros_int_cal_astra.png (PNG copy)>]
 
 LaTeX Warning: Text page 35 contains only floats.
 
 [35 <./06_Results/figures05/ros_int_cal_real.png (PNG copy)> <./06_Results/figu
 res05/opencv_int_cal_astra.png (PNG copy)>]
-Underfull \vbox (badness 3657) has occurred while \output is active []
+Underfull \vbox (badness 2253) has occurred while \output is active []
 
  [36 <./06_Results/figures05/opencv_int_cal_real.png (PNG copy)>]
 
@@ -2043,7 +2046,7 @@ Overfull \hbox (60.71927pt too wide) detected at line 127
 [][]\OML/lmm/m/it/10.95 T[] \OT1/lmr/m/n/10.95 = []
  []
 
-[38]
+[38] [39]
 Overfull \hbox (2.616pt too wide) in paragraph at lines 156--164
  [][] 
  []
@@ -2083,10 +2086,6 @@ Overfull \hbox (28.77405pt too wide) in paragraph at lines 270--277
  [][] 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [39]
 [40]
 <06_Results/figures05/1_x_validation.png, id=907, 454.69875pt x 255.95625pt>
 File: 06_Results/figures05/1_x_validation.png Graphic file (type png)
@@ -2154,11 +2153,13 @@ t line 350.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (./07_FutureWork/FutureWork7.tex [41 <./06_Results/figures05/1_x_validation.p
-ng (PNG copy)>] [42 <./06_Results/figures05/1_y_validation.png (PNG copy)> <./0
-6_Results/figures05/1_yaw_validation.png (PNG copy)>] [43] [44 <./06_Results/fi
-gures05/2_x_validation.png (PNG copy)>] [45 <./06_Results/figures05/2_y_validat
-ion.png (PNG copy)> <./06_Results/figures05/2_yaw_validation.png (PNG copy)>]
-[46
+ng (PNG copy)>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [42 <./06_Results/figures05/1_y_validation.png (PNG copy)> <./06_Results/figur
+es05/1_yaw_validation.png (PNG copy)>] [43 <./06_Results/figures05/2_x_validati
+on.png (PNG copy)> <./06_Results/figures05/2_y_validation.png (PNG copy)>] [44 
+<./06_Results/figures05/2_yaw_validation.png (PNG copy)>] [45] [46
 
 ]
 Chapter 7.
@@ -2583,9 +2584,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 122.
  (./thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 122.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 122.
-Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 4626C3B0F3EE71CFC4FAEA6B820BFDB5;4150.
 
+
+Package rerunfilecheck Warning: File `thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `thesis.out':
+(rerunfilecheck)             Before: 4626C3B0F3EE71CFC4FAEA6B820BFDB5;4150
+(rerunfilecheck)             After:  80DA76DE92B5234084C09A01F4F41226;4172.
 
 LaTeX Warning: There were undefined references.
 
@@ -2597,7 +2604,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 122.
 Here is how much of TeX's memory you used:
  21596 strings out of 493029
  375087 string characters out of 6136234
- 504308 words of memory out of 5000000
+ 502308 words of memory out of 5000000
  24279 multiletter control sequences out of 15000+600000
  114093 words of font info for 142 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2616,7 +2623,7 @@ e/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public
 texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (75 pages, 18546412 bytes).
+Output written on thesis.pdf (75 pages, 18546829 bytes).
 PDF statistics:
  1305 PDF objects out of 1440 (max. 8388607)
  1081 compressed objects within 11 object streams
