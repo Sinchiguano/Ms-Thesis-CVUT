@@ -61,17 +61,20 @@
 \contentsline {figure}{\numberline {6.8}{\ignorespaces Ground Truth vs Pose Estimation: x-axis (2nd Experiment)\relax }}{43}{figure.6.8}
 \contentsline {figure}{\numberline {6.9}{\ignorespaces Ground Truth vs Pose Estimation: y-axis (2nd Experiment)\relax }}{44}{figure.6.9}
 \contentsline {figure}{\numberline {6.10}{\ignorespaces Ground Truth vs Pose Estimation: yaw angle (2nd Experiment)\relax }}{44}{figure.6.10}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Absoute Error: x-axis\relax }}{45}{figure.6.11}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Absoute Error: y-axis\relax }}{45}{figure.6.12}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Absoute Error: yaw angle\relax }}{47}{figure.6.13}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Eye-To-Hand Result with a Constant Orientation of the Calibration Plate(Astra Camera)\relax }}{61}{figure.C.1}
-\contentsline {figure}{\numberline {C.2}{\ignorespaces Eye-To-Hand Result with Tilting Motion of the Calibration Plate(Astra Camera)\relax }}{62}{figure.C.2}
-\contentsline {figure}{\numberline {C.3}{\ignorespaces Eye-To-Hand Result with a Constant Orientation of the Calibration Plate(RealSense)\relax }}{63}{figure.C.3}
-\contentsline {figure}{\numberline {C.4}{\ignorespaces Eye-To-Hand Result with Tilting Motion of the Calibration Plate(RealSense Camera)\relax }}{64}{figure.C.4}
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Eye-To-Hand Result with a Constant Orientation of the Calibration Plate(Astra Camera)\relax }}{63}{figure.C.1}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Eye-To-Hand Result with Tilting Motion of the Calibration Plate(Astra Camera)\relax }}{64}{figure.C.2}
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Eye-To-Hand Result with a Constant Orientation of the Calibration Plate(RealSense)\relax }}{65}{figure.C.3}
+\contentsline {figure}{\numberline {C.4}{\ignorespaces Eye-To-Hand Result with Tilting Motion of the Calibration Plate(RealSense Camera)\relax }}{66}{figure.C.4}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {D.1}{\ignorespaces Overview of the Validation System 1\relax }}{65}{figure.D.1}
-\contentsline {figure}{\numberline {D.2}{\ignorespaces Overview of the Validation System 2\relax }}{66}{figure.D.2}
-\contentsline {figure}{\numberline {D.3}{\ignorespaces Setup for the Validation Test with a Constant Orientation\relax }}{67}{figure.D.3}
-\contentsline {figure}{\numberline {D.4}{\ignorespaces Setup for the Validation Test with Tilting Motion\relax }}{67}{figure.D.4}
+\contentsline {figure}{\numberline {D.1}{\ignorespaces Overview of the Validation System 1\relax }}{67}{figure.D.1}
+\contentsline {figure}{\numberline {D.2}{\ignorespaces Overview of the Validation System 2\relax }}{68}{figure.D.2}
+\contentsline {figure}{\numberline {D.3}{\ignorespaces Setup for the Validation Test with a Constant Orientation\relax }}{69}{figure.D.3}
+\contentsline {figure}{\numberline {D.4}{\ignorespaces Setup for the Validation Test with Tilting Motion\relax }}{69}{figure.D.4}

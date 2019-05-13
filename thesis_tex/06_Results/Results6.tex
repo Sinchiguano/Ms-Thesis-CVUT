@@ -319,7 +319,7 @@ In order to validate the first experiment, displacements and angles applied to t
 
 \item  For the case when when the source cloud as well as the target cloud are generated from the sensory device as described in \ref{valitest}. The Figure \ref{fig:errorx_2nd}, \ref{fig:errory_2nd}, and \ref{fig:erroryaw_2nd} where obtained for such experiment. It can bee seen that the estimated pose deviates slightly from its ground values.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% cloud from the same source
-\item cloud from astra....
+
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=5in, height=3.5in]{figures05/2_x_validation.png}
@@ -341,13 +341,41 @@ In order to validate the first experiment, displacements and angles applied to t
 \label{fig:erroryaw_2nd}
 \end{center}
 \end{figure}
+
+
+\item Absolute 
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=5in, height=3.5in]{figures05/abs_error_x.png}
+\caption{Absoute Error: x-axis}
+\label{fig:absx}
+\end{center}
+\end{figure}
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=5in, height=3.5in]{figures05/abs_error_y.png}
+\caption{Absoute Error: y-axis}
+\label{fig:absx}
+\end{center}
+\end{figure}
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=5in, height=3.5in]{figures05/abs_error_yaw.png}
+\caption{Absoute Error: yaw angle}
+\label{fig:absx}
+\end{center}
+\end{figure}
 \end{itemize}
+
+
+
 
 
 \subsection{Result Analysis}
 The pose estimation system did not performed well in the first experiment where a point cloud generated from the CAD model was used. To some extent, that result was expecting to happen. Since the point cloud that represents the CAD model is free of noise and outliars compared to the point cloud generated from the sensory device where noise, and outliars are presented mostly. The results report that the differences between the minimum and maximum are: for x-axis. 3.01 cm, y-axis approx 1.1 cm and 3 degrees for rotation angle around z. The values reported are not far from the reality given the condition that matching an cloud from the CAD model, free of outliar and noise presented on it, with a partially view cloud which reprents one side reprenting the scene is a chanllenging task. Although the pose estimation report reasonable estimation, during the whole experiment often time the pipeline system did not report values at all. The reason to have no estimation is due to the fact that in the matching process of the pipeline system fail to find correspondeces between the source cloud and target cloud. Therefore, no translation and no rotation were given.  \\
 
-As to the second experiment, where the source cloud and the targe cloud are generated from the sensory device.
+As to the second experiment, where the source cloud as well as the target cloud were generated from the sensory device(Astra camera). 
 
 
 
