@@ -283,49 +283,42 @@ $\sigma_{x[m]}$ & $\sigma_{y[m]}$ & $\sigma_{z[m]}$ & $\sigma_{q_{x}}$ & $\sigma
 This section presents the experiments and the results and how the validation test was performed for the 3D object pose estimation system. But first of all, for executing such an experiment, few requirements need to be met. The first requirement, a 3D industrial object, namely a textured object is available. As the second requirement, its CAD model is also available since it was created by the author of this thesis with the use of the FreeCAD software \ref{freecadb}. And last but not least, a third requirement, which is related to the pose of the object to be known in advance. This pose should be computed in a different fashion so that the result can be compared with the output of the pose estimation pipeline.\\
 With the output from the pose estimation pipeline and the available pose which it is referred to as ground truth, the accuracy of the system can be determined. But, it was proved to be difficult to determine the real pose of the object for the given thesis research. But a solution needed to comes out for the ground truth refers to as a gold standard pose also in this thesis. Therefore, several methods were discussed knowing that the meaning of ground truth refers to as an information provided by direct observation such as an empirical observation. A simple and unusual solution is taking into account to  the ground truth. The use of the checkerboard pattern. Having the checkboard pattern place on the table, a localization object feature from the robot is used. This is done by position the TCP onto three different points of the checkerboard, by doing so, a new coordinates system is defined where the object is placed to a desired grid of the checkboard which width and hight is 2cm each. With such setup the object can be move as the author of this thesis wishes with a certain confident of know the deisplacement in XY coordinates of the plane of chessboard. As to the orientation, a digital angle ruler is used in this thesis. The whole setup for the experiment can be seen in Figure \ref{setupsystem2} where the checkerboard object is localized onto the top of the table. Figure \ref{setupsystem1} shows a rviz simulation, where the relationship between transformations are clearly seen over time. 
 
-\subsection{Validation Test}
+\subsection{Validation Test}\label{valitest}
 
 In this section two type of experiments is taken place. The ultimate goal is to validate the pose estimation pipeline in terms of robustness and accuracy by the means of a distance error and an angle error. The pose estimation pipeline is described in \ref{chap:theo}, where it said that two 3D datas are required. One of them, a point cloud generated from the CAD model, and the other one, a point cloud generated from the scene, which was adquired from the output of the sensory device used, Astra or RealSense camera. The point cloud generated from the CAD model is called source cloud and the point cloud generated from the depth image is called the target cloud in this thesis.\\
 In order to validate the first experiment, displacements and angles applied to the industrial object are executed. As to displacement, there are three types related to it, one in the x-axis, the other one in the y-axis and the last one in the XY plane of the chekerboard. The distance of such a displacement is 2cm each. Since the transformation of the checkboard is known in advance plus the displacement applied to the object, the rough object pose can be known by visul inspection of the author of this thesis. When it comes to the validation test for the angle, a digital angle ruler is used, and the orientation is applied on the z-axis, namely a clockwise rotation. For the validation of the second experiment, the same principle is applied as described above when it comes to change the pose of the objec around the XY plane of the checkerboard. But a major difference exists for the source point cloud (CAD model). The CAD model is substitute for a partially view point cloud generated the camera used. The change was applied in order to see whether exist or not an improvement. Since the pose estimation system from time to time failed for the given conditions in the first experiment.
 
 
-\subsection{Calibration results}
+\subsection{Pose Estimation Results}
 
+ 
 \begin{itemize}
-\item cad
-%%%%%%%%%% cloud from CAD and astra
-
+\item  For the case when when the source cloud is generated from CAD model and the target cloud from the sensory device as described in \ref{valitest}. The following Figure \ref{fig:errorx_1nd}, \ref{fig:errory_1nd}, and \ref{fig:erroryaw_1nd} where obtained for such experiment. It can bee seen that the estimated pose deviates slightly from its ground values.
+%%%%%%%%%%%%%%%%%%%%%%%%%%% cloud from CAD and astra
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=5in, height=3.5in]{figures05/1_x_validation.png}
 \caption{Ground Truth vs Pose Estimation: x-axis (1st Experiment)}
-\label{fig:errorx_2nd}
+\label{fig:errorx_1nd}
 \end{center}
 \end{figure}
-
-
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=5in, height=3.5in]{figures05/1_y_validation.png}
 \caption{Ground Truth vs Pose Estimation: y-axis (1st Experiment)}
-\label{fig:errory_2nd}
+\label{fig:errory_1nd}
 \end{center}
 \end{figure}
-
-
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=5in, height=3.5in]{figures05/1_yaw_validation.png}
 \caption{Ground Truth vs Pose Estimation: yaw angle (1st Experiment)}
-\label{fig:erroryaw_2nd}
+\label{fig:erroryaw_1nd}
 \end{center}
 \end{figure}
 
-
-
-
-%%%% cloud from the same source
-
+\item  For the case when when the source cloud as well as the target cloud are generated from the sensory device as described in \ref{valitest}. The Figure \ref{fig:errorx_2nd}, \ref{fig:errory_2nd}, and \ref{fig:erroryaw_2nd} where obtained for such experiment. It can bee seen that the estimated pose deviates slightly from its ground values.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% cloud from the same source
 \item cloud from astra....
 \begin{figure}[!h]
 \begin{center}
@@ -334,8 +327,6 @@ In order to validate the first experiment, displacements and angles applied to t
 \label{fig:errorx_2nd}
 \end{center}
 \end{figure}
-
-
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=5in, height=3.5in]{figures05/2_y_validation.png}
@@ -343,8 +334,6 @@ In order to validate the first experiment, displacements and angles applied to t
 \label{fig:errory_2nd}
 \end{center}
 \end{figure}
-
-
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=5in, height=3.5in]{figures05/2_yaw_validation.png}
@@ -352,24 +341,25 @@ In order to validate the first experiment, displacements and angles applied to t
 \label{fig:erroryaw_2nd}
 \end{center}
 \end{figure}
-
-
 \end{itemize}
 
 
-
-
-
-
 \subsection{Result Analysis}
+The pose estimation system did not performed well in the first experiment where a point cloud generated from the CAD model was used. To some extent, that result was expecting to happen. Since the point cloud that represents the CAD model is free of noise and outliars compared to the point cloud generated from the sensory device where noise, and outliars are presented mostly. The results report that the differences between the minimum and maximum are: for x-axis. 3.01 cm, y-axis approx 1.1 cm and 3 degrees for rotation angle around z. The values reported are not far from the reality given the condition that matching an cloud from the CAD model, free of outliar and noise presented on it, with a partially view cloud which reprents one side reprenting the scene is a chanllenging task. Although the pose estimation report reasonable estimation, during the whole experiment often time the pipeline system did not report values at all. The reason to have no estimation is due to the fact that in the matching process of the pipeline system fail to find correspondeces between the source cloud and target cloud. Therefore, no translation and no rotation were given.  \\
 
-lll
+As to the second experiment, where the source cloud and the targe cloud are generated from the sensory device.
 
 
 
 
 
 \iffalse
+
+valuations of the system when using only one model point cloud of the LS5
+were also performed, and are presented in table 4.3. The single point cloud was
+rendered from the side, so no top nor bottom were captured. Otherwise the same
+parameters as in table 4.2 were used.
+
 , then, a suitable scaling undergoes with the use of CluodCompare software \ref{cloudcompareb}, where a point cloud is generated. As to the validation of the method, a ground truth of the object needs to be known in advance. For such a requirement. A checkboard is used as described in Figure \ref{setupsystem}. Then, by placing the robot TCP to the specific points (three points in totally), the checkerboard can be localized. With that, a new workspace is produced. By analyzing the translation and rotation errors, the system is evaluated.\\
 The checkboard workspace is used for a rough estimation of the object's pose which is compared with 3D object pose estimation system described in \ref{chap:theo}
 \fi
