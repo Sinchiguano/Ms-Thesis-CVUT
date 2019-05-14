@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.3.25)  13 MAY 2019 19:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.3.25)  14 MAY 2019 12:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2182,9 +2182,10 @@ ine 336.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 344--345
+LaTeX Warning: Reference `cloudsense' on page 45 undefined on input line 344.
 
- []
+
+LaTeX Warning: Reference `absolute' on page 45 undefined on input line 346.
 
 [45 <./06_Results/figures05/2_y_validation.png (PNG copy)> <./06_Results/figure
 s05/2_yaw_validation.png (PNG copy)>]
@@ -2192,12 +2193,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [46 <./06_Results/figures05/abs_error_x.png (PNG copy)> <./06_Results/figures0
 5/abs_error_y.png (PNG copy)>]
-Overfull \hbox (12.77257pt too wide) in paragraph at lines 353--365
+Underfull \vbox (badness 1418) has occurred while \output is active []
+
+ [47 <./06_Results/figures05/abs_error_yaw.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 356--357
+
+ []
+
+
+Overfull \hbox (12.77257pt too wide) in paragraph at lines 365--377
  [][] 
  []
 
-) (./07_FutureWork/FutureWork7.tex [47 <./06_Results/figures05/abs_error_yaw.pn
-g (PNG copy)>] [48]
+) (./07_FutureWork/FutureWork7.tex [48]
 Chapter 7.
 ) (./08_Conclusions/Conclusions8.tex [49
 
@@ -2634,10 +2642,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 122.
  ) 
 Here is how much of TeX's memory you used:
- 21624 strings out of 493029
- 375778 string characters out of 6136234
+ 21626 strings out of 493029
+ 375800 string characters out of 6136234
  500789 words of memory out of 5000000
- 24298 multiletter control sequences out of 15000+600000
+ 24300 multiletter control sequences out of 15000+600000
  114093 words of font info for 142 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,18n,58p,10357b,981s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2655,7 +2663,7 @@ e/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public
 texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (77 pages, 18643303 bytes).
+Output written on thesis.pdf (77 pages, 18645283 bytes).
 PDF statistics:
  1337 PDF objects out of 1440 (max. 8388607)
  1107 compressed objects within 12 object streams

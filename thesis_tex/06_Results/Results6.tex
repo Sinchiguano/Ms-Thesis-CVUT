@@ -341,14 +341,25 @@ From the deviation graph an absolute error can be calculated. Figure \ref{fig:ab
 
 \subsection{Result Analysis}
 
-The pose estimation system did not performed well in the first experiment where a point cloud generated from the CAD model is used. To some extent, the output from the pose estimation system was expecting to happen. Since the point cloud that represents the CAD model is free of noise and outliars compared to the point cloud generated from the sensory device where noise, and outliars are presented mostly. The results report that the differences between the minimum and maximum are: for x-axis. 3.01 cm, y-axis approx 1.1 cm and 3 degrees for rotation angle around z. The values reported are not far from the reality given the condition that matching an cloud from the CAD model, free of outliar and noise presented on it, with a partially view cloud which reprents one side reprenting the scene is a chanllenging task. Although the pose estimation report reasonable estimation, during the whole experiment often time the pipeline system did not report values at all. The reason to have no estimation is due to the fact that in the matching process of the pipeline system fail to find correspondeces between the source cloud and target cloud. Therefore, no translation and no rotation were given. \\
+From the first experiment, it was concluded that the pose estimation did not perform well. Since the cloud generated from the CAD model did not even converge to the cloud generated from the scene in several cases. By that, the author of this thesis means that a solution was not registered. This unsuccessful event could refer to several reasons. One of the reason could be that in the matching process, a block that performs a coarse estimation of the object pose failed, due to of the lacking of correspondence between the points clouds representing the CAD model and points cloud representing the scene. Another reason could be that, in the target cloud(scene cloud), noise and outlier were presented while in the source, noise and outlier were not presented. And last but not least, the point cloud from the sensory device was too wavy, as it was the case for the real sense camera where not result were encounter at all. Figure \ref{cloudsense} shows the point clouds representing the industrial object, the clouds were generated from the CAD model, RealSense camera and Astra camera.\\
+Since the issue described previously was regularly fired out, it was concluded that matching a point cloud from the CAD model with a partial viewpoint cloud from the scene was a hard task to accomplish. To some extent, it is a normal issue, it was registered in most of the literature of the computer vision that deals with the task of estimation of object pose for random Bin Picking with point cloud\\ 
+With the issue encountered and briefly discussed above, the result was quite acceptable provided that the camera used in the validation test, was the Astra camera. Table \ref{absolute}  shows an overall mean error of 2.6[cm] for the x-axis, with a standard deviation; 2.45, for the y-axis the overall mean error was 0,63[cm] with a standard deviation; 0.5[cm] and finally the orientation angle with an overall error of 2.9 [degrees] with a standard deviation of 1.27[degrees].  Until this part, it can be concluded that the results are quite promising by giving the conditions, where a domestic camera was used during the whole thesis. 
+
+
+
+
+ who is part of the estimation pipeline did not performe well its task. Ans 
+The pose estimation system did not performed well in the first experiment where a point cloud generated from the CAD model is used. To some extent, the output from the pose estimation system was expecting to happen, most of the time, the cloud from the CAD did not even fin. Th due to the complexity to match Since the point cloud that represents the CAD model is free of noise and outliars compared to the point cloud generated from the sensory device where noise, and outliars are presented mostly. 
+
+
+The results report that the differences between the minimum and maximum are: for x-axis. 3.01 cm, y-axis approx 1.1 cm and 3 degrees for rotation angle around z. The values reported are not far from the reality given the condition that matching an cloud from the CAD model, free of outliar and noise presented on it, with a partially view cloud which reprents one side reprenting the scene is a chanllenging task. Although the pose estimation report reasonable estimation, during the whole experiment often time the pipeline system did not report values at all. The reason to have no estimation is due to the fact that in the matching process of the pipeline system fail to find correspondeces between the source cloud and target cloud. Therefore, no translation and no rotation were given. \\
 
 As to the second experiment, where the source cloud as well as the target cloud were generated from the sensory device(Astra camera). 
 
 \begin{table}[ht]
 \renewcommand{\arraystretch}{1.3}
 \caption{Absolute Error Values.}
-\label{real1}
+\label{absolute}
 \centering
 \begin{tabular}{|c||c||c||c||c|}
 \hline
