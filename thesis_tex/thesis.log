@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.3.25)  16 MAY 2019 22:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.3.25)  18 MAY 2019 14:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2197,23 +2197,15 @@ Chapter 7.
 ]
 Chapter 8.
 
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
+Underfull \hbox (badness 10000) in paragraph at lines 5--11
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--8
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
-
- []
-
-) (./ZReferences/reference.tex [51] [52
-
-]
+ [51])
+(./ZReferences/reference.tex [52]
 Underfull \hbox (badness 2293) in paragraph at lines 8--10
 \T1/lmr/m/n/10.95 (+20) BER 2006,[]$\T1/lmtt/m/n/10.95 http : / / citeseerx . i
 st . psu . edu / viewdoc / download ? doi =
@@ -2225,7 +2217,9 @@ Underfull \hbox (badness 6332) in paragraph at lines 21--23
  http : / / graphics . stanford . edu /
  []
 
-[53]
+[53
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 65--67
 \T1/lmr/m/n/10.95 (+20) ,[]$\T1/lmtt/m/n/10.95 https : / / www . researchgate .
  net / publication / 238495425 _ Tsai %
@@ -2629,7 +2623,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 122.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 122.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 122.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 2AFC43E4259EFCA9A2EBFED699281887;4172.
+(rerunfilecheck)             Checksum: E2C2377EAA424569501EEBFD98F9177A;4154.
 
 
 LaTeX Warning: There were undefined references.
@@ -2642,7 +2636,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 122.
 Here is how much of TeX's memory you used:
  21624 strings out of 493029
  375807 string characters out of 6136234
- 498894 words of memory out of 5000000
+ 498856 words of memory out of 5000000
  24300 multiletter control sequences out of 15000+600000
  114010 words of font info for 141 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2661,7 +2655,7 @@ e/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public
 texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (77 pages, 18645694 bytes).
+Output written on thesis.pdf (77 pages, 18647363 bytes).
 PDF statistics:
  1341 PDF objects out of 1440 (max. 8388607)
  1111 compressed objects within 12 object streams
