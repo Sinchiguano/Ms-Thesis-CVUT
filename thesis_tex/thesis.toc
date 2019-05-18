@@ -97,4 +97,6 @@
 \contentsline {chapter}{\numberline {A}List of Notation}{57}{appendix.A}
 \contentsline {chapter}{\numberline {B}Assignment of this thesis}{59}{appendix.B}
 \contentsline {chapter}{\numberline {C}Eye-To-Hand Calibration Results}{63}{appendix.C}
-\contentsline {chapter}{\numberline {D}Images}{67}{appendix.D}
+\contentsline {chapter}{\numberline {D}System Setup}{67}{appendix.D}
+\contentsline {chapter}{\numberline {E}Point Clouds}{71}{appendix.E}
+\contentsline {chapter}{\numberline {F}Validation Test Results: RealSense D415}{73}{appendix.F}
