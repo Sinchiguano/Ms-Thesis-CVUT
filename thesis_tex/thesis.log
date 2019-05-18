@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.3.25)  18 MAY 2019 14:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.3.25)  18 MAY 2019 18:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2190,6 +2190,10 @@ Overfull \hbox (12.77257pt too wide) in paragraph at lines 361--373
 
 ) (./07_FutureWork/FutureWork7.tex [48]
 Chapter 7.
+
+LaTeX Warning: Reference `appendix......' on page 49 undefined on input line 7.
+
+
 ) (./08_Conclusions/Conclusions8.tex [49
 
 ] [50
@@ -2634,10 +2638,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 122.
  ) 
 Here is how much of TeX's memory you used:
- 21624 strings out of 493029
- 375807 string characters out of 6136234
+ 21625 strings out of 493029
+ 375823 string characters out of 6136234
  498856 words of memory out of 5000000
- 24300 multiletter control sequences out of 15000+600000
+ 24301 multiletter control sequences out of 15000+600000
  114010 words of font info for 141 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,18n,58p,10357b,981s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2655,7 +2659,7 @@ e/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public
 texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (77 pages, 18647363 bytes).
+Output written on thesis.pdf (77 pages, 18647717 bytes).
 PDF statistics:
  1341 PDF objects out of 1440 (max. 8388607)
  1111 compressed objects within 12 object streams
