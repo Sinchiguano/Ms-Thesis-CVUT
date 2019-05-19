@@ -31,10 +31,15 @@ A typical use case consists of the following steps (here using ROS kinetic):
 
 * Interface the robot with a terminal computer by executing the following launch file: 
     roslaunch yumipy yumi_arms.launch 
+
 * Execute publishingTF.py in order to command the robot movement.
+
 * Execute the following python file:
-    camera_robotCAL_real.py or camera_robotCAL_astra.py, depend on the camera to be calibrated, with this module a transform from the calibration target to the camera starts publishing into the ROS network
-* And execute the listeningTF.py in order to retrieve the transformation of the camera relative to the robot frame.
+
+    camera_robotCAL_real.py or camera_robotCAL_astra.py, depend on the camera to be calibrated. A transform from the calibration target to the camera starts publishing into the ROS network
+
+* Finally, execute the listeningTF.py in order to retrieve the transformation of the camera relative to the robot frame.
+
 * If you wish, run Rviz in order to see the tf tree.
 
 
