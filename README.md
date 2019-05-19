@@ -14,6 +14,15 @@ The system uses point cloud data rendered from a 3D CAD model and describes its 
 The system uses FPFH (Fast Point Feature Histogram) for describing the local region and a hypothesize-and-test paradigm, e.g. RANSAC in the matching process.
 In contrast to several approaches those whose rely on Point Pair Features as feature descriptors and a geometry hashing, e.g. voting-scheme as the matching process.
 
+##Requirements
+In order to use the yumi_main package for Eye_To_Hand calibration and the 3D pose estimation pipeline the following dependencies have to bo met:
+
+The  release has been tested on Linux Ubuntu 16.04 with
+
+ * Python 2.7.6, 3.4.0, 3.5.2
+ * pcl 1.7.0
+ * Cython <= 0.25.2
+ * [YuMi Python Interface](https://github.com/BerkeleyAutomation/yumipy)
 
 ## Citation
 Please cite the work in your publications if it helps your research:
