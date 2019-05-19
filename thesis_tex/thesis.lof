@@ -31,13 +31,13 @@
 \contentsline {figure}{\numberline {3.9}{\ignorespaces A view of the FreeCAD interface.\relax }}{13}{figure.3.9}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Overview of the camera pose estimation system. The system estimates the pose of the camera frame relative to the world frame(also known as robot base frame). Image from \cite {autCAL}.\relax }}{16}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Overview of the intrinsic calibration based on industrial calibration ROS package with a 6X9 checkerboard calibration target\relax }}{17}{figure.4.2}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Overview of the intrinsic calibration based on industrial calibration ROS package with a $6\times 9$ checkerboard calibration target\relax }}{17}{figure.4.2}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Overview of the camera pose estimation system. The system estimates the distance and orientation to the local coordinate system of the checkerboard\relax }}{17}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Overview of a 7X9 checkerboard calibration grid \relax }}{18}{figure.4.4}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Overview of a $7\times 9$ checkerboard calibration grid \relax }}{18}{figure.4.4}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces ARTag, AprilTag and CALTag markers example. Image from \cite {fiducialTargets}\relax }}{19}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces An 8X9 Checkerboard Calibration Target fixed on a custom-made plate\relax }}{19}{figure.4.6}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces An $8\times 9$ Checkerboard Calibration Target fixed on a custom-made plate\relax }}{19}{figure.4.6}
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Visualization of the 3D world coordinates system projeted onto the 2D image plane\relax }}{21}{figure.4.7}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Right: Visualization of the transform (camera and target) relative to the robot base frame using ROS Rviz package. Left: Show an image used in the camera pose estimation.\relax }}{22}{figure.4.8}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Left: Visualization of the transform (camera and target) relative to the robot base frame using ROS Rviz package. Right: Show an image used in the camera pose estimation.\relax }}{22}{figure.4.8}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces General architecture of proposed pose estimation pipeline\relax }}{24}{figure.5.1}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Flow Chart of Point Cloud Processing For Filtering Outliars\relax }}{25}{figure.5.2}

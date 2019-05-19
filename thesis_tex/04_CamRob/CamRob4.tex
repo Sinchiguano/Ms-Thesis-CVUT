@@ -1,16 +1,16 @@
 
 \chapter{Robot-Camera Calibration}
 \label{chap:robot}
-This section presents the theory as well as each individual step for estimating the pose of the camera relative to the robot base frame. Such a task is also known as a robot-camera calibration. The robot-camera calibration can be divided into internal camera parameter and external camera parameters also known as Eye-To-Hand calibration. Normally, it is sufficient to perform an internal camera calibration only once. And reliable methods already exist. As to, the Eye-To-Hand calibration is more application specific. It generally requires the position of the camera frame relative to a calibration target frame to be known. Therefore, the proposed method for estimating the robot-camera pose in this thesis is based on tracking a calibration target attached to the end-effector of the robot with known forward kinematics. 
+This section presents the theory as well as each individual step of the proposed system for estimating the tranformation between the camera and the robot. Such a task is also known as a robot-camera calibration. The robot-camera calibration can be divided into intrinsic and extrinsic camera calibration also known as Eye-To-Hand calibration. Normally, it is sufficient to perform an intrinsic camera calibration only once. And reliable methods already exist. As to the extrinsic camera calibration is more application specific. It generally requires the position of the camera frame relative to a calibration target frame to be known. Therefore, the proposed method for estimating the robot-camera pose in this thesis is based on tracking a calibration target attached to the end-effector of the robot with known forward kinematics. 
 
 
 \section{Camera Calibration}
 
-Camera calibration is the process of estimating intrinsic and extrinsic parameters. The intrinsic parameters deal with the camera's internal characteristics, such as its focal distance, distortion, and image centre. The extrinsic parameters represent the position and orientation relative to the calibration target. In this thesis the camera calibration is treated separately and can be divided into two main stages:
+Camera calibration is the process of estimating intrinsic and extrinsic parameters. The intrinsic parameters deal with the camera's internal characteristics, such as its focal distance, distortion and image centre. The extrinsic parameters represent the position and orientation relative to the calibration target. In this thesis the camera calibration is treated separately and can be divided into two main stages:
 
 \begin{itemize}
-\item Sensor internal parameter calibration such as lens distortion, focal distance, and optical center (image center). In addiction to that, for RGB-D cameras, color and depth image offsets.
-\item Robot-camera calibration: the pose(position and orientation) of a camera coordinate system in a reference coordinate frame. In this thesis we also refer to it as to Eye-to-Hand calibration. The transformation from the camera coordinate system to the robot base coordinates system (also called world coordinates system interchangeably in this thesis) is shown in Figure\ref{fig:system0} 
+\item Sensor internal parameter calibration such as lens distortion, focal distance, and optical center (image center). In addiction to that, for RGB-D cameras, color and depth image.
+\item Robot-camera calibration: the pose (position and orientation) of a camera coordinate system in a reference coordinate frame. In this thesis we also refer to it as to Eye-to-Hand calibration. The transformation from the camera coordinate system to the robot base coordinates system (also called world coordinates system interchangeably in this thesis) is shown in Figure\ref{fig:system0} 
 
 \end{itemize}
 \begin{figure}[!h]
@@ -31,20 +31,20 @@ Robot-camera calibration, on the other hand, is more application specific and an
 
 The choice of camera model influences the final calibration results, so the first step is to select an appropriate camera model. In this thesis, the pinhole camera model \ref{pinhole} is used. It describes the mathematical relationship between the coordinates of a point in three-dimensional space and its projection onto the image plane of an ideal camera. 
 
-The MATLAB, Open CV  and the $camera\textunderscore calibration$ ROS  \cite{calRos} packages are the most popular systems for camera calibration. They are already available for checkerboard detection based on the pinhole model and the method proposed by Zhang \cite{Zhang}, All of them introduce the radial distortion and tangential distortion. In this thesis, the OpenCV and $camera\textunderscore calibration$ ROS packages are used for the purpose of comparison in this thesis.
-The technique proposed by Zhang only requires the camera to observe a calibration target shown at a few (at least three) different orientations. the technique relates known points in the world to points in an image, in order to do so, one must first acquire a series of known world points. The most common method is to use known planar objects(checkerboard calibration grid) at different orientations with respect to the camera to develop an independent series of data points. The calibration object chosen in this thesis is a 6x9 checkerboard with the corner points as the known world points as seen in Figure \ref{fig:target0}.
+The MATLAB, OpenCV  and the $camera\textunderscore calibration$ ROS \cite{calbRos} packages are the most popular systems for camera calibration. They are already available for checkerboard detection based on the pinhole model and the method proposed by Zhang \cite{Zhang}, All of them introduce the radial distortion and tangential distortion. In this thesis, the OpenCV and $camera\textunderscore calibration$ ROS packages are used for the purpose of comparison.
+The technique proposed by Zhang only requires the camera to observe a calibration target shown at a few (at least three) different orientations. The technique relates known points in the world to points in an image, in order to do so, one must first acquire a series of known world points. The most common method is to use known planar objects (checkerboard calibration grid) at different orientations with respect to the camera to develop an independent series of data points. The calibration object chosen in this thesis is a $6\times9$ checkerboard with the corner points as the known world points as seen in Figure \ref{fig:target0}.
 
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=3in]{figures03/intros.png}
-\caption{Overview of the intrinsic calibration based on industrial calibration ROS package with a 6X9 checkerboard calibration target}%\cite{temp2}}
+\caption{Overview of the intrinsic calibration based on industrial calibration ROS package with a  $6\times9$ checkerboard calibration target}%\cite{temp2}}
 \label{fig:target0}
 \end{center}
 \end{figure}
 
 \section{Eye-to-Hand Calibration}
 
-In order to know the pose of the camera coordinate system relative to the world coordinate system, also known as robot base frame, extrinsic calibration (estimation of the rotation and translation of the camera frame) method will be used. In this thesis, the method for extrinsic camera calibration based on calibration planer target is used. It is assumed camera intrinsic parameters and distortion coefficients are known in advance \ref{intrinsic} and fixed during the entire sequence. Such a system is shown in Figure \ref{fig:camposest}.
+In order to know the pose of the camera coordinate system relative to the world coordinate system, also known as robot base frame, extrinsic calibration (estimation of the rotation and translation of the camera frame) method will be used. In this thesis, the method for extrinsic camera calibration based on a planar calibration target is used. It is assumed, camera intrinsic parameters and distortion coefficients are known in advance \ref{intrinsic} and fixed during the entire sequence. Such a system is shown in Figure \ref{fig:camposest}.
 
 
 \begin{figure}[!h]
@@ -72,7 +72,7 @@ Checkerboard calibration targets, where the calibration points are the corner po
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=3in]{figures03/openCV1.png}
-\caption{Overview of a 7X9 checkerboard calibration grid }%\cite{temp2}}
+\caption{Overview of a $7\times9$ checkerboard calibration grid }%\cite{temp2}}
 \label{fig:target1}
 \end{center}
 \end{figure}
@@ -96,16 +96,16 @@ In this thesis, the checkerboard pattern is used.  This pattern is simple to pro
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=4in]{figures03/target1.png}
-\caption{An 8X9 Checkerboard Calibration Target fixed on a custom-made plate}
+\caption{An $8\times9$ Checkerboard Calibration Target fixed on a custom-made plate}
 \label{fig:target2}
 \end{center}
 \end{figure}
 
-\subsection{Pose Estimation Using A Checkerboard Pattern}\label{pose1}
+\subsection{Pose Estimation Using a Checkerboard Pattern}\label{pose1}
 
-The task of estimating the pose of a calibrated camera given a set of \textbf{n} 3D points relative to a world and their corresponding 2D projections on the image plane is a fundamental and well-understood topic in computer vision, and it is referred to as a Perspective-n-Point problem in most of the literature. OpenCV provides several methods to solve the Perspective-n-Point problem which returns R (rotation) and t(translation). In order to use the OpenCV capabilities, the image needs to have a suitable format that OpenCV can use. In this thesis, the Robot Operative System is used, which is a suitable platform due to its modular design and rapid integration for a large amount of robot and sensor types.
+The task of estimating the pose of a calibrated camera given a set of \textbf{n} 3D points relative to a world and their corresponding 2D projections on the image plane is a fundamental and well-understood topic in computer vision, and it is referred to as a Perspective-n-Point problem in most of the literature. OpenCV provides several methods to solve the Perspective-n-Point problem which returns R (rotation) and t (translation). In order to use the OpenCV capabilities, the image needs to have a suitable format that OpenCV can use. In this thesis, the Robot Operative System is used, which is a suitable platform due to its modular design and rapid integration for a large amount of robot and sensor types.
 With the help of ROS, the system is split into two nodes also called scripts. The first one which deals with the image acquisition and converting into the right format that OpenCV can use. And the second one, where the algorithm for the pose estimation is implemented. It takes into account the modified image done in the first part. 
-Since a ROS system is modular and each node communicates one another with pass-through messages. The algorithm can be seen in the Algorithm \ref{alg:algPOSE}.
+Since a ROS system is modular and each node communicates one another with pass-through messages. The algorithm can be seen in Algorithm \ref{alg:algPOSE}.
 
 \begin{algorithm}[H]
 \SetAlgoLined
@@ -117,25 +117,25 @@ Since a ROS system is modular and each node communicates one another with pass-t
  }
 \KwResult{
 \begin{enumerate}
-\item A $R \in \mathbb{R}^{3}$ and $t \in \mathbb{R}^{3}$
+\item $R \in \mathbb{R}^{3}$ and $t \in \mathbb{R}^{3}$
 \end{enumerate}
 }
  $T \leftarrow T_{0}$  \;
  \While{$ros::ok()$}
  {
      \eIf{image}{
-     Corners are searched in the image scene where a checkerboard is placed with corner detector algorithm already available in OpenCV.\;
-     The pose of the camera is calculated with the OpenCV algorithm such as solvepnp()\;
-     Publish T, pose, to the ROS network.\;
+     Corners are searched in the image scene where a checkerboard is placed with corner detector algorithm already available in OpenCV.\\
+     The pose of the camera is calculated with the OpenCV algorithm such as solvepnp()\\
+     Publish T, pose, to the ROS network.\\
     }{
-    continue\;
+    continue\\
     }
 }
-\caption{Pose Estimation Using A Checkerboard Pattern}
+\caption{Pose Estimation Using a Checkerboard Pattern}
 \label{alg:algPOSE}
 \end{algorithm}
 
-As seen in the \ref{alg:algPOSE} the solution to the Perspective-N-Point problem is solved by the OpenCV solvepnp() or solvePnPRansac() functions. Both methods solved the problem by matching a predefined grid of corner locations in the checkerboard to the grid of detected corners in the image plane. These functions need to know the camera matrix and the distortion coefficients in advance. TAs a main feature of the solvePnPRansac function, is that it uses a RANdom SAmple Consensus (RANSAC) method to minimize the error between correspondence points. Both functions can use the following methods to solve the PnP problem:
+As seen in \ref{alg:algPOSE}, solution to the Perspective-N-Point problem is solved by the OpenCV solvepnp() or solvePnPRansac() functions. Both methods solved the problem by matching a predefined grid of corner locations in the checkerboard to the grid of detected corners in the image plane. These functions need to know the camera matrix and the distortion coefficients in advance. A main feature of the solvePnPRansac function, is that it uses a RANdom SAmple Consensus (RANSAC) method to minimize the error between correspondence points. Both functions can use the following methods to solve the PnP problem:
 
 \begin{itemize}
 \item $CV \textunderscore ITERATIVE (default).$
@@ -143,7 +143,7 @@ As seen in the \ref{alg:algPOSE} the solution to the Perspective-N-Point problem
 \item $CV \textunderscore EPNP.$
 \end{itemize}
 
-In this thesis, the default one is used. The function outputs a translation and rotation of the object in the camera coordinate system. The rotation is given as 3x1 Rodrigues rotation vector. This later is converted first
+In this thesis, the default one is used. The function outputs a translation and rotation of the object in the camera coordinate system. The rotation is given as $3\times1$ Rodrigues rotation vector. This later is converted first
 into a rotation matrix, then to a quaternion which is the
 standard representation for rotation in ROS. The resulting transformation is published over ROS network for subsequent use. A projection of 3D points expressed in world frame onto the 2D image plane is shown in Figure \ref{fig:target3}. For more details about the solution Perspective-n-point(PnP) refer to \cite{pnp}
 
@@ -159,7 +159,7 @@ standard representation for rotation in ROS. The resulting transformation is pub
 
 
 \subsection{Coordinate Transformation From Robot Base To Camera Frame}
-From the rigid transformation theory described in \ref{rigidtf0}, the orientation and translation calculated in \ref{pose1}, can be represented in a 4x4 matrix by employing homogenous coordinates as follows:
+From the rigid transformation theory described in \ref{rigidtf0}, the orientation and translation calculated in \ref{pose1}, can be represented in a $4\times4$ matrix by employing homogeneous coordinates as follows:
 
 \begin{equation}
 \begin{pmatrix}
@@ -169,20 +169,20 @@ R & t \\ \label{t}
 \end{equation}
 \\
 Eq. \ref{t} is called the Euclidean transformation, also known as transform. Where $R \in \mathbb{R}^{3}$ is the rotation matrix and $t \in \mathbb{R}^{3}$ is the translation vector, altogether representing the pose of the camera frame relative to the calibration target frame.\\
-It is assumed that the transform between the end-effector(or tool centre point) and the robot base, $ ^{R}T_{TCP}$, is known from the forward kinematics of the robot. In addition to that, the transform from the end-effector frame relative to the calibration target frame, $ ^{TCP}T_{T}$, was defined according to our need when the custom-made plate, Figure \ref{fig:target3}, was designed.
+It is assumed that the transform between the end-effector (or tool centre point) and the robot base, $ ^{R}T_{TCP}$, is known from the forward kinematics of the robot. In addition to that, the transform from the end-effector frame relative to the calibration target frame, $ ^{TCP}T_{T}$, was defined according to our need when the custom-made plate, Figure \ref{fig:target3}, was designed.
 
 Since the transform tree is already made, we can retrieve the pose of the camera relative to the robot base frame as follow:
 
 \begin{equation}
 ^{R}T_{C}= ^{R}T_{TCP} \cdot ^{TCP}T_{T} \cdot ^{T}T_{C}\label{t4}
 \end{equation}
-In Eq. \ref{t4}, $^{R}T_{C}$ represents the transform from the camera frame relative to the robot base frame. Since the whole system is based on the Robot Operative System (ROS), which is due to its modular design and available integration for a large amount of robot and sensory device, the pose of the camera frame relative the base frame can be also found with the help of tf-ROS package. In Figure \ref{fig:tf6}, $^{R}T_{C}$ is shown calculated by software mean. 
+In Eq. \ref{t4}, $^{R}T_{C}$ represents the transform from the camera frame relative to the robot base frame. Since the whole system is based on the Robot Operative System (ROS), which is due to its modular design and available integration for a large amount of robot and sensory device, the pose of the camera frame relative to the base frame can be also found with the help of ROS package tf. In Figure \ref{fig:tf6}, $^{R}T_{C}$ is shown calculated by software mean. 
 
 
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=4in]{figures03/rviz1.png}
-\caption{Right: Visualization of the transform (camera and target) relative to the robot base frame using ROS Rviz package. Left: Show an image used in the camera pose estimation.}
+\caption{Left: Visualization of the transform (camera and target) relative to the robot base frame using ROS Rviz package. Right: Show an image used in the camera pose estimation.}
 \label{fig:tf6}
 \end{center}
 \end{figure}

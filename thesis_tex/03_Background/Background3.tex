@@ -13,7 +13,7 @@ A rigid transformation also called Euclidean transformation is a geometric trans
  g(v)=R \cdot v + t, R \in \mathbb{R}^{3}
 \end{equation}
 
-A rigid transformation can be represented by using 4x4 matrices by employing homogenous coordinates as follows:
+A rigid transformation can be represented by using $4\times4$ matrices by employing homogenous coordinates as follows:
 $$
 \begin{pmatrix}
 R & t \\
@@ -36,7 +36,7 @@ $$
 \item $a \cdot b=b \cdot c=c \cdot a=0 $ The columns are mutually orthogonal
 \end{itemize}
 \subsection{Rotation Matrices}
-The matrix R, a set of 3x3 matrices with the following properties, plus the operation of matrix multiplication forms a group called SO(3) which stands for special orthogonal group $\in \mathbb{R}^{3} $
+The matrix R, a set of $3\times3$ matrices with the following properties, plus the operation of matrix multiplication forms a group called SO(3) which stands for special orthogonal group $\in \mathbb{R}^{3} $
 
 $R=(a\,  b\,  c), \, a,b,c \in \mathbb{R}^{3}$ is a rotation matrix for $\mathbb{R}^{3}$ iff
 \begin{itemize}
@@ -46,7 +46,7 @@ $R=(a\,  b\,  c), \, a,b,c \in \mathbb{R}^{3}$ is a rotation matrix for $\mathbb
 
 \subsubsection{Rotation Representations}
 \begin{itemize}
-\item A rotation can be expressed as a 3x3 matrix $R \in SO(3)$  where $R^{T} \cdot R= R \cdot R^{T} =I$ and $det(R)=1$
+\item A rotation can be expressed as a $3\times3$ matrix $R \in SO(3)$  where $R^{T} \cdot R= R \cdot R^{T} =I$ and $det(R)=1$
 
 \item A rotation can also be expressed in terms of an angle $\theta$  and an axis $\hat{\omega} \in \mathbb{R}^{3}$ where $\|\hat{\omega}\|=1$. It can relate to the matrix form via the Rodrigues formula.
 $$R=exp(\theta J(\omega))=I+\sin \theta J(\omega)+(1-\cos \theta)J(\hat{\omega})^{2}$$
@@ -152,7 +152,7 @@ Images coordinates are measured in pixels, normally with the origin in the left 
 
 \subsection{Camera's Extrinsic Parameters}
 
-The transformation between the world coordinate system and the camera coordinate system is achieved be a rotation and a translation. The translation is represented by a vector $t \in \textbf{R}^{3}$ and the rotation by a 3x3 orthogonal matrix \textbf{R}. So $\textbf{R}$ represents a rotation matrix, and it must satisfy the following properties:
+The transformation between the world coordinate system and the camera coordinate system is achieved be a rotation and a translation. The translation is represented by a vector $t \in \textbf{R}^{3}$ and the rotation by a $3\times3$ orthogonal matrix \textbf{R}. So $\textbf{R}$ represents a rotation matrix, and it must satisfy the following properties:
 
 \begin{equation}\label{eq3} 
      det(\textbf{R})=1 
