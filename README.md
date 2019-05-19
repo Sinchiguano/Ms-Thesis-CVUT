@@ -15,10 +15,11 @@ The system uses FPFH (Fast Point Feature Histogram) for describing the local reg
 In contrast to several approaches those whose rely on Point Pair Features as feature descriptors and a geometry hashing, e.g. voting-scheme as the matching process.
 
 ## Requirements
-In order to use the yumi_main package for Eye_To_Hand calibration and the 3D pose estimation pipeline the following dependencies have to bo met:
 
-The  release has been tested on Linux Ubuntu 16.04 with
+In order to use the yumi_main package where the Eye_To_Hand calibration and the 3D object pose estimation system are developed, the following dependencies have to bo met:
 
+ * Linux Ubuntu 16.04 with
+ * [ROS Kinetic Kame](http://wiki.ros.org/kinetic/Installation)
  * Python 2.7.6, 3.4.0, 3.5.2
  * pcl 1.7.0
  * Cython <= 0.25.2
