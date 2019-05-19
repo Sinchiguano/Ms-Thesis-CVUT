@@ -18,7 +18,7 @@ In contrast to several approaches those whose rely on Point Pair Features as fea
 
 In order to use the yumi_main package where the Eye_To_Hand calibration and the 3D object pose estimation system are developed, the following dependencies have to bo met:
 
- * Linux Ubuntu 16.04 with
+ * Linux Ubuntu 16.04 
  * [ROS Kinetic Kame](http://wiki.ros.org/kinetic/Installation)
  * Python 2.7.6, 3.4.0, 3.5.2
  * pcl 1.7.0
