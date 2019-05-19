@@ -22,14 +22,13 @@
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Astra Camera}}}{6}{subfigure.1.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {RealSense Camera}}}{6}{subfigure.1.2}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Overview of a point cloud (from MathWorks documentation)\relax }}{7}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces View of a Pinhole camera geometry (from Camera Calibration and 3D Reconstruction, openCV)\relax }}{8}{figure.3.3}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces View of a pinhole camera geometry (from Camera Calibration and 3D Reconstruction, OpenCV)\relax }}{8}{figure.3.3}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Overview of the transformation between the focal plane and the image plane\relax }}{8}{figure.3.4}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Overview of a world coordinate system and camera coordinate system\relax }}{9}{figure.3.5}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces A ROS Overview\relax }}{10}{figure.3.6}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces An example of the PCL implementation pipeline for Fast Point Feature Histogram (FPFH) \cite {fpfh} estimation.\relax }}{11}{figure.3.7}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces CloudCompare (view, edit and process).\relax }}{12}{figure.3.8}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces MeshLab (view, edit and process).\relax }}{13}{figure.3.9}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces A view of the FreeCAD interface.\relax }}{13}{figure.3.10}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces CloudCompare (view, edit and process).\relax }}{12}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces MeshLab (view, edit and process).\relax }}{12}{figure.3.8}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces A view of the FreeCAD interface.\relax }}{13}{figure.3.9}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Overview of the camera pose estimation system. The system estimates the pose of the camera frame relative to the world frame(also known as robot base frame). Image from \cite {autCAL}.\relax }}{16}{figure.4.1}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Overview of the intrinsic calibration based on industrial calibration ROS package with a 6X9 checkerboard calibration target\relax }}{17}{figure.4.2}

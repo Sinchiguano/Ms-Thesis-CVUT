@@ -44,9 +44,9 @@
 \contentsline {section}{\numberline {3.4}Open-source Libraries}{10}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}PCL}{10}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Open3D}{11}{subsection.3.4.2}
-\contentsline {section}{\numberline {3.5}Software tools}{12}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}CloudCompare}{12}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}MeshLab}{12}{subsection.3.5.2}
+\contentsline {section}{\numberline {3.5}Software tools}{11}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}CloudCompare}{11}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}MeshLab}{11}{subsection.3.5.2}
 \contentsline {subsection}{\numberline {3.5.3}FreeCAD}{12}{subsection.3.5.3}
 \contentsline {chapter}{\numberline {4}Robot-Camera Calibration}{15}{chapter.4}
 \contentsline {section}{\numberline {4.1}Camera Calibration}{15}{section.4.1}
