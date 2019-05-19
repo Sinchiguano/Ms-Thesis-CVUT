@@ -25,7 +25,7 @@ In order to use the yumi_main package where the Eye_To_Hand calibration and the 
  * Cython <= 0.25.2
  * [YuMi Python Interface](https://github.com/BerkeleyAutomation/yumipy)
 
-### Step-by-Step Calibration
+### Step-by-Step Eye-To-Hand Calibration
 
 A typical use case consists of the following steps (here using ROS kinetic):
 
