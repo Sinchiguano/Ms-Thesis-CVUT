@@ -2,129 +2,129 @@
 \chapter{Experimental Results}
 \label{chap:exp}
 
-This chapter presents the experiments and the results when it comes to the evaluation of the following methods: a proposed robot-camera calibration method and the 3D object pose estimation method. As to the robot-camera calibration method, the internal parameters of the camera need to be estimated. Methods for estimating the internal parameters, also known as intrinsic parameters of the camera already exists and two of the most popular methods available in the open source community were selected. A detailed description of these methods is in \ref{chap:robot}. In order to validate the output of the intrinsic parameters, a reprojection error as a metric is selected in this thesis. Then, with the most accurate internal parameters, the camera-robot calibration proceeds. A repeatability test, a validation test, for the result of the robot-camera calibration follows the calibration step. Finally, with the most accurate result of the robot-camera calibration, experiments for testing the 3D pose estimation system starts. For the purpose of testing, an industrial object is required as well as its CAD model. The latter is accomplished with the use of the FreeCAD software \ref{freecadb}, then, a suitable scaling undergoes with the use of CluodCompare software \ref{cloudcompareb}, where a point cloud is generated. As to the validation of the method, a ground truth of the object needs to be known in advance. For such a requirement a checkboard is used as described in Figure \ref{setupsystem1} and Figure \ref{setupsystem2}. By placing the robot TCP at specific points (three points in totally), the checkerboard can be localized and a new workspace is produced. The system is evaluated by analyzing the translation and rotation errors.\\
-The checkboard workspace is used for a rough estimation of the object's pose which is compared with the 3D object pose estimation system described in \ref{chap:theo}.  
+This chapter presents the experiments and the results for the evaluation of the following methods: a proposed robot-camera calibration method and the 3D object pose estimation method. As to the robot-camera calibration method, the internal parameters of the camera need to be estimated. Methods for estimating the internal parameters, also known as intrinsic parameters of the camera already exists and two of the most popular methods available in the open-source community were selected. A detailed description of these methods is in Chapter \ref{chap:robot}. In order to validate the output of the intrinsic parameters, a reprojection error as a metric is selected in this thesis. Then, with the most accurate internal parameters, the camera-robot calibration proceeds. A repeatability test, as a validation test for the result of the robot-camera calibration follows the calibration step. Finally, with the most accurate result of the robot-camera calibration, experiments for testing the 3D pose estimation system starts. For the purpose of testing, an industrial object is required as well as its CAD model. The latter is accomplished with the use of the FreeCAD software \ref{freecadb}, then, a suitable scaling undergoes with the use of CloudCompare software \ref{cloudcompareb}, where a point cloud is generated. As to the validation of the method, a ground truth of the object needs to be known in advance. For such a requirement a checkerboard is used as described in Figure \ref{setupsystem1} and Figure \ref{setupsystem2}. By placing the robot TCP at specific points (three points in total), the checkerboard can be localized and a new workobject is produced. The checkboard workspace is used for a rough estimation of the object's pose which is compared with the 3D object pose estimation system described in Chapter \ref{chap:theo}. The system is evaluated by analyzing the translation and rotation errors. 
 
 
-\section{Robot-Camera Calibration on the Yumi robot}
+\section{Robot-Camera Calibration on the YuMi Robot}
 
-In order to get the best and most accurate estimation of the robot-camera pose, careful attention must be given to the internal parameters of the camera. Which is a determining factor when determining the accuracy of the extrinsic parameters. For such estimation of those parameters, two methods were selected and a detailed description of both is shown in \ref{chap:robot}. A Astra camera and a RealSense camera are used in this thesis. The cameras are calibrated with the methods previously mention and their results are shown in \ref{------------------------------}. As to the validation process, a reprojection error is used. Since it is one of the most used metrics,  it is used in this thesis. 
+In order to get the most accurate estimation of the robot-camera pose, careful attention must be given to the internal parameters of the camera which is a determining factor when determining the accuracy of the extrinsic parameters. For such estimation of those parameters, two methods were selected and a detailed description of both is shown in Chapter \ref{chap:robot}. An Astra camera and a RealSense camera are used in this thesis. The cameras are calibrated with the methods previously mentioned and their results are shown in \ref{------------------------------}. As to the validation process, a reprojection error is used. Since it is one of the most used metrics,  it is used in this thesis. 
 
 \subsection{Reprojection Error}
 
-The reprojection error is the distance between a pattern keypoint detected in a calibration image and a corresponding world point projected into the same image. Figure \ref{fig:realopen} and Figure \ref{fig:realros} show the calibration results by analyzing the reprojection error per image using a RealSense camera with the OpenCV and camera \textunderscore industrial calibration methods. Figure \ref{fig:astraopen} and Figure \ref{fig:astraros} show the calibration results for the Astra camera. The result were analyzed using the reprojection error per image with both methods: the OpenCV and camera \textunderscore industrial calibration.
+The reprojection error is the distance between a pattern keypoint detected in a calibration image and a corresponding world point projected into the same image. Figure \ref{fig:realopen} and Figure \ref{fig:realros} show the calibration results by analyzing the reprojection error per image using a RealSense camera with the OpenCV and camera\textunderscore industrial calibration methods. Figure \ref{fig:astraopen} and Figure \ref{fig:astraros} show the calibration results by analyzing the reprojection error per image using an Astra camera. The results were analyzed using the reprojection error per image with both methods: the OpenCV and camera\textunderscore industrial calibration.
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=5in, height=3.5in]{figures05/ros_int_cal_astra.png}
-\caption{Mean Reprojection Error per image with a ROS method (Astra Orbbec Camera)}%\cite{temp2}}
+\includegraphics[width=5in, height=3.5in]{figures05/int/ros_int_cal_astra.png}
+\caption{Mean Reprojection Error per Image with the ROS Method (Astra Orbbec Camera)}%\cite{temp2}}
 \label{fig:astraros}
 \end{center}
 \end{figure}
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=5in, height=3.5in]{figures05/ros_int_cal_real.png}
-\caption{Mean Reprojection Error per image with a ROS method (RealSense D-435)}%\cite{temp2}}
+\includegraphics[width=5in, height=3.5in]{figures05/int/ros_int_cal_real.png}
+\caption{Mean Reprojection Error per Image with the ROS Method (RealSense D-435)}%\cite{temp2}}
 \label{fig:realros}
 \end{center}
 \end{figure}
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=5in, height=3.5in]{figures05/opencv_int_cal_astra.png}
-\caption{Mean Reprojection Error per image with a OpenCV method (Astra Orbbec Camera)}%\cite{temp2}}
+\includegraphics[width=5in, height=3.5in]{figures05/int/opencv_int_cal_astra.png}
+\caption{Mean Reprojection Error per Image with the OpenCV Method (Astra Orbbec Camera)}%\cite{temp2}}
 \label{fig:astraopen}
 \end{center}
 \end{figure}
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=5in, height=3.5in]{figures05/opencv_int_cal_real.png}
-\caption{Mean Reprojection Error per image with a OpenCV method (RealSense D-435)}%\cite{temp2}}
+\includegraphics[width=5in, height=3.5in]{figures05/int/opencv_int_cal_real.png}
+\caption{Mean Reprojection Error per Image with the OpenCV Method (RealSense D-435)}%\cite{temp2}}
 \label{fig:realopen}
 \end{center}
 \end{figure}
 
-In order to discuss the results for each case, an average error is calculated for each case. This is done from computing the arithmetical mean of the errors calculated for all the calibration images. And that result should be as close to zero as possible according to the literature in computer vision.
+In order to discuss the results for each case, an average error is calculated. This is done by computing the arithmetical mean of the errors calculated for all the calibration images. And that result should be as close to zero as possible according to the literature in computer vision.
 
 \subsection{Result Analysis}
 After computing the average error for both cameras, the results are shown in Table \ref{astra1} for the Astra camera and Table \ref{real1} which is for the RealSense D-435.\\
- As seen in Figures, the overall mean error of the Astra camera is closely correlated. The reprojection error was obtained from OpenCV and camera \textunderscore industrial calibration, which showed very similar figures with only a small offset. But that difference is acceptable. The requirement is to be under the 0.5 pixels, a specified value accepted as determining how accurate a device sensor is. \\
-On the other hand, the results for the RealSense camera are not as closely correlated. The sensor might be more sensitive to changes in the calibration target resulting in taking wrong measurements. In addition to that, the light condition can also affect the sensory device since the data taken is an RGB image. Such a difference presented in the mean reprojection error can largely affect the output accuracy of the estimation of the camera frame relative to the robot frame by applying the eye-to-hand calibration. In order to confirm that this difference holds we proceeded to take new measurements, without moving the calibration target when the sensory device is taking its sample. Then the whole process is evaluated again. The difference holds between methods, but meet the requirements of being under the 0,5 pixels. With the results it is too early to conclude the effectiveness of the RealSense camera. Keeping this difference in mind, we proceed with the next experiment for validating the robot-camera calibration.  \\
+ As seen in Figure \ref{fig:astraros} and Figure \ref{fig:astraopen}, the overall mean errors of the Astra camera computed for both method are correlated to each other. The reprojection error was obtained from OpenCV and camera\textunderscore industrial calibration, which showed very similar figures with only a small offset. But that difference is acceptable. The requirement is to be under 0.5 pixels, a specified value accepted as determining how accurate a device sensor is. \\
+ 
+On the other hand, the results for the RealSense camera are not as closely correlated to one another method. The sensor might be more sensitive to small movement in the calibration target resulting in taking wrong measurements. In addition to that, the light condition can also affect the sensory device since the data taken is an RGB image. Such a difference presented in the mean reprojection error can largely affect the output accuracy of the estimation of the camera frame relative to the robot frame by applying the eye-to-hand calibration. In order to confirm that this difference holds we proceeded to take new measurements, without moving the calibration target when the sensory device is taking its sample. Then the whole process is evaluated again. The difference holds between methods, but meet the requirements of being under 0.5 pixels. With the results it is too early to conclude the effectiveness of the RealSense camera. Keeping this difference in mind, we proceed with the next experiment for validating the robot-camera calibration.  \\
 Both cameras were calibrated with the same light conditions, calibration target and an equal number of images. Considering all of this, it can be concluded that the Astra camera seems to perform well and it can be our final choice for the pose estimation system evaluation. 
 
 \begin{table}[ht]
 \renewcommand{\arraystretch}{1.3}
-\caption{Experiment data for internal Astra sensor calibration.}
+\caption{Experimental data for internal Astra sensor calibration.}
 \label{astra1}
 \centering
 \begin{tabular}{|c||c|}
 \hline
-Method & Overall Mean Error\\
+Method & Overall Mean Error (pixels)\\
 \hline
 OpenCV &  0.1041954808\\
 \hline
 ROS &  0.1081118023\\
-\hline
 \hline
 \end{tabular}
 \end{table}
 
 \begin{table}[ht]
 \renewcommand{\arraystretch}{1.3}
-\caption{Experiment data for internal RealSense sensor calibration.}
+\caption{Experimental data for internal RealSense sensor calibration.}
 \label{real1}
 \centering
 \begin{tabular}{|c||c|}
 \hline
-Method & Overall Mean Error\\
+Method & Overall Mean Error (pixels)\\
 \hline
 OpenCV &  0.1684388411\\
 \hline
 ROS &  0.122868849\\
-\hline
 \hline
 \end{tabular}
 \end{table}
 
 \subsection{Eye-To-Hand Calibration}
 
-The second experiment in this chapter is related to the eye-to-hand calibration. In this experiment, both cameras, the Astra and RealSense, are used for the validation test. Since the quality of the extrinsic calibration depends on how good the estimation of the internal parameters is, we proceed with taking the most accurate internal parameters based on the reprojection error as described previously, where the less reprojection error the camera has, the more accurate the camera is. \\
-By defining the best internal parameters, the validation test is divided into two types. In the first part of the experiment. The calibration plate with a checkerboard placed on it as described in \ref{chap:robot} is kept at a constant angle, parallel to the XY plane of the robot coordinate system. Figure \ref{setupext} shows the basic setup for the extrinsic calibration with a constant orientation parallel to the XY plane of the robot. The whole process includes movements with a small offset between every pose of the TCP (Tool Center Point). The joint configuration values for each pose is known in advance. Each pose guarantees that the checkerboard is detected by the robot. Basically, the robot executes a translation of the of the calibration target around the XY plane of itself.\\ 
+The second experiment in this chapter is related to the eye-to-hand calibration. In this experiment, both cameras, the Astra and RealSense, are used for the validation test. Since the quality of the extrinsic calibration depends on how good the estimation of the internal parameters is, we proceed with taking the most accurate internal parameters based on the reprojection error as described previously. \\
+By defining the best internal parameters, the validation test is divided into two types. In the first part of the experiment, the calibration plate with a checkerboard placed on it as described in Chapter \ref{chap:robot} is kept at a constant angle, parallel to the XY plane of the robot coordinate system. Figure \ref{setupext} shows the basic setup for the extrinsic calibration with a constant orientation parallel to the XY plane of the robot. The whole process includes movements with a small offset between every pose of the TCP (Tool Center Point). The joint configuration values for each pose is known in advance. Each pose guarantees that the checkerboard is detected by the robot. Basically, the robot executes a translation of the calibration target in its XY plane.\\ 
 
-As to the second part of the experiment, the calibration plate is not kept at  a constant angle, but is tilted with predefined orientations provided that the checkboard is always detected by the camera. After defining the type of movement, several criteria for obtaining a reasonable estimation of the camera relative to the robot frame are taken into account. One of the considerations is to pause for few seconds among the movements. This is with the aim to cancel the effects of possible vibrations that the robot can produce, in an attempt to avoid wrong measurement throughout the extrinsic calibration process. Another consideration is related to speed. A reasonable speed of $25\%$ is set for the validation test. \\
+As to the second part of the experiment, the calibration plate is not kept at  a constant angle, but is tilted with predefined orientations provided that the checkerboard is always detected by the camera. After defining the type of movement, several criteria for obtaining a reasonable estimation of the camera relative to the robot frame are taken into account. One of the considerations is to pause for few seconds among the movements. This is with the aim to cancel the effects of possible vibrations that the robot can produce, in an attempt to avoid wrong measurement throughout the extrinsic calibration process. Another consideration is related to speed. A reasonable speed of $25\%$ is set for the validation test. \\
 
-With the types of experiments and the main criterias to consider for each one known in advance, the execution of the robot movement can be started. To be able to control the robot arm, interface one of each camera in each test, and estimate the pose of the camera relative to the robot base, three nodes were developed as described in \ref{chap:robot}. The node named $publishingTF.py$ is responsible for controlling the robot movement and publishing the transformation from the robot frame to TCP (Tool Center Point) frame into the ROS network (tf topic to be specific). \\
-The second node named $target\textunderscore locator \textunderscore astra.py$ or $target\textunderscore locator \textunderscore rsense.py$  which depends on the camera used, is responsible  for computing the estimation of the camera pose relative to the calibration target (checkerboard) frame. In addition to that, it broadcasts the estimation of camera pose into the ROS network. A third node named $listeningTF.py$ is responsible for keeping track of all the coordinate frames over time, and querying for the transformation of the camera frame relative to the robot frame, as well as the computation of the average of the transformation it queries after each executed robot move. 
-
+With the types of experiments and the main criteria to consider for each one known in advance, the execution of the robot movement can be started. To be able to control the robot arm, interface one of each camera in each test, and estimate the pose of the camera relative to the robot base, three nodes were developed as described in Chapter \ref{chap:robot}. The node named $publishingTF.py$ is responsible for controlling the robot movement and publishing the transformation from the robot frame to TCP (Tool Center Point) frame into the ROS network (tf topic to be specific). \\
+The second node named $target\textunderscore locator \textunderscore astra.py$ or $target\textunderscore locator \textunderscore rsense.py$  which depends on the camera used, is responsible  for computing the estimation of the camera pose relative to the calibration target (checkerboard) frame. In addition to that, it broadcasts the estimation of camera pose into the ROS network. A third node named $listeningTF.py$ is responsible for keeping track of all the coordinate frames over time, and querying for the transformation of the camera frame relative to the robot frame.
+\iffalse
+, as well as the computation of the average of the transformation it queries after each executed robot move. 
+\fi
 \subsection{Calibration results}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% astra 
 \begin{itemize}
 \item The following eye-to-hand transform was obtained for the Astra Camera with the calibration plate parallel to the XY plane in robot frame:
 \begin{equation}
-^{R}T_{C}=\begin{bmatrix} -2.26051005e-02 & 7.30112611e-01 & -6.82952842e-01 & 1.19260379\\9.99481127e-01 & 8.25583772e-04 & -3.21992981e-02 & 0.12098781\\ -2.29452788e-02 & -6.83326345e-01 & -7.29752438e-01 & 0.53569317 \end{bmatrix}
+^{R}T_{C}=\begin{bmatrix} -2.260e-02 & 7.301e-01 & -6.829e-01 & 1.192\\9.995e-01 & 8.256e-04 & -3.219e-02 & 0.121\\ -2.295e-02 & -6.833e-01 & -7.298e-01 & 0.536 \end{bmatrix}
 \end{equation}
 
 \item The following eye-to-hand transform was obtained for the Astra Camera by tilting the calibration plate:
 \begin{equation}
-^{R}T_{C}=\begin{bmatrix} -0.01440125 & 0.72431469 & -0.68931911 & 1.19518608\\0.99970886 & -0.00291747 & -0.02395149 & 0.11374275\\ -0.01935949 & -0.68946336 & -0.7240618 & 0.53606583 \end{bmatrix}
+^{R}T_{C}=\begin{bmatrix} -0.014 & 0.724 & -0.689 & 1.195\\0.999 & -0.003 & -0.024 & 0.114\\ -0.019 & -0.689 & -0.724 & 0.536 \end{bmatrix}
 \end{equation}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% realsense
 
 \item The following eye-to-hand transform was obtained for the RealSense D-435 camera with the calibration plate parallel to the XY plane in robot frame:
 \begin{equation}
-^{R}T_{C}=\begin{bmatrix} -2.23312402e-02 & 2.94145863e-01 & -9.55499622e-01 &1.22253213\\9.99723971e-01 & -4.09078692e-04 & -2.34907523e-02 & 0.11776472 \\ -7.30058216e-03 & -9.55760453e-01 & -2.94055535e-01 & 0.32424239  \end{bmatrix}
+^{R}T_{C}=\begin{bmatrix} -2.233e-02 & 2.941e-01 & -9.555e-01 &1.223\\9.997e-01 & -4.091e-04 & -2.349e-02 & 0.118 \\ -7.301e-03 & -9.558e-01 & -2.941e-01 & 0.324  \end{bmatrix}
 \end{equation}
 
 \item The following eye-to-hand transform was obtained for the RealSense D-435 camera by tilting the calibration plate:
 \begin{equation}
-^{R}T_{C}=\begin{bmatrix} -0.01833338  0.30085851 -0.95349255 & 1.21972025\\0.99978158 -0.00405373 -0.02050249& 0.09386797\\ -0.01003355 -0.95366017 -0.30071848& 0.33192816\end{bmatrix}
+^{R}T_{C}=\begin{bmatrix} -0.0183  0.309 -0.953 & 1.219\\0.999 -0.004 -0.020& 0.094\\ -0.010 -0.953 -0.301& 0.332\end{bmatrix}
 \end{equation}
 \end{itemize}
 

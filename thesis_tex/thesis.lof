@@ -40,21 +40,20 @@
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Left: Visualization of the transform (camera and target) relative to the robot base frame using ROS Rviz package. Right: Show an image used in the camera pose estimation.\relax }}{22}{figure.4.8}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces General architecture of proposed pose estimation pipeline\relax }}{24}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Flow Chart of Point Cloud Processing For Filtering Outliars\relax }}{25}{figure.5.2}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Flow Chart of Point Cloud Processing For Filtering Outliar\relax }}{25}{figure.5.2}
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Flow Chart of Point Cloud Processing For Plane Segmentation\relax }}{26}{figure.5.3}
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Left to Right: Input Image, Output after voxelGrid\relax }}{27}{figure.5.4}
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Flow Chart of Point Cloud Processing For Keypoints detection\relax }}{27}{figure.5.5}
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Flow Chart of Point Cloud Processing For Plane Segmentation\relax }}{27}{figure.5.6}
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Flow Chart of Point Cloud Processing For Feature Detection\relax }}{28}{figure.5.7}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces The influence region diagram for a Fast Point Feature Histogram. \cite {algFpfh}\relax }}{29}{figure.5.8}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Flow Chart of Point Cloud Processing For Finding Correspondence\relax }}{30}{figure.5.9}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Flow Chart of The Pose Estimation Pipeline\relax }}{31}{figure.5.10}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Flow Chart of Point Cloud Processing For Finding Correspondence\relax }}{30}{figure.5.8}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Flow Chart of The Pose Estimation Pipeline\relax }}{31}{figure.5.9}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Mean Reprojection Error per image with a ROS method (Astra Orbbec Camera)\relax }}{34}{figure.6.1}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Mean Reprojection Error per image with a ROS method (RealSense D-435)\relax }}{35}{figure.6.2}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Mean Reprojection Error per image with a OpenCV method (Astra Orbbec Camera)\relax }}{35}{figure.6.3}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Mean Reprojection Error per image with a OpenCV method (RealSense D-435)\relax }}{36}{figure.6.4}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Ground Truth vs Pose Estimation: x-axis (1st Experiment)\relax }}{43}{figure.6.5}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Mean Reprojection Error per Image with the ROS Method (Astra Orbbec Camera)\relax }}{34}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Mean Reprojection Error per Image with the ROS Method (RealSense D-435)\relax }}{35}{figure.6.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Mean Reprojection Error per Image with the OpenCV Method (Astra Orbbec Camera)\relax }}{35}{figure.6.3}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Mean Reprojection Error per Image with the OpenCV Method (RealSense D-435)\relax }}{36}{figure.6.4}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Ground Truth vs Pose Estimation: x-axis (1st Experiment)\relax }}{42}{figure.6.5}
 \contentsline {figure}{\numberline {6.6}{\ignorespaces Ground Truth vs Pose Estimation: y-axis (1st Experiment)\relax }}{43}{figure.6.6}
 \contentsline {figure}{\numberline {6.7}{\ignorespaces Ground Truth vs Pose Estimation: yaw angle (1st Experiment)\relax }}{44}{figure.6.7}
 \contentsline {figure}{\numberline {6.8}{\ignorespaces Ground Truth vs Pose Estimation: x-axis (2nd Experiment)\relax }}{44}{figure.6.8}
