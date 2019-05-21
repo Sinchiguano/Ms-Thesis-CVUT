@@ -88,8 +88,8 @@
 \contentsline {subsection}{\numberline {6.1.4}Calibration results}{38}{subsection.6.1.4}
 \contentsline {subsection}{\numberline {6.1.5}Result Analysis}{39}{subsection.6.1.5}
 \contentsline {section}{\numberline {6.2}Pose Estimation Pipeline}{40}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Validation Test}{40}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Pose Estimation Results}{41}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.1}Validation Test}{41}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Pose Estimation Results}{42}{subsection.6.2.2}
 \contentsline {subsection}{\numberline {6.2.3}Result Analysis}{42}{subsection.6.2.3}
 \contentsline {chapter}{\numberline {7}Future Work}{49}{chapter.7}
 \contentsline {chapter}{\numberline {8}Conclusions}{51}{chapter.8}
