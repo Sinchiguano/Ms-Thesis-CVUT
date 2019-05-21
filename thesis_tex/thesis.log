@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.3.25)  21 MAY 2019 21:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.3.25)  21 MAY 2019 22:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2714,15 +2714,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 127.
  (./thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 127.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 127.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 5F2AC98BD8C6CCB40785B4E96C5FE1BB;4386.
 
-
-Package rerunfilecheck Warning: File `thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: B9C34F9A1C5D6C321BC9C34D563936DE;4387
-(rerunfilecheck)             After:  5F2AC98BD8C6CCB40785B4E96C5FE1BB;4386.
 
 LaTeX Warning: There were undefined references.
 
@@ -2734,7 +2728,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 127.
 Here is how much of TeX's memory you used:
  21757 strings out of 493029
  378887 string characters out of 6136234
- 501872 words of memory out of 5000000
+ 501871 words of memory out of 5000000
  24373 multiletter control sequences out of 15000+600000
  119005 words of font info for 158 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2754,7 +2748,7 @@ exmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/l
 msy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (83 pages, 18962615 bytes).
+Output written on thesis.pdf (83 pages, 18962611 bytes).
 PDF statistics:
  1406 PDF objects out of 1440 (max. 8388607)
  1152 compressed objects within 12 object streams
