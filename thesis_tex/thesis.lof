@@ -53,12 +53,12 @@
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Mean Reprojection Error per Image with the ROS Method (RealSense D-435)\relax }}{35}{figure.6.2}
 \contentsline {figure}{\numberline {6.3}{\ignorespaces Mean Reprojection Error per Image with the OpenCV Method (Astra Orbbec Camera)\relax }}{35}{figure.6.3}
 \contentsline {figure}{\numberline {6.4}{\ignorespaces Mean Reprojection Error per Image with the OpenCV Method (RealSense D-435)\relax }}{36}{figure.6.4}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Ground Truth vs Pose Estimation: x-axis (1st Experiment)\relax }}{42}{figure.6.5}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Ground Truth vs Pose Estimation: y-axis (1st Experiment)\relax }}{43}{figure.6.6}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Ground Truth vs Pose Estimation: yaw angle (1st Experiment)\relax }}{43}{figure.6.7}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Ground Truth vs Pose Estimation: x-axis (2nd Experiment)\relax }}{44}{figure.6.8}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Ground Truth vs Pose Estimation: y-axis (2nd Experiment)\relax }}{44}{figure.6.9}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Ground Truth vs Pose Estimation: yaw angle (2nd Experiment)\relax }}{45}{figure.6.10}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Ground Truth and Pose Estimation: x-axis ($1^{st}$ Experiment, Astra Camera)\relax }}{42}{figure.6.5}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Ground Truth and Pose Estimation: y-axis ($1^{st}$ Experiment, Astra Camera)\relax }}{43}{figure.6.6}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Ground Truth and Pose Estimation: yaw angle ($1^{st}$ Experiment, Astra Camera)\relax }}{43}{figure.6.7}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Ground Truth and Pose Estimation: x-axis ($2^{nd}$ Experiment, Astra Camera)\relax }}{44}{figure.6.8}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Ground Truth and Pose Estimation: y-axis ($2^{nd}$ Experiment, Astra Camera)\relax }}{44}{figure.6.9}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Ground Truth and Pose Estimation: yaw angle ($2^{nd}$ Experiment, Astra Camera)\relax }}{45}{figure.6.10}
 \contentsline {figure}{\numberline {6.11}{\ignorespaces Absolute Error: x-axis\relax }}{45}{figure.6.11}
 \contentsline {figure}{\numberline {6.12}{\ignorespaces Absolute Error: y-axis\relax }}{46}{figure.6.12}
 \contentsline {figure}{\numberline {6.13}{\ignorespaces Absolute Error: yaw angle\relax }}{46}{figure.6.13}
@@ -67,10 +67,10 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Eye-To-Hand Result with a Constant Orientation of the Calibration Plate(Astra Camera)\relax }}{63}{figure.C.1}
-\contentsline {figure}{\numberline {C.2}{\ignorespaces Eye-To-Hand Result with Tilting Motion of the Calibration Plate(Astra Camera)\relax }}{64}{figure.C.2}
-\contentsline {figure}{\numberline {C.3}{\ignorespaces Eye-To-Hand Result with a Constant Orientation of the Calibration Plate(RealSense)\relax }}{65}{figure.C.3}
-\contentsline {figure}{\numberline {C.4}{\ignorespaces Eye-To-Hand Result with Tilting Motion of the Calibration Plate(RealSense Camera)\relax }}{66}{figure.C.4}
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Eye-To-Hand Result with a Constant Orientation of the Calibration Plate (Astra Camera)\relax }}{63}{figure.C.1}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Eye-To-Hand Result with Tilting Motion of the Calibration Plate (Astra Camera)\relax }}{64}{figure.C.2}
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Eye-To-Hand Result with a Constant Orientation of the Calibration Plate (RealSense)\relax }}{65}{figure.C.3}
+\contentsline {figure}{\numberline {C.4}{\ignorespaces Eye-To-Hand Result with Tilting Motion of the Calibration Plate (RealSense Camera)\relax }}{66}{figure.C.4}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {D.1}{\ignorespaces Overview of the Validation System 1\relax }}{67}{figure.D.1}
 \contentsline {figure}{\numberline {D.2}{\ignorespaces Overview of the Validation System 2\relax }}{68}{figure.D.2}
