@@ -27,6 +27,8 @@ In order to use the yumi_main package where the Eye_To_Hand calibration and the 
 
 ### Step-by-Step: Eye-To-Hand Calibration
 
+![top_page](/tmp/ext1.png)
+![top_page](/tmp/ext2.png)
 A typical use case consists of the following steps (here using ROS kinetic):
 
 * Interface the robot with a terminal computer by executing the following launch file: 
