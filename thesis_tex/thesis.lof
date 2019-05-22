@@ -57,28 +57,26 @@
 \contentsline {figure}{\numberline {6.6}{\ignorespaces Mean Reprojection Error per Image with the OpenCV Method (RealSense D-435)\relax }}{37}{figure.6.6}
 \contentsline {figure}{\numberline {6.7}{\ignorespaces System setup and Visualization in Rviz of the Validation Test with a Constant Orientation.\relax }}{40}{figure.6.7}
 \contentsline {figure}{\numberline {6.8}{\ignorespaces System setup and Visualization in Rviz of the Validation Test with Tilting Motion.\relax }}{41}{figure.6.8}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Ground Truth and Pose Estimation: x-axis ($1^{st}$ Experiment, Astra Camera)\relax }}{45}{figure.6.9}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Ground Truth and Pose Estimation: y-axis ($1^{st}$ Experiment, Astra Camera)\relax }}{46}{figure.6.10}
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Ground Truth and Pose Estimation: yaw angle ($1^{st}$ Experiment, Astra Camera)\relax }}{46}{figure.6.11}
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Ground Truth and Pose Estimation: x-axis ($2^{nd}$ Experiment, Astra Camera)\relax }}{47}{figure.6.12}
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Ground Truth and Pose Estimation: y-axis ($2^{nd}$ Experiment, Astra Camera)\relax }}{47}{figure.6.13}
-\contentsline {figure}{\numberline {6.14}{\ignorespaces Ground Truth and Pose Estimation: yaw angle ($2^{nd}$ Experiment, Astra Camera)\relax }}{48}{figure.6.14}
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Absolute Error: x-axis\relax }}{48}{figure.6.15}
-\contentsline {figure}{\numberline {6.16}{\ignorespaces Absolute Error: y-axis\relax }}{49}{figure.6.16}
-\contentsline {figure}{\numberline {6.17}{\ignorespaces Absolute Error: yaw angle\relax }}{49}{figure.6.17}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces System Setup for the Validation Test \relax }}{44}{figure.6.9}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Ground Truth and Pose Estimation: x-axis ($1^{st}$ Experiment, Astra Camera)\relax }}{46}{figure.6.10}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Ground Truth and Pose Estimation: y-axis ($1^{st}$ Experiment, Astra Camera)\relax }}{46}{figure.6.11}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Ground Truth and Pose Estimation: yaw angle ($1^{st}$ Experiment, Astra Camera)\relax }}{47}{figure.6.12}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Ground Truth and Pose Estimation: x-axis ($2^{nd}$ Experiment, Astra Camera)\relax }}{47}{figure.6.13}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Ground Truth and Pose Estimation: y-axis ($2^{nd}$ Experiment, Astra Camera)\relax }}{48}{figure.6.14}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Ground Truth and Pose Estimation: yaw angle ($2^{nd}$ Experiment, Astra Camera)\relax }}{48}{figure.6.15}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Absolute Error: x-axis\relax }}{49}{figure.6.16}
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Absolute Error: y-axis\relax }}{49}{figure.6.17}
+\contentsline {figure}{\numberline {6.18}{\ignorespaces Absolute Error: yaw angle\relax }}{50}{figure.6.18}
+\contentsline {figure}{\numberline {6.19}{\ignorespaces Point Cloud Sources: CAD model, Astra Camera and RealSense D-435 Camera\relax }}{51}{figure.6.19}
+\contentsline {figure}{\numberline {6.20}{\ignorespaces Ground Truth and Pose Estimation ($2^{nd}$ Experiment, RealSense D-415\relax }}{53}{figure.6.20}
+\contentsline {figure}{\numberline {6.21}{\ignorespaces Overview of the Validation Test: RealSense D-415\relax }}{54}{figure.6.21}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Eye-To-Hand Result with a Constant Orientation of the Calibration Plate (Astra Camera)\relax }}{67}{figure.C.1}
-\contentsline {figure}{\numberline {C.2}{\ignorespaces Eye-To-Hand Result with Tilting Motion of the Calibration Plate (Astra Camera)\relax }}{68}{figure.C.2}
-\contentsline {figure}{\numberline {C.3}{\ignorespaces Eye-To-Hand Result with a Constant Orientation of the Calibration Plate (RealSense)\relax }}{69}{figure.C.3}
-\contentsline {figure}{\numberline {C.4}{\ignorespaces Eye-To-Hand Result with Tilting Motion of the Calibration Plate (RealSense Camera)\relax }}{70}{figure.C.4}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {D.1}{\ignorespaces Point Cloud Sources: CAD model and Astra Camera\relax }}{71}{figure.D.1}
-\contentsline {figure}{\numberline {D.2}{\ignorespaces Point Cloud Sources: RealSense D-435 and RealSense D-415 Cameras\relax }}{72}{figure.D.2}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {E.1}{\ignorespaces Overview of the Validation Test: RealSense D-415\relax }}{73}{figure.E.1}
-\contentsline {figure}{\numberline {E.2}{\ignorespaces Ground Truth and Pose Estimation ($2^{nd}$ Experiment, RealSense D-415\relax }}{74}{figure.E.2}
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Eye-To-Hand Result with a Constant Orientation of the Calibration Plate (Astra Camera)\relax }}{69}{figure.C.1}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Eye-To-Hand Result with Tilting Motion of the Calibration Plate (Astra Camera)\relax }}{70}{figure.C.2}
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Eye-To-Hand Result with a Constant Orientation of the Calibration Plate (RealSense)\relax }}{71}{figure.C.3}
+\contentsline {figure}{\numberline {C.4}{\ignorespaces Eye-To-Hand Result with Tilting Motion of the Calibration Plate (RealSense Camera)\relax }}{72}{figure.C.4}
 \addvspace {10\p@ }

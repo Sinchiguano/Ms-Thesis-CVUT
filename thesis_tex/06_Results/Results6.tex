@@ -209,10 +209,11 @@ given that the housing of the camera (namely the RealSense camera) is rounded
 which makes it hard to get a good measurement from the mounting point to the camera. In addition to that, the orientation and the translation from the sensor to the housing is not known
 is taking into account for this new test. The difference is that the new joint values are taken and saved provided that the checkerboard was detected by the camera used and the number of movements is increased.\\
 \fi
+
 Given the previous condition, the repeatability test was executed. The results are shown in Annex \ref{chap:resultsa}. Standard deviation and mean values are computed from those results. The mean value and standard deviation for the Astra camera are shown in Table \ref{meanastra1} when the orientation of the camera is kept constant. When it comes to the type of experiments where the robot moves with tilting motion, the results are shown in Table \ref{meanastra2}.\\
-From the values, it can be seen that the external parameters differ in the range of 1 [cm] for the x-axis and y-axis. And on the z-axis, a difference of 1 [mm] is reported. It can be concluded that the external parameters for the Astra camera are acceptable.
+From the values, it can be seen that the external parameters differ in the range of \unit[1]{cm} for the x-axis and y-axis. And on the z-axis, a difference of \unit[1] {mm} is reported. It can be concluded that the external parameters for the Astra camera are acceptable.
 As to the RealSense Camera, the standard deviation and mean values are shown in Table \ref{meanreal1} when a constant angle was used. When a tilting angle is applied, the results are shown in Table \ref{meanreal2}.\\
-From the values, it can be seen that the external parameters differ approximately \unit[1]{cm} for the x-axis, 2 [cm] for the y-axis and 1 [cm]  when it comes to vertical displacement.  It can be concluded that the Astra has produced more estable values in the repeatability test compared to the RealSense camera. But a new validation test should be applied. \\
+From the values, it can be seen that the external parameters differ approximately \unit[1]{cm} for the x-axis, \unit[2] {cm} for the y-axis and \unit[1] {cm}  when it comes to vertical displacement.  It can be concluded that the Astra has produced more estable values in the repeatability test compared to the RealSense camera. But a new validation test should be applied. \\
 By doing intrinsic calibration and the eye-to-hand calibration, the next and final validation test takes place for the 3D pose estimation system.
 
 %%%%%%%%%%%%%%%%%%%%%proofreading so far%%%%%%%%%%%%%%%%%%%%
@@ -223,105 +224,39 @@ By doing intrinsic calibration and the eye-to-hand calibration, the next and fin
 \caption{Mean Values and Standard Deviation of the Repeatability Test with a Constant Orientation of the Calibration Plate(Astra Camera).}
 \label{meanastra1}
 \centering
-\begin{tabular}{|c|c|c|c|c|c|c|}
+\begin{tabular}{|c|c|c|}
 \hline
-$x[m]$ & $y[m]$ & $z[m]$ & $q_{x}$ & $q_{y}$ & $q_{z}$ &$q_{\omega}$ \\
+$x[m]$ & $y[m]$ & $z[m]$ \\
 \hline
-1.1926 & 0.1245 & 0.5368& 0.653175&	0.661978&	-0.269761&	-0.249755 \\
+1.1926 & 0.1245 & 0.5368 \\
 \hline
+$\sigma_{x[m]}$ & $\sigma_{y[m]}$ & $\sigma_{z[m]}$ \\
 \hline
-$\sigma_{x[m]}$ & $\sigma_{y[m]}$ & $\sigma_{z[m]}$ & $\sigma_{q_{x}}$ & $\sigma_{q_{y}}$ & $\sigma_{q_{z}}$ &$\sigma_{q_{\omega}}$ \\
-\hline
-0.011012&	0.009877	&0.000906&0.000243&	8.45E-05&	0.000446&	0.000976\\
-\hline
-\end{tabular}
-\end{table}
-
-
-\iffalse
-\begin{table}[ht]
-\renewcommand{\arraystretch}{1.3}
-\caption{Mean Values of the Repeatability Test with a Constant Orientation of the Calibration Plate (Astra Camera).}
-\label{meanastra1}
-\centering
-\begin{tabular}{|c||c||c||c||c||c||c|}
-\hline
-$x[m]$ & $y[m]$ & $z[m]$ & $q_{x}$ & $q_{y}$ & $q_{z}$ &$q_{\omega}$ \\
-\hline
-1.1926 & 0.1245 & 0.5368& 0.653175&	0.661978&	-0.269761&	-0.249755 \\
+0.011012&	0.009877	&0.000906 \\
 \hline
 \end{tabular}
 \end{table}
 
 
-\begin{table}[ht]
-\renewcommand{\arraystretch}{1.3}
-\caption{Standard Deviation from the Repeatability Test With a Constant Orientation of the Calibration Plate (Astra Camera).}
-\label{standardastra1}
-\centering
-\begin{tabular}{|c||c||c||c||c||c||c|}
-\hline
-$\sigma_{x[m]}$ & $\sigma_{y[m]}$ & $\sigma_{z[m]}$ & $\sigma_{q_{x}}$ & $\sigma_{q_{y}}$ & $\sigma_{q_{z}}$ &$\sigma_{q_{\omega}}$ \\
-\hline
-0.011012&	0.009877	&0.000906&0.000243&	8.45E-05&	0.000446&	0.000976\\
-\hline
-\end{tabular}
-\end{table}
-\fi
 
 \begin{table}[ht]
 \renewcommand{\arraystretch}{1.3}
 \caption{Mean Values and Standard Deviation of the Repeatability Test with Tilting Motion of the Calibration Plate (Astra Camera).}
 \label{meanastra2}
 \centering
-\begin{tabular}{|c|c|c|c|c|c|c|}
+\begin{tabular}{|c|c|c|}
 \hline
-$x[m]$ & $y[m]$ & $z[m]$ & $q_{x}$ & $q_{y}$ & $q_{z}$ &$q_{\omega}$ \\
+$x[m]$ & $y[m]$ & $z[m]$ \\
 \hline
-1.197089&	0.116571&	0.539509&
-0.653488&	0.660281&	-0.270449&	-0.252499 \\
+1.197089&	0.116571&	0.539509 \\
 \hline
 \hline
-$\sigma_{x[m]}$ & $\sigma_{y[m]}$ & $\sigma_{z[m]}$ & $\sigma_{q_{x}}$ & $\sigma_{q_{y}}$ & $\sigma_{q_{z}}$ &$\sigma_{q_{\omega}}$ \\
+$\sigma_{x[m]}$ & $\sigma_{y[m]}$ & $\sigma_{z[m]}$\\
 \hline
-0.012046&	0.010473&	0.008465& 0.000837&	0.002155&	0.000920&	0.002450\\
-\hline
-\end{tabular}
-\end{table}
-
-
-\iffalse%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[ht]
-\renewcommand{\arraystretch}{1.3}
-\caption{Mean Values of the Repeatability Test With Tilting Motion of the Calibration Plate (Astra Camera).}
-\label{meanastra2}
-\centering
-\begin{tabular}{|c||c||c||c||c||c||c|}
-\hline
-$x[m]$ & $y[m]$ & $z[m]$ & $q_{x}$ & $q_{y}$ & $q_{z}$ &$q_{\omega}$ \\
-\hline
-1.197089&	0.116571&	0.539509&
-0.653488&	0.660281&	-0.270449&	-0.252499 \\
-\hline
+0.012046&	0.010473&	0.008465\\
 \hline
 \end{tabular}
 \end{table}
-\begin{table}[ht]
-\renewcommand{\arraystretch}{1.3}
-\caption{Standard Deviation from the Repeatability Test With Tilting Orientation of the Calibration Plate (Astra Camera).}
-\label{standardastra2}
-\centering
-\begin{tabular}{|c||c||c||c||c||c||c|}
-\hline
-$\sigma_{x[m]}$ & $\sigma_{y[m]}$ & $\sigma_{z[m]}$ & $\sigma_{q_{x}}$ & $\sigma_{q_{y}}$ & $\sigma_{q_{z}}$ &$\sigma_{q_{\omega}}$ \\
-0.012046&	0.010473&	0.008465& 0.000837&	0.002155&	0.000920&	0.002450
-\\
-\hline
-\hline
-\end{tabular}
-\end{table}
-\fi
-
 
 
 
@@ -331,16 +266,16 @@ $\sigma_{x[m]}$ & $\sigma_{y[m]}$ & $\sigma_{z[m]}$ & $\sigma_{q_{x}}$ & $\sigma
 \caption{Mean Values and Standard Deviation of the Repeatability Test with a Constant Orientation of the Calibration Plate (RealSense Camera).}
 \label{meanreal1}
 \centering
-\begin{tabular}{|c||c||c||c||c||c||c|}
+\begin{tabular}{|c|c|c|}
 \hline
-$x[m]$ & $y[m]$ & $z[m]$ & $q_{x}$ & $q_{y}$ & $q_{z}$ &$q_{\omega}$ \\
+$x[m]$ & $y[m]$ & $z[m]$ \\
 \hline
-1.222425&	0.112532&	0.324441&0.564006&	0.573552&	-0.426780&	-0.413272 \\
+1.222425&	0.112532&	0.324441 \\
 \hline
 \hline
-$\sigma_{x[m]}$ & $\sigma_{y[m]}$ & $\sigma_{z[m]}$ & $\sigma_{q_{x}}$ & $\sigma_{q_{y}}$ & $\sigma_{q_{z}}$ &$\sigma_{q_{\omega}}$ \\
+$\sigma_{x[m]}$ & $\sigma_{y[m]}$ & $\sigma_{z[m]}$ \\
 \hline
-0.000160&	0.007729&	0.000294&9.20E-05&	4.19E-05&	5.26E-05&	1.31E-05\\
+0.000160&	0.007729&	0.000294\\
 \hline
 \end{tabular}
 \end{table}
@@ -353,30 +288,43 @@ $\sigma_{x[m]}$ & $\sigma_{y[m]}$ & $\sigma_{z[m]}$ & $\sigma_{q_{x}}$ & $\sigma
 \caption{Mean Values and Standard Deviation  of the Repeatability Test with Tilting Motion of the Calibration Plate (Real Sense).}
 \label{meanreal2}
 \centering
-\begin{tabular}{|c||c||c||c||c||c||c|}
+\begin{tabular}{|c|c|c|}
 \hline
-$x[m]$ & $y[m]$ & $z[m]$ & $q_{x}$ & $q_{y}$ & $q_{z}$ &$q_{\omega}$ \\
+$x[m]$ & $y[m]$ & $z[m]$ \\
 \hline
-1.222425&	0.112532&	0.324441&0.564006&	0.573552&	-0.426780&	-0.413272  \\
+1.222425&	0.112532&	0.324441 \\
 \hline
 \hline
-$\sigma_{x[m]}$ & $\sigma_{y[m]}$ & $\sigma_{z[m]}$ & $\sigma_{q_{x}}$ & $\sigma_{q_{y}}$ & $\sigma_{q_{z}}$ &$\sigma_{q_{\omega}}$ \\
+$\sigma_{x[m]}$ & $\sigma_{y[m]}$ & $\sigma_{z[m]}$ \\
 \hline
-0.000160&	0.007729&	0.000294&9.20E-05&	4.19E-05&	5.26E-05&	1.31E-05\\
+0.000160&	0.007729&	0.000294\\
 \hline
 \end{tabular}
 \end{table}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Pose Estimation Pipeline}
 
 This section presents the experiments and the results and how the validation test was performed for the 3D object pose estimation system. Before executing such an experiment, a few requirements need to be met. The first requirement being a 3D industrial object, preferably a textured object. Secondly, its CAD model is needed. For the purpose of this thesis, one was created using the FreeCAD software \ref{freecadb}. Lastly, the pose of the object must be known in advance. This pose should be computed in a different fashion in order to compare the results with the output of the pose estimation pipeline.\\
-With the output from the pose estimation pipeline and the available pose, which it is referred to as ground truth, the accuracy of the system can be determined. It proved to be difficult to determine the real pose of the object for the given thesis research. A method for determining the ground truth is based on direct observation of the object by the author of this thesis, such a method is known as an empirical observation. A checkerboard pattern is placed on the table where the localization object feature of the robot is used. This is done by position the TCP onto three different points of the checkerboard, by doing so, a new coordinates system is defined where the object is placed on a desired grid of the checkboard with a width and height of 2cm each. By moving the object in x-axis for the first type of measurement, y-axis for the second type, the pose can be estimated with some confidence, knowing the displacement in the XY coordinates of  the checkerboard plane. As to the orientation, a digital angle ruler was used in this thesis. An overview of the setup for the experiment can be seen in Figure \ref{setupsystem2} where the checkerboard object is localized onto the top of the table. Figure \ref{setupsystem1} shows a rviz simulation, where the relationship between transformations is clearly seen over time. 
+With the output from the pose estimation pipeline and the available pose, which it is referred to as ground truth, the accuracy of the system can be determined. It proved to be difficult to determine the real pose of the object for the given thesis research. A method for determining the ground truth is based on direct observation of the object by the author of this thesis, such a method is known as an empirical observation. A checkerboard pattern is placed on the table where the localization object feature of the robot is used. This is done by position the TCP onto three different points of the checkerboard, by doing so, a new coordinates system is defined where the object is placed on a desired grid of the checkboard with a width and height of \unit[2]{cm} each. By moving the object through the x-axis for the first type of movement, and y-axis for the second type of movement, the pose can be estimated with some confidence, knowing the displacement in the XY coordinates of  the checkerboard plane. As to the orientation, a digital angle ruler was used in this thesis and it can seen in Figure \ref{fig:ruler}. An overview of the setup for the experiment can be seen in Figure \ref{setupsystem1} where the checkerboard object is localized onto the top of the table, by doing so a new workobject is set. Figure \ref{setupsystem2} shows a general view of the system setup with  its Rviz simulation, where the relationship between transformations is clearly seen over time. 
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=3in]{images/ruler0.png}
+\caption{System Setup for the Validation Test }
+\label{fig:ruler}
+\end{center}
+\end{figure}
+
+
 
 \subsection{Validation Test}\label{valitest}
 
-In this section, two experiments were executed. The objective of the experiments is to validate the pose estimation pipeline in terms of robustness and accuracy by the means of the overall mean errors. The pose estimation pipeline is described in Chapter \ref{chap:theo}, where it explains that two 3D data sets are required: a point cloud generated from the CAD model, and a point cloud generated from the scene, acquired from the output of the sensory device, Astra or RealSense camera. The point cloud generated from the CAD model is called source cloud and the point cloud generated from the camera is called the target cloud in this thesis.\\
-In order to validate the first experiment, displacements and angles are applied to the industrial object. There are two types of displacement related to this experiment: x-axis, and y-axis of the checkerboard frame. The distance of such a displacement is 2cm each. Since the transformation of the checkboard is known in advance plus the displacement applied to the object, the rough ground-truth object pose can be known by visual inspection. When it comes to the validation test of the angle, a digital angle ruler is used, and the orientation is applied on the z-axis, in a clockwise rotation. For the validation of the second experiment, the same principle is applied as described above when it comes to changing the pose of the object around the XY plane of the checkerboard. However, a major difference exists for the source point cloud (CAD model). The CAD model is substituted for a partial view point cloud generated by the camera used. The change was applied in order to see whether an improvement exists since the pose estimation system from time to time failed for the given conditions in the first experiment.
+In this section, two experiments were executed. The objective of the experiments is to validate the pose estimation pipeline in terms of robustness and accuracy by the means of the overall mean errors. The pose estimation pipeline is described in Chapter \ref{chap:theo}, where it explains that two 3D data sets are required: a point cloud generated from the CAD model, and a point cloud generated from the scene, acquired from the output of the sensory device, Astra or RealSense D-435 camera. The point cloud generated from the CAD model is called source cloud and the point cloud generated from the camera is called the target cloud in this thesis.\\
+In order to validate the first experiment, displacements and angles are applied to the industrial object. There are two types of displacement related to this experiment: the first type along the x-axis, and the second type along the y-axis of the checkerboard frame. The distance of such a displacement is \unit[2]{cm} each. Since the transformation of the checkboard is known in advance plus the displacement applied to the object, the ground-truth object pose can be known by visual inspection. When it comes to the validation test of the angle, a digital angle ruler is used, and the orientation is applied on the z-axis, in a clockwise rotation as seen in Figure \ref{fig2:ruler}. For the validation of the second experiment, the same principle is applied as described above when it comes to changing the pose of the object around the XY plane of the checkerboard. However, a major difference exists for the source point cloud (CAD model). The CAD model is substituted for a partial view point cloud generated by the camera used. The change was applied in order to see whether an improvement exists since the pose estimation system did not perform well with the CAD data in the first experiment. 
 
 \subsection{Pose Estimation Results}
  
@@ -455,19 +403,38 @@ From the deviation graph an absolute error can be calculated. Figures \ref{fig:a
 \end{center}
 \end{figure}
 
-\iffalse
-meaning the solution did not register
-\fi
 
 \subsection{Result Analysis}
 
-After analyzing the outcomes of the first experiment, it was concluded that the pose estimation did not perform well. Since the cloud generated from the CAD model did not converge to the cloud generated from the scene in several cases. This unsuccessful event can occur for several reasons. One of the reasons could be that in the matching process, the block that performs the coarse estimation of the object pose failed due to the lack of correspondence between the points clouds representing the CAD model and point clouds representing the scene. Another reason could be that, in the target cloud, noise and outlier were present, but in the source, they were not. In addition to that, the point cloud from the sensory device was too wavy (having a series of curves), as it was the case for the real sense camera where no results were reported. Figure Annex \ref{chap:pointclouds} shows the point clouds representing the industrial object, where the clouds were generated from the CAD model, RealSense camera and Astra camera.\\
+After analyzing the outcomes of the first experiment, it was concluded that the pose estimation did not perform well. Since the cloud generated from the CAD model did not converge to the cloud generated from the scene in most cases. This unsuccessful event can occur for several reasons. One of the reasons could be that in the matching process, the block that performs the coarse estimation of the object pose failed due to the lack of correspondence between the points clouds representing the CAD model and point clouds representing the scene. Another reason could be that, in the target cloud, noise and outlier were present, but in the source, they were not. In addition to that, the point cloud generated from the sensory device was too wavy (having a series of curves), as it was the case for the RealSense D-435 camera where no results were reported. Figure \ref{cadastracloudresult} shows the point clouds representing the industrial object, where the clouds were generated from the CAD model, RealSense D-435 camera and Astra camera.\\
+
+
+\begin{figure}[htp]
+\begin{center}
+{
+  \includegraphics[clip,width=0.6\columnwidth]{images/cad_cloud.png}
+}
+\end{center}
+\begin{center}
+{
+  \includegraphics[clip,width=0.6\columnwidth]{images/astra_cloud.png}
+}
+\end{center}
+\begin{center}
+{
+  \includegraphics[clip,width=0.6\columnwidth]{images/real_cloud.png}
+}
+\end{center}
+\caption{Point Cloud Sources: CAD model, Astra Camera and RealSense D-435 Camera}
+\label{cadastracloudresult}
+\end{figure}
+
 Since the issue described previously was regularly present, it was concluded that matching a point cloud from the CAD model with a point cloud of a partial view of the scene was a difficult task to accomplish. A normal issue has already registered in most of the literature of the computer vision that deals with the task of estimation of object pose giving the CAD model and point cloud taken from domestic camera.	\\ 
-With the issue encountered and briefly discussed above, the result was good enough provided that the camera used in the validation test was the Astra camera. Table \ref{absolute} shows an overall mean error of 2.6 cm for the x-axis, with a standard deviation; 2.45 cm, for the y-axis the overall mean error was 0,63 cm with a standard deviation; 0.5 cm and finally the orientation angle with an overall error of $2.9^{\circ}$ with a standard deviation of $1.27^{\circ}$. It can be concluded that the results are quite promising under the giving conditions, where a domestic camera was used during the whole thesis, and not an industrial one which would be suitable for this type of task. 
+With the issue encountered and briefly discussed above, the result was good enough provided that the camera used in the validation test was the Astra camera. Table \ref{absolute} shows an overall mean error of \unit[2.6] {cm} for the x-axis, with a standard deviation; \unit[2.45] {cm}, for the y-axis the overall mean error was \unit[0,63] {cm} with a standard deviation; \unit[0.5] {cm} and finally the orientation angle with an overall error of $2.9^{\circ}$ with a standard deviation of $1.27^{\circ}$. It can be concluded that the results are quite promising under the giving conditions, where a domestic camera was used during the whole thesis, and not an industrial one which would be suitable for this type of task. 
 
 The second experiment is executed, where the source cloud needed to be changed. To accomplish that, a partial view of the scene is taken and used as a source cloud, which is fed to the pose estimation system in the offline stage as described in \ref{chap:theo}. The workaround may not be a proper solution since a partial view of the scene is taken into account, but it was proved to be good enough according to the output from the pose estimation system. An ideal solution would require the whole reconstruction of the 3D object with the camera to be used and then to render the object in order to prove the robustness of the system for different views. But it proved to be quite laborious since special hardware as well as software, needed to be implemented. For the purpose of the thesis, where an isolated object needed to be taken, free of occlusion and clutter scene, this approach has been proven successful.
 
-In Table \ref{absolute}, the absolute error values calculated for the second experiment are shown. It clearly shows an improvement when the source cloud generated from the CAD was replaced for a point cloud representing a partial view of the scene. It reports an overall mean value for the x-axis of 0.152 cm,  with standard deviation of 0.1134 cm. For the y-axis reported an overall mean error of 0.406[cm] with a standard deviation of 0.5492 cm. As to the orientation around the z-axis, an overall mean of $1.21^{\circ}$ with a standard deviation of $1.019^{\circ}$ was reported. It was proved satisfactory that the pose estimation system performed successfully as long as the source cloud and target cloud are generated from the same sensory device, which in our case, was the Astra camera. It is also concluded, from the validation tests, that the RealSense camera is not suitable for this type of task where a reasonable quality of point cloud is needed.  
+In Table \ref{absolute}, the absolute error values calculated for the second experiment are shown. It clearly shows an improvement when the source cloud generated from the CAD was replaced for a point cloud representing a partial view of the scene. It reports an overall mean value for the x-axis of \unit[0.152] {cm},  with standard deviation of \unit[0.1134] {cm}. For the y-axis reported an overall mean error of \unit[0.406] {cm} with a standard deviation of \unit[0.5492] {cm}. As to the orientation around the z-axis, an overall mean of $1.21^{\circ}$ with a standard deviation of $1.019^{\circ}$ was reported. It was proved satisfactory that the pose estimation system performed successfully as long as the source cloud and target cloud are generated from the same sensory device, which in our case, was the Astra camera. It is also concluded, from the validation tests, that the RealSense D-435 camera is not suitable for this type of task where a reasonable quality of point cloud is needed.  
 
 
 \begin{table}[ht]
@@ -490,3 +457,66 @@ yaw angle (degrees)& 2.8748 & 1.2741 & 1.2177 & 1.0197\\
 \end{table}
 
 
+\subsection{•}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%RealSense D-415
+\begin{figure}[htp]
+\begin{center}
+{
+  \includegraphics[clip,width=0.7\columnwidth]{figures/x_newrealsense.png}
+}
+\end{center}
+\begin{center}
+{
+  \includegraphics[clip,width=0.7\columnwidth]{figures/y_newrealsense.png}
+}
+\end{center}
+
+\begin{center}
+{
+  \includegraphics[clip,width=0.7\columnwidth]{figures/yaw_newrealsense.png}
+}
+\end{center}
+\caption{Ground Truth and Pose Estimation ($2^{nd}$ Experiment, RealSense D-415}
+\label{newreal2}
+\end{figure}
+
+\begin{table}[ht]
+\renewcommand{\arraystretch}{1.3}
+\caption{Absolute Error Values (RealSense D-415 Camera).}
+\label{absolute}
+\centering
+\begin{tabular}{|c||c||c||c||c|}
+\hline
+  & Mean (2nd Exp )& STD \\
+\hline
+x-axis (cm) & 0.009 & 0.001
+ \\
+\hline
+y-axis (cm) & 0.001 & 0.001  \\
+\hline
+yaw angle (degrees)& 0.698 & 0.400 \\
+\hline
+\hline
+\end{tabular}
+\end{table}
+
+%With several templates
+%RealSense D-415
+\begin{figure}[htp]
+\begin{center}
+{
+  \includegraphics[clip,width=0.7\columnwidth]{figures/newreal_fitness.png}
+}
+\end{center}
+\begin{center}
+{
+  \includegraphics[clip,width=0.7\columnwidth]{figures/newreal_rmse.png}
+}
+\end{center}
+\caption{Overview of the Validation Test: RealSense D-415}
+\label{newreal1}
+\end{figure}
