@@ -21,13 +21,13 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Experimental data for internal Astra sensor calibration.\relax }}{37}{table.6.1}
-\contentsline {table}{\numberline {6.2}{\ignorespaces Experimental data for internal RealSense sensor calibration.\relax }}{37}{table.6.2}
-\contentsline {table}{\numberline {6.3}{\ignorespaces Mean Values and Standard Deviation of the Repeatability Test with a Constant Orientation of the Calibration Plate(Astra Camera).\relax }}{40}{table.6.3}
-\contentsline {table}{\numberline {6.4}{\ignorespaces Mean Values and Standard Deviation of the Repeatability Test with Tilting Motion of the Calibration Plate (Astra Camera).\relax }}{40}{table.6.4}
-\contentsline {table}{\numberline {6.5}{\ignorespaces Mean Values and Standard Deviation of the Repeatability Test with a Constant Orientation of the Calibration Plate (RealSense Camera).\relax }}{41}{table.6.5}
-\contentsline {table}{\numberline {6.6}{\ignorespaces Mean Values and Standard Deviation of the Repeatability Test with Tilting Motion of the Calibration Plate (Real Sense).\relax }}{41}{table.6.6}
-\contentsline {table}{\numberline {6.7}{\ignorespaces Absolute Error Values (Astra Camera).\relax }}{48}{table.6.7}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Experimental data for internal Astra sensor calibration.\relax }}{38}{table.6.1}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Experimental data for internal RealSense sensor calibration.\relax }}{39}{table.6.2}
+\contentsline {table}{\numberline {6.3}{\ignorespaces Mean Values and Standard Deviation of the Repeatability Test with a Constant Orientation of the Calibration Plate(Astra Camera).\relax }}{43}{table.6.3}
+\contentsline {table}{\numberline {6.4}{\ignorespaces Mean Values and Standard Deviation of the Repeatability Test with Tilting Motion of the Calibration Plate (Astra Camera).\relax }}{43}{table.6.4}
+\contentsline {table}{\numberline {6.5}{\ignorespaces Mean Values and Standard Deviation of the Repeatability Test with a Constant Orientation of the Calibration Plate (RealSense Camera).\relax }}{44}{table.6.5}
+\contentsline {table}{\numberline {6.6}{\ignorespaces Mean Values and Standard Deviation of the Repeatability Test with Tilting Motion of the Calibration Plate (Real Sense).\relax }}{44}{table.6.6}
+\contentsline {table}{\numberline {6.7}{\ignorespaces Absolute Error Values (Astra Camera).\relax }}{51}{table.6.7}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
@@ -35,7 +35,6 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {E.1}{\ignorespaces Absolute Error Values (RealSense D-415 Camera).\relax }}{73}{table.E.1}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {F.1}{\ignorespaces Absolute Error Values (RealSense D-415 Camera).\relax }}{73}{table.F.1}
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {G.1}{\ignorespaces Calibration results: Intrinsic Parameters\relax }}{75}{table.G.1}
+\contentsline {table}{\numberline {F.1}{\ignorespaces Calibration results: Intrinsic Parameters\relax }}{75}{table.F.1}
