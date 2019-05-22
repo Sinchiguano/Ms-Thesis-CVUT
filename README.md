@@ -29,8 +29,8 @@ In order to use the yumi_main package where the Eye_To_Hand calibration and the 
 ![alt-text-1]( "title-1") ![alt-text-2]("title-2")
 
 <p float="left">
-  <img src="/tmp/ext1.png" width="100" />
-  <img src="/tmp/ext2.png" width="100" /> 
+  <img src="/tmp/ext1.png" width="400" />
+  <img src="/tmp/ext2.png" width="400" /> 
 </p>
 
 A typical use case consists of the following steps (here using ROS kinetic):
