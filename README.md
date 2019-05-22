@@ -48,6 +48,10 @@ A typical use case consists of the following steps (here using ROS kinetic):
 
 
 ### Step-by-Step: 3D Object Pose Estimation System
+<p float="left">
+  <img src="/tmp/11.jpg" width="400" />
+  <img src="/tmp/12.jpg" width="440" /> 
+</p>
 
 A typical use case consists of the following steps (here using ROS kinetic):
 
