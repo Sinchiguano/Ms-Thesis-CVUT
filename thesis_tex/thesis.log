@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.3.25)  22 MAY 2019 16:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.3.25)  22 MAY 2019 19:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1293,7 +1293,10 @@ LaTeX Warning: Label `fig:planesegmentation' multiply defined.
 LaTeX Warning: Label `fig:planesegmentation' multiply defined.
 
 
-LaTeX Warning: Label `absolute' multiply defined.
+LaTeX Warning: Label `newreal22' multiply defined.
+
+
+LaTeX Warning: Label `newreal22' multiply defined.
 
 
 LaTeX Warning: Label `absolute' multiply defined.
@@ -1301,25 +1304,25 @@ LaTeX Warning: Label `absolute' multiply defined.
 )
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 78.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 76.
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Info: Redefining \microtypecontext on input line 78.
+LaTeX Info: Redefining \microtypecontext on input line 76.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1410,7 +1413,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 78.
+Package hyperref Info: Link coloring OFF on input line 76.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -1419,9 +1422,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count183
 )
-LaTeX Info: Redefining \ref on input line 78.
-LaTeX Info: Redefining \pageref on input line 78.
-LaTeX Info: Redefining \nameref on input line 78.
+LaTeX Info: Redefining \ref on input line 76.
+LaTeX Info: Redefining \pageref on input line 76.
+LaTeX Info: Redefining \nameref on input line 76.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write4
@@ -1431,34 +1434,34 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 79.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 77.
  (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 79.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 77.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 79.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 77.
 
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 79.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 77.
 
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 79.
+(Font)              <10.95> on input line 77.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 79.
+(Font)              <8> on input line 77.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 79.
-LaTeX Font Info:    Try loading font information for U+msa on input line 79.
+(Font)              <6> on input line 77.
+LaTeX Font Info:    Try loading font information for U+msa on input line 77.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1466,7 +1469,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 79.
+LaTeX Font Info:    Try loading font information for U+msb on input line 77.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1474,20 +1477,20 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-<ctu_logo_black.pdf, id=253, 366.36874pt x 279.0425pt>
+<ctu_logo_black.pdf, id=249, 366.36874pt x 279.0425pt>
 File: ctu_logo_black.pdf Graphic file (type pdf)
 
 <use ctu_logo_black.pdf>
-Package pdftex.def Info: ctu_logo_black.pdf used on input line 79.
+Package pdftex.def Info: ctu_logo_black.pdf used on input line 77.
 (pdftex.def)             Requested size: 85.86746pt x 65.40001pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 79.
+(Font)              <14.4> on input line 77.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 79.
+(Font)              <10> on input line 77.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 79.
+(Font)              <7> on input line 77.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 79--79
+Overfull \hbox (5.0pt too wide) in paragraph at lines 77--77
 []|| [][][][][][] 
  []
 
@@ -1496,7 +1499,7 @@ Overfull \hbox (5.0pt too wide) in paragraph at lines 79--79
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./ctu_logo_black.pdf>]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 79.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 77.
 
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1544,53 +1547,48 @@ Package microtype Info: Loading generic settings for font family
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \chapter with sig. 'som' on line 79.
+. Redefining command \chapter with sig. 'som' on line 77.
 .................................................
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \tableofcontents with sig. '' on line 79.
+. Redefining command \tableofcontents with sig. '' on line 77.
 .................................................
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \listoffigures with sig. '' on line 79.
+. Redefining command \listoffigures with sig. '' on line 77.
 .................................................
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \listoftables with sig. '' on line 79.
+. Redefining command \listoftables with sig. '' on line 77.
 .................................................
  [3
 
 
 ] [4
 
-] (./thesis.toc
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 94.
-
-(/usr/share/texmf/tex/latex/lm/omslmr.fd
-File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 94.
-)
+] (./thesis.toc)
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
  [5
 
-] (./thesis.lof [6
+]
+(./thesis.lof [6
 
 ])
 \tf@lof=\write6
 \openout6 = `thesis.lof'.
 
- (./thesis.lot)
+ [7] (./thesis.lot)
 \tf@lot=\write7
 \openout7 = `thesis.lot'.
 
- [7]
+ [8
+
+]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -1624,14 +1622,13 @@ LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [8
-
-
-
-
-] (./01_Introduction/Intro1.tex
+ (./01_Introduction/Intro1.tex
 Chapter 1.
 [1
+
+
+
+
 
 ]) (./02_RelatedWork/RelatedWork2.tex
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
@@ -1645,7 +1642,7 @@ Chapter 3.
 [5
 
 ]
-<03_Background/figures02/astraorbbec.jpg, id=533, 426.59375pt x 215.80624pt>
+<03_Background/figures02/astraorbbec.jpg, id=536, 426.59375pt x 215.80624pt>
 File: 03_Background/figures02/astraorbbec.jpg Graphic file (type jpg)
 
 <use 03_Background/figures02/astraorbbec.jpg>
@@ -1653,7 +1650,7 @@ Package pdftex.def Info: 03_Background/figures02/astraorbbec.jpg used on input
 line 65.
 (pdftex.def)             Requested size: 142.26378pt x 71.97035pt.
 
-<03_Background/figures02/realsense.png, id=534, 417.56pt x 234.8775pt>
+<03_Background/figures02/realsense.png, id=537, 417.56pt x 234.8775pt>
 File: 03_Background/figures02/realsense.png Graphic file (type png)
 
 <use 03_Background/figures02/realsense.png>
@@ -1662,7 +1659,7 @@ ne 67.
 (pdftex.def)             Requested size: 142.26378pt x 80.02214pt.
  [6 <./03_Background/figures02/astraorbbec.jpg> <./03_Background/figures02/real
 sense.png>]
-<03_Background/figures02/pcd.png, id=547, 562.1pt x 421.575pt>
+<03_Background/figures02/pcd.png, id=550, 562.1pt x 421.575pt>
 File: 03_Background/figures02/pcd.png Graphic file (type png)
 
 <use 03_Background/figures02/pcd.png>
@@ -1670,7 +1667,7 @@ Package pdftex.def Info: 03_Background/figures02/pcd.png used on input line 90.
 
 (pdftex.def)             Requested size: 289.07999pt x 216.80798pt.
 
-<03_Background/figures02/pinhole_camera_model.png, id=549, 602.25pt x 424.58624
+<03_Background/figures02/pinhole_camera_model.png, id=552, 602.25pt x 424.58624
 pt>
 File: 03_Background/figures02/pinhole_camera_model.png Graphic file (type png)
  <use 03_Background/figures02/pinhole_camera_model.png>
@@ -1682,7 +1679,7 @@ on input line 102.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [7 <./03_Background/figures02/pcd.png>]
-<03_Background/figures02/intrinsic.png, id=559, 395.22656pt x 223.58531pt>
+<03_Background/figures02/intrinsic.png, id=562, 395.22656pt x 223.58531pt>
 File: 03_Background/figures02/intrinsic.png Graphic file (type png)
 
 <use 03_Background/figures02/intrinsic.png>
@@ -1691,7 +1688,7 @@ ne 146.
 (pdftex.def)             Requested size: 289.07999pt x 163.53659pt.
  [8 <./03_Background/figures02/pinhole_camera_model.png> <./03_Background/figur
 es02/intrinsic.png>]
-<03_Background/figures02/extrinsic.png, id=566, 602.25pt x 307.1475pt>
+<03_Background/figures02/extrinsic.png, id=569, 602.25pt x 307.1475pt>
 File: 03_Background/figures02/extrinsic.png Graphic file (type png)
 
 <use 03_Background/figures02/extrinsic.png>
@@ -1699,7 +1696,7 @@ Package pdftex.def Info: 03_Background/figures02/extrinsic.png used on input li
 ne 169.
 (pdftex.def)             Requested size: 289.07999pt x 147.4338pt.
  [9 <./03_Background/figures02/extrinsic.png>]
-<03_Background/figures02/ros_workflows.png, id=577, 1027.84pt x 527.9725pt>
+<03_Background/figures02/ros_workflows.png, id=580, 1027.84pt x 527.9725pt>
 File: 03_Background/figures02/ros_workflows.png Graphic file (type png)
 
 <use 03_Background/figures02/ros_workflows.png>
@@ -1707,7 +1704,7 @@ Package pdftex.def Info: 03_Background/figures02/ros_workflows.png used on inpu
 t line 194.
 (pdftex.def)             Requested size: 289.07999pt x 148.4919pt.
  [10 <./03_Background/figures02/ros_workflows.png>]
-<03_Background/figures02/cloudcompare.jpg, id=591, 662.475pt x 401.5pt>
+<03_Background/figures02/cloudcompare.jpg, id=594, 662.475pt x 401.5pt>
 File: 03_Background/figures02/cloudcompare.jpg Graphic file (type jpg)
 
 <use 03_Background/figures02/cloudcompare.jpg>
@@ -1718,7 +1715,7 @@ Package pdftex.def Info: 03_Background/figures02/cloudcompare.jpg used on input
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<03_Background/figures02/meshlab.png, id=593, 1930.21124pt x 1139.75812pt>
+<03_Background/figures02/meshlab.png, id=596, 1930.21124pt x 1139.75812pt>
 File: 03_Background/figures02/meshlab.png Graphic file (type png)
 
 <use 03_Background/figures02/meshlab.png>
@@ -1729,7 +1726,7 @@ Package pdftex.def Info: 03_Background/figures02/meshlab.png used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[11] <03_Background/figures02/freecad.jpg, id=606, 1027.84pt x 578.16pt>
+[11] <03_Background/figures02/freecad.jpg, id=609, 1027.84pt x 578.16pt>
 File: 03_Background/figures02/freecad.jpg Graphic file (type jpg)
 
 <use 03_Background/figures02/freecad.jpg>
@@ -1746,7 +1743,7 @@ g>] [14
 
 ]
 Chapter 4.
-<04_CamRob/figures03/system1.png, id=622, 338.26375pt x 302.12875pt>
+<04_CamRob/figures03/system1.png, id=625, 338.26375pt x 302.12875pt>
 File: 04_CamRob/figures03/system1.png Graphic file (type png)
 
 <use 04_CamRob/figures03/system1.png>
@@ -1765,7 +1762,7 @@ LaTeX Warning: Command \textunderscore invalid in math mode on input line 34.
 LaTeX Warning: Command \textunderscore invalid in math mode on input line 34.
 
 [16 <./04_CamRob/figures03/system1.png>]
-<04_CamRob/figures03/intros.png, id=648, 1696.3375pt x 1120.185pt>
+<04_CamRob/figures03/intros.png, id=651, 1696.3375pt x 1120.185pt>
 File: 04_CamRob/figures03/intros.png Graphic file (type png)
 
 <use 04_CamRob/figures03/intros.png>
@@ -1774,7 +1771,7 @@ Package pdftex.def Info: 04_CamRob/figures03/intros.png used on input line 39.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 40.
 
-<04_CamRob/figures03/camposest.png, id=651, 361.35pt x 261.97874pt>
+<04_CamRob/figures03/camposest.png, id=654, 361.35pt x 261.97874pt>
 File: 04_CamRob/figures03/camposest.png Graphic file (type png)
 
 <use 04_CamRob/figures03/camposest.png>
@@ -1782,7 +1779,7 @@ Package pdftex.def Info: 04_CamRob/figures03/camposest.png used on input line 5
 2.
 (pdftex.def)             Requested size: 216.81pt x 157.18845pt.
  [17 <./04_CamRob/figures03/intros.png> <./04_CamRob/figures03/camposest.png>]
-<04_CamRob/figures03/openCV1.png, id=660, 452.69125pt x 348.30125pt>
+<04_CamRob/figures03/openCV1.png, id=663, 452.69125pt x 348.30125pt>
 File: 04_CamRob/figures03/openCV1.png Graphic file (type png)
 
 <use 04_CamRob/figures03/openCV1.png>
@@ -1790,7 +1787,7 @@ Package pdftex.def Info: 04_CamRob/figures03/openCV1.png used on input line 74.
 
 (pdftex.def)             Requested size: 216.81pt x 166.81067pt.
 
-<04_CamRob/figures03/fiducials.png, id=662, 372.39125pt x 153.57375pt>
+<04_CamRob/figures03/fiducials.png, id=665, 372.39125pt x 153.57375pt>
 File: 04_CamRob/figures03/fiducials.png Graphic file (type png)
 
 <use 04_CamRob/figures03/fiducials.png>
@@ -1802,7 +1799,7 @@ Package pdftex.def Info: 04_CamRob/figures03/fiducials.png used on input line 8
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [18 <./04_CamRob/figures03/openCV1.png>]
-<04_CamRob/figures03/target1.png, id=672, 677.53125pt x 520.94624pt>
+<04_CamRob/figures03/target1.png, id=675, 677.53125pt x 520.94624pt>
 File: 04_CamRob/figures03/target1.png Graphic file (type png)
 
 <use 04_CamRob/figures03/target1.png>
@@ -1825,7 +1822,7 @@ LaTeX Warning: Command \textunderscore invalid in math mode on input line 142.
 LaTeX Warning: Command \textunderscore invalid in math mode on input line 143.
 
 [20]
-<04_CamRob/figures03/calibrationtarget1.png, id=694, 632.3625pt x 478.78876pt>
+<04_CamRob/figures03/calibrationtarget1.png, id=697, 632.3625pt x 478.78876pt>
 File: 04_CamRob/figures03/calibrationtarget1.png Graphic file (type png)
 
 <use 04_CamRob/figures03/calibrationtarget1.png>
@@ -1833,7 +1830,7 @@ Package pdftex.def Info: 04_CamRob/figures03/calibrationtarget1.png used on inp
 ut line 153.
 (pdftex.def)             Requested size: 289.07999pt x 218.87932pt.
  [21 <./04_CamRob/figures03/calibrationtarget1.png>]
-<04_CamRob/figures03/rviz1.png, id=708, 1696.3375pt x 1140.26pt>
+<04_CamRob/figures03/rviz1.png, id=711, 1696.3375pt x 1140.26pt>
 File: 04_CamRob/figures03/rviz1.png Graphic file (type png)
 
 <use 04_CamRob/figures03/rviz1.png>
@@ -1844,7 +1841,7 @@ Chapter 5.
 [23
 
 ]
-<05_PoseObject/diagrams/wholesystem.png, id=730, 972.63374pt x 364.36125pt>
+<05_PoseObject/diagrams/wholesystem.png, id=733, 972.63374pt x 364.36125pt>
 File: 05_PoseObject/diagrams/wholesystem.png Graphic file (type png)
 
 <use 05_PoseObject/diagrams/wholesystem.png>
@@ -1852,7 +1849,7 @@ Package pdftex.def Info: 05_PoseObject/diagrams/wholesystem.png used on input l
 ine 15.
 (pdftex.def)             Requested size: 289.07643pt x 144.53546pt.
  [24 <./05_PoseObject/diagrams/wholesystem.png>]
-<05_PoseObject/diagrams/passthrough.png, id=740, 397.485pt x 112.42pt>
+<05_PoseObject/diagrams/passthrough.png, id=743, 397.485pt x 112.42pt>
 File: 05_PoseObject/diagrams/passthrough.png Graphic file (type png)
 
 <use 05_PoseObject/diagrams/passthrough.png>
@@ -1860,7 +1857,7 @@ Package pdftex.def Info: 05_PoseObject/diagrams/passthrough.png used on input l
 ine 39.
 (pdftex.def)             Requested size: 216.81pt x 61.32172pt.
 
-<05_PoseObject/diagrams/planesegmentation.png, id=745, 505.89pt x 99.37125pt>
+<05_PoseObject/diagrams/planesegmentation.png, id=748, 505.89pt x 99.37125pt>
 File: 05_PoseObject/diagrams/planesegmentation.png Graphic file (type png)
 
 <use 05_PoseObject/diagrams/planesegmentation.png>
@@ -1871,7 +1868,7 @@ nput line 83.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25 <./05_PoseObject/diagrams/passthrough.png>]
-<05_PoseObject/figures03/voxelcloud1.png, id=760, 1499.6025pt x 653.44125pt>
+<05_PoseObject/figures03/voxelcloud1.png, id=763, 1499.6025pt x 653.44125pt>
 File: 05_PoseObject/figures03/voxelcloud1.png Graphic file (type png)
 
 <use 05_PoseObject/figures03/voxelcloud1.png>
@@ -1882,7 +1879,7 @@ line 99.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<05_PoseObject/diagrams/keypoints.png, id=761, 265.99374pt x 352.31625pt>
+<05_PoseObject/diagrams/keypoints.png, id=764, 265.99374pt x 352.31625pt>
 File: 05_PoseObject/diagrams/keypoints.png Graphic file (type png)
 
 <use 05_PoseObject/diagrams/keypoints.png>
@@ -1894,7 +1891,7 @@ e 107.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [26 <./05_PoseObject/diagrams/planesegmentation.png>]
-<05_PoseObject/diagrams/vertexnormal.png, id=772, 262.9825pt x 349.305pt>
+<05_PoseObject/diagrams/vertexnormal.png, id=775, 262.9825pt x 349.305pt>
 File: 05_PoseObject/diagrams/vertexnormal.png Graphic file (type png)
 
 <use 05_PoseObject/diagrams/vertexnormal.png>
@@ -1903,7 +1900,7 @@ line 122.
 (pdftex.def)             Requested size: 144.5445pt x 144.5378pt.
  [27 <./05_PoseObject/figures03/voxelcloud1.png> <./05_PoseObject/diagrams/keyp
 oints.png> <./05_PoseObject/diagrams/vertexnormal.png>]
-<05_PoseObject/diagrams/fpfh.png, id=782, 419.5675pt x 99.37125pt>
+<05_PoseObject/diagrams/fpfh.png, id=785, 419.5675pt x 99.37125pt>
 File: 05_PoseObject/diagrams/fpfh.png Graphic file (type png)
 
 <use 05_PoseObject/diagrams/fpfh.png>
@@ -1911,7 +1908,7 @@ Package pdftex.def Info: 05_PoseObject/diagrams/fpfh.png used on input line 133
 .
 (pdftex.def)             Requested size: 216.81pt x 51.34885pt.
  [28 <./05_PoseObject/diagrams/fpfh.png>]
-<05_PoseObject/diagrams/ransac.png, id=795, 484.81125pt x 96.36pt>
+<05_PoseObject/diagrams/ransac.png, id=798, 484.81125pt x 96.36pt>
 File: 05_PoseObject/diagrams/ransac.png Graphic file (type png)
 
 <use 05_PoseObject/diagrams/ransac.png>
@@ -1927,7 +1924,7 @@ Overfull \hbox (11.2pt too wide) detected at line 240
 [][] 
  []
 
-<05_PoseObject/diagrams/lastone.png, id=807, 945.5325pt x 157.58875pt>
+<05_PoseObject/diagrams/lastone.png, id=810, 945.5325pt x 157.58875pt>
 File: 05_PoseObject/diagrams/lastone.png Graphic file (type png)
 
 <use 05_PoseObject/diagrams/lastone.png>
@@ -1942,35 +1939,35 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 Chapter 6.
-<06_Results/images/setup3.jpg, id=840, 642.4pt x 481.8pt>
+<06_Results/images/setup3.jpg, id=843, 642.4pt x 481.8pt>
 File: 06_Results/images/setup3.jpg Graphic file (type jpg)
 
 <use 06_Results/images/setup3.jpg>
 Package pdftex.def Info: 06_Results/images/setup3.jpg used on input line 10.
 (pdftex.def)             Requested size: 254.09889pt x 190.56989pt.
 
-<06_Results/images/setup2.png, id=842, 2307.62125pt x 2760.3125pt>
+<06_Results/images/setup2.png, id=845, 2307.62125pt x 2760.3125pt>
 File: 06_Results/images/setup2.png Graphic file (type png)
 
 <use 06_Results/images/setup2.png>
 Package pdftex.def Info: 06_Results/images/setup2.png used on input line 15.
 (pdftex.def)             Requested size: 254.09889pt x 303.93015pt.
 
-<06_Results/images/setup1.jpg, id=844, 3276.24pt x 2457.18pt>
+<06_Results/images/setup1.jpg, id=847, 3276.24pt x 2457.18pt>
 File: 06_Results/images/setup1.jpg Graphic file (type jpg)
 
 <use 06_Results/images/setup1.jpg>
 Package pdftex.def Info: 06_Results/images/setup1.jpg used on input line 28.
 (pdftex.def)             Requested size: 254.09889pt x 190.54196pt.
 
-<06_Results/images/system1.jpg, id=846, 1371.1225pt x 768.8725pt>
+<06_Results/images/system1.jpg, id=849, 1371.1225pt x 768.8725pt>
 File: 06_Results/images/system1.jpg Graphic file (type jpg)
 
 <use 06_Results/images/system1.jpg>
 Package pdftex.def Info: 06_Results/images/system1.jpg used on input line 33.
 (pdftex.def)             Requested size: 254.09889pt x 142.48555pt.
  [33] [34 <./06_Results/images/setup3.jpg> <./06_Results/images/setup2.png>]
-<06_Results/figures05/int/ros_int_cal_astra.png, id=865, 455.45157pt x 255.9562
+<06_Results/figures05/int/ros_int_cal_astra.png, id=868, 455.45157pt x 255.9562
 5pt>
 File: 06_Results/figures05/int/ros_int_cal_astra.png Graphic file (type png)
  <use 06_Results/figures05/int/ros_int_cal_astra.png>
@@ -1982,7 +1979,7 @@ Package pdftex.def Info: 06_Results/figures05/int/ros_int_cal_astra.png used on
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<06_Results/figures05/int/ros_int_cal_real.png, id=866, 455.45157pt x 255.95625
+<06_Results/figures05/int/ros_int_cal_real.png, id=869, 455.45157pt x 255.95625
 pt>
 File: 06_Results/figures05/int/ros_int_cal_real.png Graphic file (type png)
  <use 06_Results/figures05/int/ros_int_cal_real.png>
@@ -1994,7 +1991,7 @@ input line 62.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<06_Results/figures05/int/opencv_int_cal_astra.png, id=867, 511.15968pt x 264.9
+<06_Results/figures05/int/opencv_int_cal_astra.png, id=870, 511.15968pt x 264.9
 9pt>
 File: 06_Results/figures05/int/opencv_int_cal_astra.png Graphic file (type png)
 
@@ -2007,7 +2004,7 @@ Package pdftex.def Info: 06_Results/figures05/int/opencv_int_cal_astra.png used
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<06_Results/figures05/int/opencv_int_cal_real.png, id=868, 502.87875pt x 259.72
+<06_Results/figures05/int/opencv_int_cal_real.png, id=871, 502.87875pt x 259.72
 03pt>
 File: 06_Results/figures05/int/opencv_int_cal_real.png Graphic file (type png)
  <use 06_Results/figures05/int/opencv_int_cal_real.png>
@@ -2066,28 +2063,28 @@ ator[]astra:py$ \T1/lmr/m/n/10.95 (-20) or $\OML/lmm/m/it/10.95 target[]locator
 Underfull \vbox (badness 2277) has occurred while \output is active []
 
  [39]
-<06_Results/images/ext1.jpg, id=902, 3276.24pt x 2457.18pt>
+<06_Results/images/ext1.jpg, id=905, 3276.24pt x 2457.18pt>
 File: 06_Results/images/ext1.jpg Graphic file (type jpg)
 
 <use 06_Results/images/ext1.jpg>
 Package pdftex.def Info: 06_Results/images/ext1.jpg used on input line 139.
 (pdftex.def)             Requested size: 217.80222pt x 163.32169pt.
 
-<06_Results/images/ext2.jpg, id=904, 1827.82875pt x 1129.21875pt>
+<06_Results/images/ext2.jpg, id=907, 1827.82875pt x 1129.21875pt>
 File: 06_Results/images/ext2.jpg Graphic file (type jpg)
 
 <use 06_Results/images/ext2.jpg>
 Package pdftex.def Info: 06_Results/images/ext2.jpg used on input line 144.
 (pdftex.def)             Requested size: 254.09889pt x 156.96956pt.
 
-<06_Results/images/ext3.jpg, id=906, 642.4pt x 481.8pt>
+<06_Results/images/ext3.jpg, id=909, 642.4pt x 481.8pt>
 File: 06_Results/images/ext3.jpg Graphic file (type jpg)
 
 <use 06_Results/images/ext3.jpg>
 Package pdftex.def Info: 06_Results/images/ext3.jpg used on input line 157.
 (pdftex.def)             Requested size: 254.09889pt x 190.56989pt.
 
-<06_Results/images/tilting2.png, id=908, 792.9625pt x 469.755pt>
+<06_Results/images/tilting2.png, id=911, 792.9625pt x 469.755pt>
 File: 06_Results/images/tilting2.png Graphic file (type png)
 
 <use 06_Results/images/tilting2.png>
@@ -2098,7 +2095,7 @@ Package pdftex.def Info: 06_Results/images/tilting2.png used on input line 162.
 Underfull \vbox (badness 1983) has occurred while \output is active []
 
  [41 <./06_Results/images/ext3.jpg> <./06_Results/images/tilting2.png>] [42]
-<06_Results/images/ruler0.png, id=942, 2395.95125pt x 2600.71625pt>
+<06_Results/images/ruler0.png, id=945, 2395.95125pt x 2600.71625pt>
 File: 06_Results/images/ruler0.png Graphic file (type png)
 
 <use 06_Results/images/ruler0.png>
@@ -2116,7 +2113,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [43]
 [44 <./06_Results/images/ruler0.png>]
-<06_Results/figures05/1_x_validation.png, id=957, 454.69875pt x 255.95625pt>
+<06_Results/figures05/1_x_validation.png, id=960, 454.69875pt x 255.95625pt>
 File: 06_Results/figures05/1_x_validation.png Graphic file (type png)
 
 <use 06_Results/figures05/1_x_validation.png>
@@ -2124,7 +2121,7 @@ Package pdftex.def Info: 06_Results/figures05/1_x_validation.png used on input
 line 335.
 (pdftex.def)             Requested size: 361.35196pt x 252.94441pt.
 
-<06_Results/figures05/1_y_validation.png, id=958, 455.45157pt x 255.95625pt>
+<06_Results/figures05/1_y_validation.png, id=961, 455.45157pt x 255.95625pt>
 File: 06_Results/figures05/1_y_validation.png Graphic file (type png)
 
 <use 06_Results/figures05/1_y_validation.png>
@@ -2132,7 +2129,7 @@ Package pdftex.def Info: 06_Results/figures05/1_y_validation.png used on input
 line 342.
 (pdftex.def)             Requested size: 361.35951pt x 252.94441pt.
 
-<06_Results/figures05/1_yaw_validation.png, id=959, 455.45157pt x 255.95625pt>
+<06_Results/figures05/1_yaw_validation.png, id=962, 455.45157pt x 255.95625pt>
 File: 06_Results/figures05/1_yaw_validation.png Graphic file (type png)
 
 <use 06_Results/figures05/1_yaw_validation.png>
@@ -2149,7 +2146,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<06_Results/figures05/2_x_validation.png, id=964, 454.69875pt x 255.95625pt>
+<06_Results/figures05/2_x_validation.png, id=967, 454.69875pt x 255.95625pt>
 File: 06_Results/figures05/2_x_validation.png Graphic file (type png)
 
 <use 06_Results/figures05/2_x_validation.png>
@@ -2157,7 +2154,7 @@ Package pdftex.def Info: 06_Results/figures05/2_x_validation.png used on input
 line 359.
 (pdftex.def)             Requested size: 361.35196pt x 252.94441pt.
 
-<06_Results/figures05/2_y_validation.png, id=965, 455.45157pt x 255.95625pt>
+<06_Results/figures05/2_y_validation.png, id=968, 455.45157pt x 255.95625pt>
 File: 06_Results/figures05/2_y_validation.png Graphic file (type png)
 
 <use 06_Results/figures05/2_y_validation.png>
@@ -2165,7 +2162,7 @@ Package pdftex.def Info: 06_Results/figures05/2_y_validation.png used on input
 line 366.
 (pdftex.def)             Requested size: 361.35951pt x 252.94441pt.
 
-<06_Results/figures05/2_yaw_validation.png, id=966, 455.45157pt x 255.95625pt>
+<06_Results/figures05/2_yaw_validation.png, id=969, 455.45157pt x 255.95625pt>
 File: 06_Results/figures05/2_yaw_validation.png Graphic file (type png)
 
 <use 06_Results/figures05/2_yaw_validation.png>
@@ -2182,7 +2179,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<06_Results/figures05/abs_error_x.png, id=970, 454.69875pt x 255.95625pt>
+<06_Results/figures05/abs_error_x.png, id=973, 454.69875pt x 255.95625pt>
 File: 06_Results/figures05/abs_error_x.png Graphic file (type png)
 
 <use 06_Results/figures05/abs_error_x.png>
@@ -2193,7 +2190,7 @@ e 384.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<06_Results/figures05/abs_error_y.png, id=971, 455.45157pt x 255.95625pt>
+<06_Results/figures05/abs_error_y.png, id=974, 455.45157pt x 255.95625pt>
 File: 06_Results/figures05/abs_error_y.png Graphic file (type png)
 
 <use 06_Results/figures05/abs_error_y.png>
@@ -2204,7 +2201,7 @@ e 392.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<06_Results/figures05/abs_error_yaw.png, id=972, 455.45157pt x 255.95625pt>
+<06_Results/figures05/abs_error_yaw.png, id=975, 455.45157pt x 255.95625pt>
 File: 06_Results/figures05/abs_error_yaw.png Graphic file (type png)
 
 <use 06_Results/figures05/abs_error_yaw.png>
@@ -2236,7 +2233,7 @@ LaTeX Warning: Text page 48 contains only floats.
 
 [48 <./06_Results/figures05/2_y_validation.png (PNG copy)> <./06_Results/figure
 s05/2_yaw_validation.png (PNG copy)>]
-<06_Results/images/cad_cloud.png, id=993, 464.73625pt x 457.71pt>
+<06_Results/images/cad_cloud.png, id=996, 464.73625pt x 457.71pt>
 File: 06_Results/images/cad_cloud.png Graphic file (type png)
 
 <use 06_Results/images/cad_cloud.png>
@@ -2244,7 +2241,7 @@ Package pdftex.def Info: 06_Results/images/cad_cloud.png used on input line 415
 .
 (pdftex.def)             Requested size: 217.80222pt x 214.50912pt.
 
-<06_Results/images/astra_cloud.png, id=995, 378.41376pt x 313.17pt>
+<06_Results/images/astra_cloud.png, id=998, 378.41376pt x 313.17pt>
 File: 06_Results/images/astra_cloud.png Graphic file (type png)
 
 <use 06_Results/images/astra_cloud.png>
@@ -2252,7 +2249,7 @@ Package pdftex.def Info: 06_Results/images/astra_cloud.png used on input line 4
 20.
 (pdftex.def)             Requested size: 217.80222pt x 180.25293pt.
 
-<06_Results/images/real_cloud.png, id=997, 745.78625pt x 567.11874pt>
+<06_Results/images/real_cloud.png, id=1000, 745.78625pt x 567.11874pt>
 File: 06_Results/images/real_cloud.png Graphic file (type png)
 
 <use 06_Results/images/real_cloud.png>
@@ -2263,74 +2260,124 @@ Package pdftex.def Info: 06_Results/images/real_cloud.png used on input line 42
 5/abs_error_y.png (PNG copy)>] [50 <./06_Results/figures05/abs_error_yaw.png (P
 NG copy)>] [51 <./06_Results/images/cad_cloud.png> <./06_Results/images/astra_c
 loud.png> <./06_Results/images/real_cloud.png>]
-Overfull \hbox (22.44505pt too wide) in paragraph at lines 445--457
+Overfull \hbox (12.84508pt too wide) in paragraph at lines 445--456
  [][] 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+lmss on input line 460
-.
-LaTeX Font Info:    No file OMSlmss.fd. on input line 460.
+[52] <06_Results/realnew/realnew_cloud.png, id=1030, 544.0325pt x 417.56pt>
+File: 06_Results/realnew/realnew_cloud.png Graphic file (type png)
 
-LaTeX Font Warning: Font shape `OMS/lmss/bx/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 460.
+<use 06_Results/realnew/realnew_cloud.png>
+Package pdftex.def Info: 06_Results/realnew/realnew_cloud.png used on input lin
+e 467.
+(pdftex.def)             Requested size: 217.80222pt x 167.17393pt.
 
-<06_Results/figures/x_newrealsense.png, id=1021, 455.45157pt x 255.95625pt>
+<06_Results/figures/x_newrealsense.png, id=1032, 455.45157pt x 255.95625pt>
 File: 06_Results/figures/x_newrealsense.png Graphic file (type png)
 
 <use 06_Results/figures/x_newrealsense.png>
 Package pdftex.def Info: 06_Results/figures/x_newrealsense.png used on input li
-ne 469.
+ne 481.
 (pdftex.def)             Requested size: 254.09889pt x 142.80336pt.
 
-<06_Results/figures/y_newrealsense.png, id=1023, 455.45157pt x 255.95625pt>
+<06_Results/figures/y_newrealsense.png, id=1034, 455.45157pt x 255.95625pt>
 File: 06_Results/figures/y_newrealsense.png Graphic file (type png)
 
 <use 06_Results/figures/y_newrealsense.png>
 Package pdftex.def Info: 06_Results/figures/y_newrealsense.png used on input li
-ne 474.
+ne 486.
 (pdftex.def)             Requested size: 254.09889pt x 142.80336pt.
 
-<06_Results/figures/yaw_newrealsense.png, id=1025, 455.45157pt x 255.95625pt>
+<06_Results/figures/yaw_newrealsense.png, id=1036, 455.45157pt x 255.95625pt>
 File: 06_Results/figures/yaw_newrealsense.png Graphic file (type png)
 
 <use 06_Results/figures/yaw_newrealsense.png>
 Package pdftex.def Info: 06_Results/figures/yaw_newrealsense.png used on input 
-line 480.
+line 492.
 (pdftex.def)             Requested size: 254.09889pt x 142.80336pt.
+ [53 <./06_Results/realnew/realnew_cloud.png>] [54 <./06_Results/figures/x_newr
+ealsense.png (PNG copy)> <./06_Results/figures/y_newrealsense.png (PNG copy)> <
+./06_Results/figures/yaw_newrealsense.png (PNG copy)>]
+<06_Results/realnew/1.png, id=1055, 219.82124pt x 158.5925pt>
+File: 06_Results/realnew/1.png Graphic file (type png)
 
-<06_Results/figures/newreal_fitness.png, id=1027, 455.45157pt x 255.95625pt>
+<use 06_Results/realnew/1.png>
+Package pdftex.def Info: 06_Results/realnew/1.png used on input line 525.
+(pdftex.def)             Requested size: 142.26378pt x 102.64104pt.
+
+<06_Results/realnew/2.png, id=1056, 159.59625pt x 120.45pt>
+File: 06_Results/realnew/2.png Graphic file (type png)
+
+<use 06_Results/realnew/2.png>
+Package pdftex.def Info: 06_Results/realnew/2.png used on input line 527.
+(pdftex.def)             Requested size: 142.26378pt x 107.36923pt.
+
+<06_Results/realnew/3.png, id=1057, 185.69376pt x 145.54375pt>
+File: 06_Results/realnew/3.png Graphic file (type png)
+
+<use 06_Results/realnew/3.png>
+Package pdftex.def Info: 06_Results/realnew/3.png used on input line 529.
+(pdftex.def)             Requested size: 142.26378pt x 111.50716pt.
+
+<06_Results/realnew/4.png, id=1058, 241.90375pt x 159.59625pt>
+File: 06_Results/realnew/4.png Graphic file (type png)
+
+<use 06_Results/realnew/4.png>
+Package pdftex.def Info: 06_Results/realnew/4.png used on input line 531.
+(pdftex.def)             Requested size: 142.26378pt x 93.86142pt.
+
+<06_Results/figures/newreal_fitness.png, id=1059, 455.45157pt x 255.95625pt>
 File: 06_Results/figures/newreal_fitness.png Graphic file (type png)
 
 <use 06_Results/figures/newreal_fitness.png>
 Package pdftex.def Info: 06_Results/figures/newreal_fitness.png used on input l
-ine 512.
-(pdftex.def)             Requested size: 254.09889pt x 142.80336pt.
+ine 540.
+(pdftex.def)             Requested size: 290.40111pt x 163.20216pt.
 
-<06_Results/figures/newreal_rmse.png, id=1029, 455.45157pt x 255.95625pt>
+<06_Results/figures/newreal_rmse.png, id=1061, 455.45157pt x 255.95625pt>
 File: 06_Results/figures/newreal_rmse.png Graphic file (type png)
 
 <use 06_Results/figures/newreal_rmse.png>
 Package pdftex.def Info: 06_Results/figures/newreal_rmse.png used on input line
- 517.
-(pdftex.def)             Requested size: 254.09889pt x 142.80336pt.
-) (./07_FutureWork/FutureWork7.tex
-[52] [53 <./06_Results/figures/x_newrealsense.png (PNG copy)> <./06_Results/fig
-ures/y_newrealsense.png (PNG copy)> <./06_Results/figures/yaw_newrealsense.png 
-(PNG copy)>] [54 <./06_Results/figures/newreal_fitness.png (PNG copy)> <./06_Re
-sults/figures/newreal_rmse.png (PNG copy)>]
+ 545.
+(pdftex.def)             Requested size: 290.40111pt x 163.20216pt.
+
+<06_Results/realnew/2.jpg, id=1063, 1606.0pt x 903.375pt>
+File: 06_Results/realnew/2.jpg Graphic file (type jpg)
+
+<use 06_Results/realnew/2.jpg>
+Package pdftex.def Info: 06_Results/realnew/2.jpg used on input line 556.
+(pdftex.def)             Requested size: 254.09889pt x 142.93018pt.
+
+<06_Results/realnew/3.jpg, id=1065, 1606.0pt x 903.375pt>
+File: 06_Results/realnew/3.jpg Graphic file (type jpg)
+
+<use 06_Results/realnew/3.jpg>
+Package pdftex.def Info: 06_Results/realnew/3.jpg used on input line 561.
+(pdftex.def)             Requested size: 254.09889pt x 142.93018pt.
+
+<06_Results/realnew/5.jpg, id=1067, 1606.0pt x 903.375pt>
+File: 06_Results/realnew/5.jpg Graphic file (type jpg)
+
+<use 06_Results/realnew/5.jpg>
+Package pdftex.def Info: 06_Results/realnew/5.jpg used on input line 573.
+(pdftex.def)             Requested size: 254.09889pt x 142.93018pt.
+
+<06_Results/realnew/4.jpg, id=1069, 1606.0pt x 903.375pt>
+File: 06_Results/realnew/4.jpg Graphic file (type jpg)
+
+<use 06_Results/realnew/4.jpg>
+Package pdftex.def Info: 06_Results/realnew/4.jpg used on input line 578.
+(pdftex.def)             Requested size: 254.09889pt x 142.93018pt.
+) (./08_Conclusions/Conclusions8.tex [55 <./06_Results/realnew/1.png> <./06_Res
+ults/realnew/2.png> <./06_Results/realnew/3.png> <./06_Results/realnew/4.png>] 
+[56 <./06_Results/figures/newreal_fitness.png (PNG copy)> <./06_Results/figures
+/newreal_rmse.png (PNG copy)>] [57 <./06_Results/realnew/2.jpg> <./06_Results/r
+ealnew/3.jpg>] [58 <./06_Results/realnew/5.jpg> <./06_Results/realnew/4.jpg>]
 Chapter 7.
+) (./ZReferences/reference.tex [59
 
-LaTeX Warning: Reference `appendix...???????????...' on page 55 undefined on in
-put line 6.
-
-) (./08_Conclusions/Conclusions8.tex [55
-
-] [56
-
-]
-Chapter 8.
-) (./ZReferences/reference.tex [57] [58
+] [60
 
 ]
 Underfull \hbox (badness 2293) in paragraph at lines 8--10
@@ -2344,7 +2391,7 @@ Underfull \hbox (badness 6332) in paragraph at lines 21--23
  http : / / graphics . stanford . edu /
  []
 
-[59]
+[61]
 Underfull \hbox (badness 10000) in paragraph at lines 65--67
 \T1/lmr/m/n/10.95 (+20) ,[]$\T1/lmtt/m/n/10.95 https : / / www . researchgate .
  net / publication / 238495425 _ Tsai %
@@ -2374,7 +2421,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--79
 516 .
  []
 
-[60]
+[62]
 Underfull \hbox (badness 10000) in paragraph at lines 88--90
 \T1/lmr/m/n/10.95 (+20) 2014, []$\T1/lmtt/m/n/10.95 https : / / www . researchg
 ate . net / publication / 289587273 _
@@ -2428,7 +2475,7 @@ Overfull \hbox (20.07874pt too wide) in paragraph at lines 107--109
 ]A-[]Guo-[]Bennamoun /
  []
 
-[61]
+[63]
 Underfull \hbox (badness 1596) in paragraph at lines 113--116
 []\T1/lmr/m/n/10.95 (+20) Sebastian Thrun,Dirk Haehnel,Aleksandr V. Se-gal, "Ge
 neralized-
@@ -2451,7 +2498,7 @@ x . ac . uk / ~avsegal / resources / papers /
 . 
 . Redefining command \appendix with sig. 'ss' on line 3.
 .................................................
- [62]
+ [64]
 Appendix A.
 ) (./ZAppendixA/AppendixB.tex
 Underfull \hbox (badness 10000) in paragraph at lines 22--1
@@ -2463,9 +2510,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--1
 * 
 * The macro \appendix should be used only once. Silently ignoring.
 *************************************************
-[63
+[65
 
-] [64
+] [66
 
 ]
 Appendix B.
@@ -2474,7 +2521,7 @@ Package pdfpages Warning: Option `page' is unknow to \includepdf.
 (pdfpages)                Did you mean `pages'? (Note the `s'!)
 (pdfpages)                OK, I'll proceed as if it were `pages'.
 
-<ZAppendixA/assignment.pdf, id=1153, 597.50829pt x 845.0471pt>
+<ZAppendixA/assignment.pdf, id=1198, 597.50829pt x 845.0471pt>
 File: ZAppendixA/assignment.pdf Graphic file (type pdf)
 
 <use ZAppendixA/assignment.pdf>
@@ -2490,7 +2537,7 @@ File: ZAppendixA/assignment.pdf Graphic file (type pdf)
 Package pdftex.def Info: ZAppendixA/assignment.pdf used on input line 6.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 
-<ZAppendixA/assignment.pdf, id=1157, page=1, 597.50829pt x 845.0471pt>
+<ZAppendixA/assignment.pdf, id=1202, page=1, 597.50829pt x 845.0471pt>
 File: ZAppendixA/assignment.pdf Graphic file (type pdf)
 
 <use ZAppendixA/assignment.pdf, page 1>
@@ -2503,7 +2550,7 @@ File: ZAppendixA/assignment.pdf Graphic file (type pdf)
 Package pdftex.def Info: ZAppendixA/assignment.pdf, page1 used on input line 6.
 
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
- [65]
+ [67]
 File: ZAppendixA/assignment.pdf Graphic file (type pdf)
 
 <use ZAppendixA/assignment.pdf, page 1>
@@ -2522,8 +2569,8 @@ File: ZAppendixA/assignment.pdf Graphic file (type pdf)
 Package pdftex.def Info: ZAppendixA/assignment.pdf, page1 used on input line 6.
 
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
- [66 <./ZAppendixA/assignment.pdf>]
-<ZAppendixA/assignment.pdf, id=1194, page=2, 597.50829pt x 845.0471pt>
+ [68 <./ZAppendixA/assignment.pdf>]
+<ZAppendixA/assignment.pdf, id=1239, page=2, 597.50829pt x 845.0471pt>
 File: ZAppendixA/assignment.pdf Graphic file (type pdf)
 
 <use ZAppendixA/assignment.pdf, page 2>
@@ -2542,19 +2589,19 @@ File: ZAppendixA/assignment.pdf Graphic file (type pdf)
 Package pdftex.def Info: ZAppendixA/assignment.pdf, page2 used on input line 6.
 
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
- [67 <./ZAppendixA/assignment.pdf>])
+ [69 <./ZAppendixA/assignment.pdf>])
 (./ZAppendixA/AppendixC.tex
 *************************************************
 * ctuthesis warning: "appendix-twice"
 * 
 * The macro \appendix should be used only once. Silently ignoring.
 *************************************************
-[68
+[70
 
 ]
 Appendix C.
 
-<ZAppendixA/figures/astra/constantorientation_astra_x.png, id=1208, 307.1475pt 
+<ZAppendixA/figures/astra/constantorientation_astra_x.png, id=1252, 307.1475pt 
 x 178.41656pt>
 File: ZAppendixA/figures/astra/constantorientation_astra_x.png Graphic file (ty
 pe png)
@@ -2563,7 +2610,7 @@ Package pdftex.def Info: ZAppendixA/figures/astra/constantorientation_astra_x.p
 ng used on input line 11.
 (pdftex.def)             Requested size: 181.5pt x 105.43091pt.
 
-<ZAppendixA/figures/astra/constantorientation_astra_y.png, id=1210, 314.67563pt
+<ZAppendixA/figures/astra/constantorientation_astra_y.png, id=1254, 314.67563pt
  x 190.46156pt>
 File: ZAppendixA/figures/astra/constantorientation_astra_y.png Graphic file (ty
 pe png)
@@ -2572,7 +2619,7 @@ Package pdftex.def Info: ZAppendixA/figures/astra/constantorientation_astra_y.p
 ng used on input line 16.
 (pdftex.def)             Requested size: 181.5pt x 109.85455pt.
 
-<ZAppendixA/figures/astra/constantorientation_astra_z.png, id=1212, 319.94531pt
+<ZAppendixA/figures/astra/constantorientation_astra_z.png, id=1256, 319.94531pt
  x 190.46156pt>
 File: ZAppendixA/figures/astra/constantorientation_astra_z.png Graphic file (ty
 pe png)
@@ -2581,7 +2628,7 @@ Package pdftex.def Info: ZAppendixA/figures/astra/constantorientation_astra_z.p
 ng used on input line 22.
 (pdftex.def)             Requested size: 181.5pt x 108.04689pt.
 
-<ZAppendixA/figures/astra/tiltingorientation_astra_x.png, id=1214, 319.1925pt x
+<ZAppendixA/figures/astra/tiltingorientation_astra_x.png, id=1258, 319.1925pt x
  189.70876pt>
 File: ZAppendixA/figures/astra/tiltingorientation_astra_x.png Graphic file (typ
 e png)
@@ -2590,7 +2637,7 @@ Package pdftex.def Info: ZAppendixA/figures/astra/tiltingorientation_astra_x.pn
 g used on input line 32.
 (pdftex.def)             Requested size: 181.5pt x 107.87169pt.
 
-<ZAppendixA/figures/astra/tiltingorientation_astra_y.png, id=1216, 321.45094pt 
+<ZAppendixA/figures/astra/tiltingorientation_astra_y.png, id=1260, 321.45094pt 
 x 189.70876pt>
 File: ZAppendixA/figures/astra/tiltingorientation_astra_y.png Graphic file (typ
 e png)
@@ -2599,7 +2646,7 @@ Package pdftex.def Info: ZAppendixA/figures/astra/tiltingorientation_astra_y.pn
 g used on input line 37.
 (pdftex.def)             Requested size: 181.5pt x 107.11617pt.
 
-<ZAppendixA/figures/astra/tiltingorientation_astra_z.png, id=1218, 320.69812pt 
+<ZAppendixA/figures/astra/tiltingorientation_astra_z.png, id=1262, 320.69812pt 
 x 187.45032pt>
 File: ZAppendixA/figures/astra/tiltingorientation_astra_z.png Graphic file (typ
 e png)
@@ -2608,7 +2655,7 @@ Package pdftex.def Info: ZAppendixA/figures/astra/tiltingorientation_astra_z.pn
 g used on input line 43.
 (pdftex.def)             Requested size: 181.5pt x 106.08981pt.
 
-<ZAppendixA/figures/real/constantorientation_real_x.png, id=1220, 307.1475pt x 
+<ZAppendixA/figures/real/constantorientation_real_x.png, id=1264, 307.1475pt x 
 178.41656pt>
 File: ZAppendixA/figures/real/constantorientation_real_x.png Graphic file (type
  png)
@@ -2617,7 +2664,7 @@ Package pdftex.def Info: ZAppendixA/figures/real/constantorientation_real_x.png
  used on input line 57.
 (pdftex.def)             Requested size: 181.5pt x 105.43091pt.
 
-<ZAppendixA/figures/real/constantorientation_real_y.png, id=1222, 314.67563pt x
+<ZAppendixA/figures/real/constantorientation_real_y.png, id=1266, 314.67563pt x
  190.46156pt>
 File: ZAppendixA/figures/real/constantorientation_real_y.png Graphic file (type
  png)
@@ -2626,7 +2673,7 @@ Package pdftex.def Info: ZAppendixA/figures/real/constantorientation_real_y.png
  used on input line 62.
 (pdftex.def)             Requested size: 181.5pt x 109.85455pt.
 
-<ZAppendixA/figures/real/constantorientation_real_z.png, id=1224, 319.94531pt x
+<ZAppendixA/figures/real/constantorientation_real_z.png, id=1268, 319.94531pt x
  190.46156pt>
 File: ZAppendixA/figures/real/constantorientation_real_z.png Graphic file (type
  png)
@@ -2635,7 +2682,7 @@ Package pdftex.def Info: ZAppendixA/figures/real/constantorientation_real_z.png
  used on input line 68.
 (pdftex.def)             Requested size: 181.5pt x 108.04689pt.
 
-<ZAppendixA/figures/real/tiltingorientation_real_x.png, id=1226, 319.1925pt x 1
+<ZAppendixA/figures/real/tiltingorientation_real_x.png, id=1270, 319.1925pt x 1
 89.70876pt>
 File: ZAppendixA/figures/real/tiltingorientation_real_x.png Graphic file (type 
 png)
@@ -2644,7 +2691,7 @@ Package pdftex.def Info: ZAppendixA/figures/real/tiltingorientation_real_x.png
 used on input line 78.
 (pdftex.def)             Requested size: 181.5pt x 107.87169pt.
 
-<ZAppendixA/figures/real/tiltingorientation_real_y.png, id=1228, 321.45094pt x 
+<ZAppendixA/figures/real/tiltingorientation_real_y.png, id=1272, 321.45094pt x 
 189.70876pt>
 File: ZAppendixA/figures/real/tiltingorientation_real_y.png Graphic file (type 
 png)
@@ -2653,7 +2700,7 @@ Package pdftex.def Info: ZAppendixA/figures/real/tiltingorientation_real_y.png
 used on input line 83.
 (pdftex.def)             Requested size: 181.5pt x 107.11617pt.
 
-<ZAppendixA/figures/real/tiltingorientation_real_z.png, id=1230, 320.69812pt x 
+<ZAppendixA/figures/real/tiltingorientation_real_z.png, id=1274, 320.69812pt x 
 187.45032pt>
 File: ZAppendixA/figures/real/tiltingorientation_real_z.png Graphic file (type 
 png)
@@ -2668,32 +2715,29 @@ used on input line 89.
 * 
 * The macro \appendix should be used only once. Silently ignoring.
 *************************************************
-[69 <./ZAppendixA/figures/astra/constantorientation_astra_x.png (PNG copy)> <./
+[71 <./ZAppendixA/figures/astra/constantorientation_astra_x.png (PNG copy)> <./
 ZAppendixA/figures/astra/constantorientation_astra_y.png (PNG copy)> <./ZAppend
-ixA/figures/astra/constantorientation_astra_z.png (PNG copy)>] [70 <./ZAppendix
+ixA/figures/astra/constantorientation_astra_z.png (PNG copy)>] [72 <./ZAppendix
 A/figures/astra/tiltingorientation_astra_x.png (PNG copy)> <./ZAppendixA/figure
 s/astra/tiltingorientation_astra_y.png (PNG copy)> <./ZAppendixA/figures/astra/
-tiltingorientation_astra_z.png (PNG copy)>] [71 <./ZAppendixA/figures/real/cons
+tiltingorientation_astra_z.png (PNG copy)>] [73 <./ZAppendixA/figures/real/cons
 tantorientation_real_x.png (PNG copy)> <./ZAppendixA/figures/real/constantorien
 tation_real_y.png (PNG copy)> <./ZAppendixA/figures/real/constantorientation_re
-al_z.png (PNG copy)>] [72 <./ZAppendixA/figures/real/tiltingorientation_real_x.
+al_z.png (PNG copy)>] [74 <./ZAppendixA/figures/real/tiltingorientation_real_x.
 png (PNG copy)> <./ZAppendixA/figures/real/tiltingorientation_real_y.png (PNG c
 opy)> <./ZAppendixA/figures/real/tiltingorientation_real_z.png (PNG copy)>]
 Appendix D.
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 125.
- [73
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 123.
+ [75
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 125.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 123.
  (./thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 125.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 125.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 123.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 123.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: DE5B36EB7944995205E0CE09DF56AA1C;4270.
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+(rerunfilecheck)             Checksum: 087EE78CFD8A0881207925A7965C12BE;4264.
 
 
 LaTeX Warning: There were undefined references.
@@ -2701,36 +2745,35 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 125.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 123.
  ) 
 Here is how much of TeX's memory you used:
- 21777 strings out of 493029
- 379216 string characters out of 6136234
- 495479 words of memory out of 5000000
- 24398 multiletter control sequences out of 15000+600000
- 119345 words of font info for 160 fonts, out of 8000000 for 9000
+ 21803 strings out of 493029
+ 380014 string characters out of 6136234
+ 495859 words of memory out of 5000000
+ 24414 multiletter control sequences out of 15000+600000
+ 119171 words of font info for 160 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,18n,58p,10357b,981s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/l
-m/lm-rm.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/font
-s/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb
-></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type
-1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/s
-hare/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/
-lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texm
-f/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lm
-sso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/
-fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pf
-b>
-Output written on thesis.pdf (81 pages, 29376701 bytes).
+m/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi
+10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/font
+s/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb><
+/usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/p
+ublic/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/shar
+e/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/l
+mtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
+am10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msb
+m10.pfb>
+Output written on thesis.pdf (83 pages, 30687420 bytes).
 PDF statistics:
- 1393 PDF objects out of 1440 (max. 8388607)
- 1139 compressed objects within 12 object streams
- 293 named destinations out of 1000 (max. 500000)
- 33301 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 1436 PDF objects out of 1440 (max. 8388607)
+ 1162 compressed objects within 12 object streams
+ 302 named destinations out of 1000 (max. 500000)
+ 33368 words of extra memory for PDF output out of 35830 (max. 10000000)
 

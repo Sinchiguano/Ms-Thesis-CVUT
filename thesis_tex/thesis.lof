@@ -68,15 +68,22 @@
 \contentsline {figure}{\numberline {6.17}{\ignorespaces Absolute Error: y-axis\relax }}{49}{figure.6.17}
 \contentsline {figure}{\numberline {6.18}{\ignorespaces Absolute Error: yaw angle\relax }}{50}{figure.6.18}
 \contentsline {figure}{\numberline {6.19}{\ignorespaces Point Cloud Sources: CAD model, Astra Camera and RealSense D-435 Camera\relax }}{51}{figure.6.19}
-\contentsline {figure}{\numberline {6.20}{\ignorespaces Ground Truth and Pose Estimation ($2^{nd}$ Experiment, RealSense D-415\relax }}{53}{figure.6.20}
-\contentsline {figure}{\numberline {6.21}{\ignorespaces Overview of the Validation Test: RealSense D-415\relax }}{54}{figure.6.21}
+\contentsline {figure}{\numberline {6.20}{\ignorespaces Point Cloud Source: RealSense D-435 Camera\relax }}{53}{figure.6.20}
+\contentsline {figure}{\numberline {6.21}{\ignorespaces Ground Truth and Pose Estimation ($2^{nd}$ Experiment, RealSense D-415\relax }}{54}{figure.6.21}
+\contentsline {figure}{\numberline {6.22}{\ignorespaces RGB Images of the Dataset \relax }}{55}{figure.6.22}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Template 1}}}{55}{subfigure.22.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Template 2}}}{55}{subfigure.22.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Template 3}}}{55}{subfigure.22.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Template 4}}}{55}{subfigure.22.4}
+\contentsline {figure}{\numberline {6.23}{\ignorespaces Results: Pose Estimation System with the RealSense D-415 Camera\relax }}{56}{figure.6.23}
+\contentsline {figure}{\numberline {6.24}{\ignorespaces Overview 1: Pose Estimation System with the RealSense D-415 Camera.\relax }}{57}{figure.6.24}
+\contentsline {figure}{\numberline {6.25}{\ignorespaces Overview 2: Pose Estimation System with the RealSense D-415 Camera.\relax }}{58}{figure.6.25}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Eye-To-Hand Result with a Constant Orientation of the Calibration Plate (Astra Camera)\relax }}{69}{figure.C.1}
-\contentsline {figure}{\numberline {C.2}{\ignorespaces Eye-To-Hand Result with Tilting Motion of the Calibration Plate (Astra Camera)\relax }}{70}{figure.C.2}
-\contentsline {figure}{\numberline {C.3}{\ignorespaces Eye-To-Hand Result with a Constant Orientation of the Calibration Plate (RealSense)\relax }}{71}{figure.C.3}
-\contentsline {figure}{\numberline {C.4}{\ignorespaces Eye-To-Hand Result with Tilting Motion of the Calibration Plate (RealSense Camera)\relax }}{72}{figure.C.4}
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Eye-To-Hand Result with a Constant Orientation of the Calibration Plate (Astra Camera)\relax }}{71}{figure.C.1}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Eye-To-Hand Result with Tilting Motion of the Calibration Plate (Astra Camera)\relax }}{72}{figure.C.2}
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Eye-To-Hand Result with a Constant Orientation of the Calibration Plate (RealSense)\relax }}{73}{figure.C.3}
+\contentsline {figure}{\numberline {C.4}{\ignorespaces Eye-To-Hand Result with Tilting Motion of the Calibration Plate (RealSense Camera)\relax }}{74}{figure.C.4}
 \addvspace {10\p@ }

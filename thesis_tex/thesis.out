@@ -52,11 +52,10 @@
 \BOOKMARK [2][-]{subsection.6.2.1}{Validation Test}{section.6.2}% 52
 \BOOKMARK [2][-]{subsection.6.2.2}{Pose Estimation Results}{section.6.2}% 53
 \BOOKMARK [2][-]{subsection.6.2.3}{Result Analysis}{section.6.2}% 54
-\BOOKMARK [2][-]{subsection.6.2.4}{\200}{section.6.2}% 55
-\BOOKMARK [0][-]{chapter.7}{Future Work}{}% 56
-\BOOKMARK [0][-]{chapter.8}{Conclusions}{}% 57
-\BOOKMARK [0][-]{chapter*.14}{Bibliography}{}% 58
-\BOOKMARK [0][-]{appendix.A}{List of Notation}{}% 59
-\BOOKMARK [0][-]{appendix.B}{Assignment of this thesis}{}% 60
-\BOOKMARK [0][-]{appendix.C}{Eye-To-Hand Calibration Results}{}% 61
-\BOOKMARK [0][-]{appendix.D}{Intrinsic Parameters: Astra, RealSense D-435 and RealSense D-415}{}% 62
+\BOOKMARK [1][-]{section.6.3}{Testing RealSense D-415 Camera}{chapter.6}% 55
+\BOOKMARK [0][-]{chapter.7}{Conclusions and Future Directions}{}% 56
+\BOOKMARK [0][-]{chapter*.14}{Bibliography}{}% 57
+\BOOKMARK [0][-]{appendix.A}{List of Notation}{}% 58
+\BOOKMARK [0][-]{appendix.B}{Assignment of this thesis}{}% 59
+\BOOKMARK [0][-]{appendix.C}{Eye-To-Hand Calibration Results}{}% 60
+\BOOKMARK [0][-]{appendix.D}{Intrinsic Parameters: Astra, RealSense D-435 and RealSense D-415}{}% 61
