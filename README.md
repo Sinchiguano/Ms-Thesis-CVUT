@@ -26,9 +26,12 @@ In order to use the yumi_main package where the Eye_To_Hand calibration and the 
  * [YuMi Python Interface](https://github.com/BerkeleyAutomation/yumipy)
 
 ### Step-by-Step: Eye-To-Hand Calibration
-![alt-text-1](/tmp/ext1.png "title-1") ![alt-text-2](/tmp/ext2.png"title-2")
+![alt-text-1]( "title-1") ![alt-text-2]("title-2")
 
-
+<p float="left">
+  <img src="/tmp/ext1.png" width="100" />
+  <img src="/tmp/ext2.png" width="100" /> 
+</p>
 
 A typical use case consists of the following steps (here using ROS kinetic):
 
