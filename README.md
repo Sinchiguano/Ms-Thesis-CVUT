@@ -26,9 +26,12 @@ In order to use the yumi_main package where the Eye_To_Hand calibration and the 
  * [YuMi Python Interface](https://github.com/BerkeleyAutomation/yumipy)
 
 ### Step-by-Step: Eye-To-Hand Calibration
-
+<p align="left">
 ![top_page](/tmp/ext1.png)
 ![top_page](/tmp/ext2.png)
+</p>
+
+
 A typical use case consists of the following steps (here using ROS kinetic):
 
 * Interface the robot with a terminal computer by executing the following launch file: 
