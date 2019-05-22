@@ -27,7 +27,7 @@ In order to use the yumi_main package where the Eye_To_Hand calibration and the 
 
 ### Step-by-Step: Eye-To-Hand Calibration
 <p float="left">
-  <img src="/tmp/ext1.png" width="440" />
+  <img src="/tmp/ext1.png" width="400" />
   <img src="/tmp/ext2.png" width="440" /> 
 </p>
 
