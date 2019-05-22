@@ -26,8 +26,7 @@ In order to use the yumi_main package where the Eye_To_Hand calibration and the 
  * [YuMi Python Interface](https://github.com/BerkeleyAutomation/yumipy)
 
 ### Step-by-Step: Eye-To-Hand Calibration
-![top_page](/tmp/ext1.png)
-![top_page](/tmp/ext2.png)
+![alt-text-1](/tmp/ext1.png "title-1") ![alt-text-2](/tmp/ext2.png"title-2")
 
 
 
