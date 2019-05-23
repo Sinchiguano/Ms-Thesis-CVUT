@@ -77,6 +77,8 @@ def do_icp_registration(source, target, transformation):
     '''Point-to-plane ICP registration is applied on original points'''
 
     # estimate_normals(source, KDTreeSearchParamHybrid(radius = 0.01, max_nn = 20))
+    # estimate_normals(target, KDTreeSearchParamHybrid(radius = 0.01, max_nn = 20))
+
     threshold = 0.005
 
     #result = registration_icp(source, target, threshold,transformation,TransformationEstimationPointToPlane())
@@ -182,3 +184,19 @@ if __name__ == '__main__':
     main()
 
 
+
+# draw_geometries([pcd_[0]])
+# for i, cloud in enumerate(pcd_):
+#     # Display the table and the object
+#     draw_geometries([cloud])
+#     #flag=False
+# '''
+# statistical_outlier_removal removes points that are further away from their neighbors compared to the average for the point cloud.
+# It takes two input parameters: nb_neighbors: allows to specify how many neighbors are taken into account in order to calculate
+# the average distance for a given point. std_ratio: allows to set the threshold level based on the standard deviation of
+# the average distances across the point cloud. The lower this number the more aggressive the filter will be.
+# '''
+# print("Statistical oulier removal")
+# cl,ind = statistical_outlier_removal(pcd_[0],nb_neighbors=20, std_ratio=5.0)
+# inlier_cloud = select_down_sample(pcd_[0], ind)
+# draw_geometries([inlier_cloud])

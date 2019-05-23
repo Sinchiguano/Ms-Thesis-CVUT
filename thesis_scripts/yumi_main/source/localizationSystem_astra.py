@@ -77,9 +77,9 @@ def do_vector3d(pc):
     #                 [ 0.,          0.,          0.,          1.        ]])
 
     #may_2_2019
-    pcd.transform( [[-0.02202798,  0.73070074, -0.68234243,  1.19405833]
-                     [ 0.99953549,  0.00171815, -0.03042798,  0.12247143]
-                     [-0.02106138, -0.68269574, -0.73039917,  0.53667407]
+    pcd.transform( [[-0.02202798,  0.73070074, -0.68234243,  1.19405833],
+                     [ 0.99953549,  0.00171815, -0.03042798,  0.12247143],
+                     [-0.02106138, -0.68269574, -0.73039917,  0.53667407],
                      [ 0. ,         0. ,         0. ,         1.        ]])
 
 
@@ -251,11 +251,21 @@ def main():
         command=cv2.waitKey(1) & 0xFF
         print('Ready to take scene data!!!')
 
-        if command == ord('e'):
+        if command == ord('t'):
             counter1+=1
             """Get a scene cloud in the world coordinate system"""
             pcd=do_pointcloud(frame,pc,counter2)
             cloud=copy.deepcopy(pcd)
+
+
+            # #from thesis_registration2 import *
+            # model_path='pipeline_model/'
+            # scene_path='pipeline_pcd/'
+
+            # #folder where i will save my dataset#
+            # #tmp='dataset_astra_CAD/'
+            # tmp='dataset_astra_ownCAD/'
+            # name_file=tmp+'transform_data.csv'
 
             #######
             #for testing purposes
@@ -265,17 +275,12 @@ def main():
             cv2.imwrite(tmp+str(counter1)+'img'+'.jpg', frame)
             #draw_geometries([pcd])
 
-            #######
-            # print('	//Ready to collect 3D-data')
-            # print "\n============ Press `Enter` to start..."
-            # raw_input()
-            # counter2+=1
 
             # Mask out point cloud in order to get only information of our region of interest, as we don't care about the other parts
             #--------------------------------------------------------
             # Threshold when working with the astra
             filter = do_passthrough_filter(point_cloud = cloud,name_axis = 'x', min_axis = 0.25, max_axis = 0.75)
-            filter = do_passthrough_filter(point_cloud = filter,name_axis = 'y', min_axis = -0.10, max_axis = 0.50)
+            filter = do_passthrough_filter(point_cloud = filter,name_axis = 'y', min_axis = -0.10, max_axis = 0.40)
             pcl.save(filter,scene_path +'filter_objects_'+str(counter2)+'.pcd' )
             print('filter done!')
 
@@ -291,8 +296,8 @@ def main():
             print('change done')
 
             #The source cloud is my CAD model that it is already in the world coordinate system
-            #source=read_point_cloud(model_path+'front_face_m_down.pcd')
-            source=read_point_cloud(model_path+'objects_0_render_m.ply')
+            source=read_point_cloud(model_path+'cad_model_m_down.ply')
+            #source=read_point_cloud(model_path+'model_camera_m.ply')
 
             #The target cloud is a scene image, it is already mapped into the world coordinate system (T: World -> Camera)
             target=read_point_cloud(scene_path+'objects_'+str(counter2)+'.pcd')

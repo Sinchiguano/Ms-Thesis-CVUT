@@ -55,14 +55,60 @@ def publish_transforms(br):
     global position_
 
 
+    # t0 = geometry_msgs.msg.TransformStamped()
+    # t0.header.stamp = rospy.Time.now()
+    # t0.header.frame_id = "world"
+    # #t0.child_frame_id = "panda_link0"
+    # #t0.child_frame_id = "base_link"
+    # t0.child_frame_id = "yumi_base_link"
+    # t0.transform.translation.x = 0.0
+    # t0.transform.translation.y = 0.0
+    # t0.transform.translation.z = 0.0
+    
+    # tmp_rot=np.array([[1,0, 0], [0, 1, 0],[0, 0, 1]])
+    # tmp_trans=np.array([[0.30],[0],[0] ])
+    # myrot =np.hstack((tmp_rot,tmp_trans))
+    # myrot=np.vstack((myrot,[0.0,0.0,0.0,1.0]))
+    # #print('my rotation: \n {}'.format(myrot) )
+    
+    # q0 = tf.transformations.quaternion_from_matrix(myrot)
+    # t0.transform.rotation.x = q0[0]
+    # t0.transform.rotation.y = q0[1]
+    # t0.transform.rotation.z = q0[2]
+    # t0.transform.rotation.w = q0[3]
+    # br.sendTransform(t0)
+
+
+    # t1 = geometry_msgs.msg.TransformStamped()
+    # t1.header.stamp = rospy.Time.now()
+    # t1.header.frame_id = "target"
+    # t1.child_frame_id = "object"
+    # t1.transform.translation.x = 0.12
+    # t1.transform.translation.y = 0.12
+    # t1.transform.translation.z = 0.0
+
+    # q1 = tf.transformations.quaternion_from_euler(0, 0, 0)
+    # t1.transform.rotation.x = q1[0]
+    # t1.transform.rotation.y = q1[1]
+    # t1.transform.rotation.z = q1[2]
+    # t1.transform.rotation.w = q1[3]
+    # br.sendTransform(t1)
+
     t1 = geometry_msgs.msg.TransformStamped()
     t1.header.stamp = rospy.Time.now()
     t1.header.frame_id = "world"
     t1.child_frame_id = "target"
-    t1.transform.translation.x = 0.0
+    t1.transform.translation.x = 0.40
     t1.transform.translation.y = 0.0
     t1.transform.translation.z = 0.0
 
+    # tmp_rot=np.array([[0, 1, 0], [1, 0, 0],[0, 0, -1]])
+    # tmp_trans=np.array([[0.30],[0],[0] ])
+    # myrot =np.hstack((tmp_rot,tmp_trans))
+    # myrot=np.vstack((myrot,[0.0,0.0,0.0,1.0]))
+    #print('my rotation: \n {}'.format(myrot) )
+
+    #q1 = tf.transformations.quaternion_from_matrix(myrot)
     q1 = tf.transformations.quaternion_from_euler(0, 0, 0)
     t1.transform.rotation.x = q1[0]
     t1.transform.rotation.y = q1[1]
@@ -101,12 +147,31 @@ def print_information(rotation_vector,translation_vector,rvec_matrix):
     print("===translation_vector:")
     print(translation_vector)
 
+    matr =np.hstack((rvec_matrix,translation_vector))
+    matr=np.vstack((matr,[0.0,0.0,0.0,1.0]))
+
+    quat_tmp = tf.transformations.quaternion_from_matrix(matr)
+    roll_, pitch_, yaw_=tf.transformations.euler_from_quaternion(quat_tmp)
+    euler_angles_tmp=[roll_,pitch_,yaw_]
+    print("euler_angles_tmp: ",euler_angles_tmp)
+    import math
+    print(roll_* 180 / math.pi,pitch_* 180 / math.pi,yaw_* 180 / math.pi)
 
     print("\n\nThe camera origin in -->>world coordinate system:")
     print("===camera rvec_matrix:")
     print(rvec_matrix.T)
     print("===camera translation_vector:")
     print(-np.dot(rvec_matrix.T, translation_vector))
+
+    r_matrix=rvec_matrix.T
+    t_position=-np.dot(rvec_matrix.T, translation_vector)
+    print('euler_angles inv roll_,pitch_,yaw:  \n',euler_angles_)
+    print(euler_angles_[0]* 180 / math.pi,euler_angles_[1]* 180 / math.pi,euler_angles_[2]* 180 / math.pi)
+    mat =np.hstack((r_matrix,t_position))
+    mat=np.vstack((mat,[0.0,0.0,0.0,1.0]))
+    print('transform world->camera:')
+    print(mat)
+
 
     print('\n\n-----------------------------------------------------')
 
@@ -142,31 +207,20 @@ def locate_target_orientation(frame,ret, corners):
     x,y=np.meshgrid(range(7),range(9))#col row
     world_points_3d=np.hstack((y.reshape(63,1)*0.020,x.reshape(63,1)*0.020,np.zeros((63,1)))).astype(np.float32)
 
-    # Camera internals
+    # Camera internals  
     #new calibration 16 April
-    #list_matrix=[509.1342693936671, 0, 307.8668860619281, 0, 508.0139759782658, 240.6956622253994, 0, 0, 1]
-    #from internet offset in z axes
-    #list_matrix=[585.3933817769559, 0, 315.1468411661461, 0, 585.1118292242563, 241.6570193534038, 0, 0, 1]
+    list_matrix=[509.1342693936671, 0, 307.8668860619281, 0, 508.0139759782658, 240.6956622253994, 0, 0, 1]
 
-
-    #last calibration 
-    list_matrix=[506.1338725148187, 0, 313.7031356480479, 0, 506.4623458309018, 246.4363947238303, 0, 0, 1]
+    #May_2_2019
+    #list_matrix=[513.916180, 0.000000, 308.570130, 0.000000, 514.377333, 240.628363, 0.000000, 0.000000, 1.000000]
     cameraMatrix_ar=np.asarray(list_matrix).reshape(3,3)
-    distCoef=[-0.004755818169472225, -0.04879035388633979, -0.002404621345494799, 0.001159841420888698, 0]
+    distCoef=[0.071388, -0.188724, -0.002271, 0.002146, 0.000000]
     distCoef_ar=np.asarray(distCoef).reshape(len(distCoef),1)
-
-
-    # #May_2_2019
-    # list_matrix=[513.916180, 0.000000, 308.570130, 0.000000, 514.377333, 240.628363, 0.000000, 0.000000, 1.000000]
-    # cameraMatrix_ar=np.asarray(list_matrix).reshape(3,3)
-    # distCoef=[0.071388, -0.188724, -0.002271, 0.002146, 0.000000]
-    # distCoef_ar=np.asarray(distCoef).reshape(len(distCoef),1)
 
 
     #Rotation vector (radians)
     (success, rotation_vector, translation_vector) = cv2.solvePnP(world_points_3d, corners, cameraMatrix_ar, distCoef_ar, flags=cv2.SOLVEPNP_ITERATIVE)
     #_, rvecs, tvecs, inliers=cv2.solvePnPRansac(world_points_3d, corners, cameraMatrix_ar, distCoef_ar)
-
 
     # World coordinates system
     axis = np.float32([[0.10,0,0],[0,0.10,0],[0,0,0.10],[0,0,0]])
@@ -201,8 +255,8 @@ def main():
 
         # Capture frame-by-frame
 
-        #frame=cv2.imread('temp2.jpg')
-        frame=camObj.get_image()
+        frame=cv2.imread('astraSetup.jpg')
+        #frame=camObj.get_image()
 
         #print(type(frame))
         if frame is None:
@@ -210,7 +264,7 @@ def main():
             continue
 
         if cv2.waitKey(1) & 0xFF == ord('q'):
-            cv2.imwrite('temp2.jpg', frame)
+            cv2.imwrite('astraSetup.jpg', frame)
             break
 
         try:

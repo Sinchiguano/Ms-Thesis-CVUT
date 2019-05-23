@@ -15,15 +15,18 @@ from thesis_library import *
 from thesis_class import *
 from open3d import uniform_down_sample,registration_icp,TransformationEstimationPointToPlane,TransformationEstimationPointToPoint
 import pcl
-
+import csv
 ######################################
+
 
 #from thesis_registration2 import *
 model_path='pipeline_model/'
 scene_path='pipeline_pcd/'
 
-
-
+#folder where i will save my dataset#
+#tmp='dataset_astra_CAD/'
+tmp='dataset_astra_ownCAD/'
+name_file=tmp+'transform_data.csv'
 
 def do_pointcloud(frame,pc,counter):
     global scene_path
@@ -63,23 +66,29 @@ def do_vector3d(pc):
     #                 [ 0.99994059, -0.00870372, -0.00656244,  0.09943772],
     #                 [-0.01026543, -0.95439533, -0.2983692,   0.33255621],
     #                 [ 0.,          0.,          0.,          1.        ]])
-    #second measurement may_2_2019
-    pcd.transform([[-0.01949542,  0.29517533, -0.95524418,  1.22202822],
-                    [ 0.99978308, -0.0012487,  -0.02079026,  0.10141686],
-                    [-0.00732958, -0.95544229, -0.29508696,  0.32457367],
-                    [ 0.,          0.,          0.,          1.        ]])
+
+    # #second measurement may_2_2019
+    # pcd.transform([[-0.01949542,  0.29517533, -0.95524418,  1.22202822],
+    #                 [ 0.99978308, -0.0012487,  -0.02079026,  0.10141686],
+    #                 [-0.00732958, -0.95544229, -0.29508696,  0.32457367],
+    #                 [ 0.,          0.,          0.,          1.        ]])
+    #17_May_2019
+    pcd.transform([[ 0.03038076,  0.63332156, -0.77329219,  0.9637014],
+    [ 0.99951984, -0.02396364,  0.01964262,  0.02123857],
+    [-0.0060908,  -0.77351765, -0.63374549,  0.33466165],
+    [ 0.,          0.,          0.,          1.        ]])
 
     return pcd
 
 def do_dataset(source,target):
     '''Preprocessing step'''
     print("Downsample the point cloud and get features with FPFH")
-    source_down, source_fpfh = do_preprocessing_pcd(source, 0.006)#in mm
+    source_down, source_fpfh = do_preprocessing_pcd(source, 0.004)#in mm
     tmp_source=np.asarray(source_down.points)
     print('shape:',tmp_source.shape)
 
     print("Downsample the point cloud and get features with FPFH")
-    target_down, target_fpfh = do_preprocessing_pcd(target, 0.003)#good tunning
+    target_down, target_fpfh = do_preprocessing_pcd(target, 0.004)#good tunning
     tmp_target=np.asarray(target_down.points)
     print('shape:',tmp_target.shape)
 
@@ -160,6 +169,38 @@ def do_ransac_plane_segmentation(point_cloud, max_distance = 0.01):
     inliers = point_cloud.extract(inlier_indices, negative = False)
     outliers = point_cloud.extract(inlier_indices, negative = True)
     return inliers, outliers
+def do_csv_file(tran_rot,counter1,computation_time):
+    global name_file
+    aux_angles=do_rotation_matrix_to_euler_angles(tran_rot[:-1,:-1])
+    tmp_list=list(tran_rot[:-1,3])
+    #q = tf.transformations.quaternion_from_matrix()
+    from pyquaternion import Quaternion
+    a= Quaternion(matrix=tran_rot)
+    # print(a)
+    # print("{} + {}i + {}j + {}k".format(a[0], a[1], a[2], a[3]))
+    quat=[a[0], a[1], a[2], a[3]]
+    with open(name_file, 'a') as csvfile:# a means append
+        filewriter = csv.writer(csvfile, delimiter=',',quotechar='|', quoting=csv.QUOTE_MINIMAL)
+        #filewriter.writerow(aux_angles+tmp_list+quat)
+        filewriter.writerow(aux_angles+tmp_list+computation_time)
+
+# Calculates rotation matrix to euler angles
+def do_rotation_matrix_to_euler_angles(R) :
+    #inspire by the following source
+    #https://www.learnopencv.com/rotation-matrix-to-euler-angles/
+    sy = math.sqrt(R[0,0] * R[0,0] +  R[1,0] * R[1,0])
+
+    singular = sy < 1e-6
+
+    if  not singular :
+        x = math.atan2(R[2,1] , R[2,2])
+        y = math.atan2(-R[2,0], sy)
+        z = math.atan2(R[1,0], R[0,0])
+    else :
+        x = math.atan2(-R[1,2], R[1,1])
+        y = math.atan2(-R[2,0], sy)
+        z = 0
+    return [x* 180 / math.pi, y* 180 / math.pi, z* 180 / math.pi]
 
 
 def main():
@@ -200,17 +241,18 @@ def main():
         command=cv2.waitKey(1) & 0xFF
         print('Ready to take scene data!!!')
 
-        if command == ord('e'):
+        if command == ord('t'):
             """Get a scene cloud in the world coordinate system"""
             pcd=do_pointcloud(frame,pc,counter2)
             cloud=copy.deepcopy(pcd)
 
-            # #######
-            # #for testing purposes
-            pcl.save(pcd,'temp.pcd')
-            pcd = read_point_cloud('temp'+'.pcd')
-            write_point_cloud('temp'+'.ply', pcd)
-            # draw_geometries([pcd])
+            #######
+            #for testing purposes
+            pcl.save(pcd,tmp+str(counter1)+'cloud'+'.pcd')
+            pcd = read_point_cloud(tmp+str(counter1)+'cloud'+'.pcd')
+            write_point_cloud(tmp+str(counter1)+'cloud'+'.ply', pcd)
+            cv2.imwrite(tmp+str(counter1)+'img'+'.jpg', frame)
+            #draw_geometries([pcd])
             #######
 
 
@@ -221,8 +263,8 @@ def main():
 
             #--------------------------------------------------------
             # Threshold when working with the astra
-            filter = do_passthrough_filter(point_cloud = cloud,name_axis = 'x', min_axis = 0.25, max_axis = 0.5)
-            filter = do_passthrough_filter(point_cloud = filter,name_axis = 'y', min_axis = -0.10, max_axis = 0.50)
+            filter = do_passthrough_filter(point_cloud = cloud,name_axis = 'x', min_axis = 0.30, max_axis = 0.70)
+            filter = do_passthrough_filter(point_cloud = filter,name_axis = 'y', min_axis = -0.10, max_axis = 0.35)
             pcl.save(filter,scene_path +'filter_objects_'+str(counter2)+'.pcd' )
             print('filter done!')
 
@@ -238,34 +280,37 @@ def main():
             print('change done')
 
 
-
             #The source cloud is my CAD model that it is already in the world coordinate system
-            source=read_point_cloud(model_path+'front_face_m_down.pcd')
+            #source=read_point_cloud(model_path+'front_face_m_down.pcd')
+            #source=read_point_cloud(model_path+'objects_m_end_1.ply')
+            source=read_point_cloud(model_path+'new_m.ply')
             #The target cloud is a scene image, it is already mapped into the world coordinate system (T: World -> Camera)
             target=read_point_cloud(scene_path+'objects_'+str(counter2)+'.pcd')
             draw_geometries([source,target])
             print('Uploading done!!!')
 
 
-
             #DOWNSAMPLE AND COMPUTE FAST POINT FEATURE HISTOGRAM-->PREPROCESSING STEP: DATA MANIPULATION OF THE POINT CLOUD
             source, target, source_down, target_down, source_fpfh, target_fpfh=do_dataset(source,target)
             draw_geometries([source_down,target_down])
 
+            import time
+            start = time.time()
+
             #RANSAC REGISTRATION-->>global registration
             #-------------------
             ransac_output=do_ransac_registration(source_down, target_down, source_fpfh, target_fpfh )
+            #ICP REGISTRATION -->>local registration, point to plane approach
+            #-------------------
+            icp_output = do_icp_registration(source, target,ransac_output.transformation)
+            end = time.time()
+            print(end - start)
 
+            print(icp_output)
+            do_csv_file(icp_output.transformation,counter1,[end - start])
             do_drawing_registration(source, target, ransac_output.transformation)
-            print('RANSAC')
-            print(ransac_output.transformation)
-
-            # #ICP REGISTRATION -->>local registration, point to plane approach
-            # #-------------------
-            # icp_output = do_icp_registration(source, target,ransac_output.transformation)
-            # do_drawing_registration(source, target, icp_output.transformation)
-            # print('ICP')
-            # print(icp_output.transformation)
+            do_drawing_registration(source, target, icp_output.transformation)
+            print('ICP')
 
         cv2.imshow('frame',frame)
 
