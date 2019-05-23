@@ -6,15 +6,11 @@
 \select@language {english}
 \contentsline {paragraph}{Keywords:}{iv}{paragraph*.1}
 \contentsline {paragraph}{Supervisor:}{iv}{paragraph*.2}
-\select@language {czech}
-\contentsline {paragraph}{Kl\'i\v cov\'a\ slova:}{iv}{paragraph*.3}
-\contentsline {paragraph}{P\v reklad\ n\'azvu:}{iv}{paragraph*.4}
 \select@language {english}
 \select@language {english}
 \select@language {english}
 \select@language {english}
 \select@language {english}
-\select@language {czech}
 \select@language {english}
 \select@language {english}
 \select@language {english}
@@ -30,12 +26,12 @@
 \contentsline {section}{\numberline {3.1} Mathematical Tools}{5}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Rigid Transformations}{5}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Rotation Matrices}{5}{subsection.3.1.2}
-\contentsline {subsubsection}{Rotation Representations}{6}{subsubsection*.5}
-\contentsline {subsubsection}{Rotation Representations}{6}{subsubsection*.5}
+\contentsline {subsubsection}{Rotation Representations}{6}{subsubsection*.3}
+\contentsline {subsubsection}{Rotation Representations}{6}{subsubsection*.3}
 \contentsline {section}{\numberline {3.2}Basics of 3D Computer Vision}{6}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1} RGB-D sensors}{6}{subsection.3.2.1}
-\contentsline {subsubsection}{Point Cloud}{6}{subsubsection*.6}
-\contentsline {subsubsection}{Point Cloud}{6}{subsubsection*.6}
+\contentsline {subsubsection}{Point Cloud}{6}{subsubsection*.4}
+\contentsline {subsubsection}{Point Cloud}{6}{subsubsection*.4}
 \contentsline {subsection}{\numberline {3.2.2} Camera Pinhole Model}{7}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Parameters of camera model}{7}{subsection.3.2.3}
 \contentsline {subsection}{\numberline {3.2.4}Camera's Intrinsic Parameters}{8}{subsection.3.2.4}
@@ -63,23 +59,23 @@
 \contentsline {section}{\numberline {5.1}Pose estimation pipeline}{23}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Preprocessing stage}{24}{subsection.5.1.1}
 \contentsline {subsection}{\numberline {5.1.2}Filtering a Point cloud}{24}{subsection.5.1.2}
-\contentsline {subsubsection}{Filtering a PointCloud using a PassThrough filter}{25}{subsubsection*.7}
-\contentsline {subsubsection}{Filtering a PointCloud using a PassThrough filter}{25}{subsubsection*.7}
-\contentsline {subsubsection}{Plane Segmentation}{25}{subsubsection*.8}
-\contentsline {subsubsection}{Plane Segmentation}{25}{subsubsection*.8}
+\contentsline {subsubsection}{Filtering a PointCloud using a PassThrough filter}{25}{subsubsection*.5}
+\contentsline {subsubsection}{Filtering a PointCloud using a PassThrough filter}{25}{subsubsection*.5}
+\contentsline {subsubsection}{Plane Segmentation}{25}{subsubsection*.6}
+\contentsline {subsubsection}{Plane Segmentation}{25}{subsubsection*.6}
 \contentsline {subsection}{\numberline {5.1.3}Extract geometric feature}{26}{subsection.5.1.3}
-\contentsline {subsubsection}{3D keypoint Detection}{26}{subsubsection*.9}
-\contentsline {subsubsection}{3D keypoint Detection}{26}{subsubsection*.9}
-\contentsline {subsubsection}{Local surface feature description}{26}{subsubsection*.10}
-\contentsline {subsubsection}{Local surface feature description}{26}{subsubsection*.10}
-\contentsline {subsubsection}{Local surface feature description}{28}{subsubsection*.11}
-\contentsline {subsubsection}{Local surface feature description}{28}{subsubsection*.11}
+\contentsline {subsubsection}{3D keypoint Detection}{26}{subsubsection*.7}
+\contentsline {subsubsection}{3D keypoint Detection}{26}{subsubsection*.7}
+\contentsline {subsubsection}{Local surface feature description}{26}{subsubsection*.8}
+\contentsline {subsubsection}{Local surface feature description}{26}{subsubsection*.8}
+\contentsline {subsubsection}{Local surface feature description}{28}{subsubsection*.9}
+\contentsline {subsubsection}{Local surface feature description}{28}{subsubsection*.9}
 \contentsline {subsection}{\numberline {5.1.4}Searching Strategies}{28}{subsection.5.1.4}
-\contentsline {subsubsection}{RANSAC-based method}{29}{subsubsection*.12}
-\contentsline {subsubsection}{RANSAC-based method}{29}{subsubsection*.12}
+\contentsline {subsubsection}{RANSAC-based method}{29}{subsubsection*.10}
+\contentsline {subsubsection}{RANSAC-based method}{29}{subsubsection*.10}
 \contentsline {subsection}{\numberline {5.1.5}Local refinement}{29}{subsection.5.1.5}
-\contentsline {subsubsection}{Iterative Closest Point}{30}{subsubsection*.13}
-\contentsline {subsubsection}{Iterative Closest Point}{30}{subsubsection*.13}
+\contentsline {subsubsection}{Iterative Closest Point}{30}{subsubsection*.11}
+\contentsline {subsubsection}{Iterative Closest Point}{30}{subsubsection*.11}
 \contentsline {chapter}{\numberline {6}Experimental Results}{33}{chapter.6}
 \contentsline {section}{\numberline {6.1}Robot-Camera Calibration on the YuMi Robot}{33}{section.6.1}
 \contentsline {subsection}{\numberline {6.1.1}Reprojection Error}{35}{subsection.6.1.1}
@@ -93,7 +89,7 @@
 \contentsline {subsection}{\numberline {6.2.3}Result Analysis}{47}{subsection.6.2.3}
 \contentsline {section}{\numberline {6.3}Testing The RealSense D-415 Camera}{52}{section.6.3}
 \contentsline {chapter}{\numberline {7}Conclusions and Future Directions}{59}{chapter.7}
-\contentsline {chapter}{Bibliography}{61}{chapter*.14}
+\contentsline {chapter}{Bibliography}{61}{chapter*.12}
 \contentsline {chapter}{\numberline {A}List of Notation}{65}{appendix.A}
 \contentsline {chapter}{\numberline {B}Assignment of this thesis}{67}{appendix.B}
 \contentsline {chapter}{\numberline {C}Eye-To-Hand Calibration Results}{71}{appendix.C}
