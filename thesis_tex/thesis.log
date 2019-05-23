@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.3.25)  23 MAY 2019 08:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.3.25)  23 MAY 2019 09:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2289,42 +2289,38 @@ File: 06_Results/figures/yaw_newrealsense.png Graphic file (type png)
 Package pdftex.def Info: 06_Results/figures/yaw_newrealsense.png used on input 
 line 492.
 (pdftex.def)             Requested size: 254.09889pt x 142.80336pt.
-
-
-LaTeX Warning: Reference `absoluteRR' on page 53 undefined on input line 520.
-
-[53 <./06_Results/realnew/realnew_cloud.png>] [54 <./06_Results/figures/x_newre
-alsense.png (PNG copy)> <./06_Results/figures/y_newrealsense.png (PNG copy)> <.
-/06_Results/figures/yaw_newrealsense.png (PNG copy)>]
-<06_Results/realnew/1.png, id=1064, 219.82124pt x 158.5925pt>
+ [53 <./06_Results/realnew/realnew_cloud.png>] [54 <./06_Results/figures/x_newr
+ealsense.png (PNG copy)> <./06_Results/figures/y_newrealsense.png (PNG copy)> <
+./06_Results/figures/yaw_newrealsense.png (PNG copy)>]
+<06_Results/realnew/1.png, id=1065, 219.82124pt x 158.5925pt>
 File: 06_Results/realnew/1.png Graphic file (type png)
 
 <use 06_Results/realnew/1.png>
 Package pdftex.def Info: 06_Results/realnew/1.png used on input line 526.
 (pdftex.def)             Requested size: 142.26378pt x 102.64104pt.
 
-<06_Results/realnew/2.png, id=1065, 159.59625pt x 120.45pt>
+<06_Results/realnew/2.png, id=1066, 159.59625pt x 120.45pt>
 File: 06_Results/realnew/2.png Graphic file (type png)
 
 <use 06_Results/realnew/2.png>
 Package pdftex.def Info: 06_Results/realnew/2.png used on input line 528.
 (pdftex.def)             Requested size: 142.26378pt x 107.36923pt.
 
-<06_Results/realnew/3.png, id=1066, 185.69376pt x 145.54375pt>
+<06_Results/realnew/3.png, id=1067, 185.69376pt x 145.54375pt>
 File: 06_Results/realnew/3.png Graphic file (type png)
 
 <use 06_Results/realnew/3.png>
 Package pdftex.def Info: 06_Results/realnew/3.png used on input line 530.
 (pdftex.def)             Requested size: 142.26378pt x 111.50716pt.
 
-<06_Results/realnew/4.png, id=1067, 241.90375pt x 159.59625pt>
+<06_Results/realnew/4.png, id=1068, 241.90375pt x 159.59625pt>
 File: 06_Results/realnew/4.png Graphic file (type png)
 
 <use 06_Results/realnew/4.png>
 Package pdftex.def Info: 06_Results/realnew/4.png used on input line 532.
 (pdftex.def)             Requested size: 142.26378pt x 93.86142pt.
 
-<06_Results/figures/newreal_fitness.png, id=1068, 455.45157pt x 255.95625pt>
+<06_Results/figures/newreal_fitness.png, id=1069, 455.45157pt x 255.95625pt>
 File: 06_Results/figures/newreal_fitness.png Graphic file (type png)
 
 <use 06_Results/figures/newreal_fitness.png>
@@ -2332,7 +2328,7 @@ Package pdftex.def Info: 06_Results/figures/newreal_fitness.png used on input l
 ine 541.
 (pdftex.def)             Requested size: 290.40111pt x 163.20216pt.
 
-<06_Results/figures/newreal_rmse.png, id=1070, 455.45157pt x 255.95625pt>
+<06_Results/figures/newreal_rmse.png, id=1071, 455.45157pt x 255.95625pt>
 File: 06_Results/figures/newreal_rmse.png Graphic file (type png)
 
 <use 06_Results/figures/newreal_rmse.png>
@@ -2340,28 +2336,28 @@ Package pdftex.def Info: 06_Results/figures/newreal_rmse.png used on input line
  546.
 (pdftex.def)             Requested size: 290.40111pt x 163.20216pt.
 
-<06_Results/realnew/2.jpg, id=1072, 1606.0pt x 903.375pt>
+<06_Results/realnew/2.jpg, id=1073, 1606.0pt x 903.375pt>
 File: 06_Results/realnew/2.jpg Graphic file (type jpg)
 
 <use 06_Results/realnew/2.jpg>
 Package pdftex.def Info: 06_Results/realnew/2.jpg used on input line 558.
 (pdftex.def)             Requested size: 254.09889pt x 142.93018pt.
 
-<06_Results/realnew/3.jpg, id=1074, 1606.0pt x 903.375pt>
+<06_Results/realnew/3.jpg, id=1075, 1606.0pt x 903.375pt>
 File: 06_Results/realnew/3.jpg Graphic file (type jpg)
 
 <use 06_Results/realnew/3.jpg>
 Package pdftex.def Info: 06_Results/realnew/3.jpg used on input line 563.
 (pdftex.def)             Requested size: 254.09889pt x 142.93018pt.
 
-<06_Results/realnew/5.jpg, id=1076, 1606.0pt x 903.375pt>
+<06_Results/realnew/5.jpg, id=1077, 1606.0pt x 903.375pt>
 File: 06_Results/realnew/5.jpg Graphic file (type jpg)
 
 <use 06_Results/realnew/5.jpg>
 Package pdftex.def Info: 06_Results/realnew/5.jpg used on input line 575.
 (pdftex.def)             Requested size: 254.09889pt x 142.93018pt.
 
-<06_Results/realnew/4.jpg, id=1078, 1606.0pt x 903.375pt>
+<06_Results/realnew/4.jpg, id=1079, 1606.0pt x 903.375pt>
 File: 06_Results/realnew/4.jpg Graphic file (type jpg)
 
 <use 06_Results/realnew/4.jpg>
@@ -2519,7 +2515,7 @@ Package pdfpages Warning: Option `page' is unknow to \includepdf.
 (pdfpages)                Did you mean `pages'? (Note the `s'!)
 (pdfpages)                OK, I'll proceed as if it were `pages'.
 
-<ZAppendixA/assignment.pdf, id=1211, 597.50829pt x 845.0471pt>
+<ZAppendixA/assignment.pdf, id=1212, 597.50829pt x 845.0471pt>
 File: ZAppendixA/assignment.pdf Graphic file (type pdf)
 
 <use ZAppendixA/assignment.pdf>
@@ -2535,7 +2531,7 @@ File: ZAppendixA/assignment.pdf Graphic file (type pdf)
 Package pdftex.def Info: ZAppendixA/assignment.pdf used on input line 6.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 
-<ZAppendixA/assignment.pdf, id=1215, page=1, 597.50829pt x 845.0471pt>
+<ZAppendixA/assignment.pdf, id=1216, page=1, 597.50829pt x 845.0471pt>
 File: ZAppendixA/assignment.pdf Graphic file (type pdf)
 
 <use ZAppendixA/assignment.pdf, page 1>
@@ -2568,7 +2564,7 @@ Package pdftex.def Info: ZAppendixA/assignment.pdf, page1 used on input line 6.
 
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [68 <./ZAppendixA/assignment.pdf>]
-<ZAppendixA/assignment.pdf, id=1251, page=2, 597.50829pt x 845.0471pt>
+<ZAppendixA/assignment.pdf, id=1252, page=2, 597.50829pt x 845.0471pt>
 File: ZAppendixA/assignment.pdf Graphic file (type pdf)
 
 <use ZAppendixA/assignment.pdf, page 2>
@@ -2599,7 +2595,7 @@ Package pdftex.def Info: ZAppendixA/assignment.pdf, page2 used on input line 6.
 ]
 Appendix C.
 
-<ZAppendixA/figures/astra/constantorientation_astra_x.png, id=1264, 307.1475pt 
+<ZAppendixA/figures/astra/constantorientation_astra_x.png, id=1265, 307.1475pt 
 x 178.41656pt>
 File: ZAppendixA/figures/astra/constantorientation_astra_x.png Graphic file (ty
 pe png)
@@ -2608,7 +2604,7 @@ Package pdftex.def Info: ZAppendixA/figures/astra/constantorientation_astra_x.p
 ng used on input line 11.
 (pdftex.def)             Requested size: 181.5pt x 105.43091pt.
 
-<ZAppendixA/figures/astra/constantorientation_astra_y.png, id=1266, 314.67563pt
+<ZAppendixA/figures/astra/constantorientation_astra_y.png, id=1267, 314.67563pt
  x 190.46156pt>
 File: ZAppendixA/figures/astra/constantorientation_astra_y.png Graphic file (ty
 pe png)
@@ -2617,7 +2613,7 @@ Package pdftex.def Info: ZAppendixA/figures/astra/constantorientation_astra_y.p
 ng used on input line 16.
 (pdftex.def)             Requested size: 181.5pt x 109.85455pt.
 
-<ZAppendixA/figures/astra/constantorientation_astra_z.png, id=1268, 319.94531pt
+<ZAppendixA/figures/astra/constantorientation_astra_z.png, id=1269, 319.94531pt
  x 190.46156pt>
 File: ZAppendixA/figures/astra/constantorientation_astra_z.png Graphic file (ty
 pe png)
@@ -2626,7 +2622,7 @@ Package pdftex.def Info: ZAppendixA/figures/astra/constantorientation_astra_z.p
 ng used on input line 22.
 (pdftex.def)             Requested size: 181.5pt x 108.04689pt.
 
-<ZAppendixA/figures/astra/tiltingorientation_astra_x.png, id=1270, 319.1925pt x
+<ZAppendixA/figures/astra/tiltingorientation_astra_x.png, id=1271, 319.1925pt x
  189.70876pt>
 File: ZAppendixA/figures/astra/tiltingorientation_astra_x.png Graphic file (typ
 e png)
@@ -2635,7 +2631,7 @@ Package pdftex.def Info: ZAppendixA/figures/astra/tiltingorientation_astra_x.pn
 g used on input line 32.
 (pdftex.def)             Requested size: 181.5pt x 107.87169pt.
 
-<ZAppendixA/figures/astra/tiltingorientation_astra_y.png, id=1272, 321.45094pt 
+<ZAppendixA/figures/astra/tiltingorientation_astra_y.png, id=1273, 321.45094pt 
 x 189.70876pt>
 File: ZAppendixA/figures/astra/tiltingorientation_astra_y.png Graphic file (typ
 e png)
@@ -2644,7 +2640,7 @@ Package pdftex.def Info: ZAppendixA/figures/astra/tiltingorientation_astra_y.pn
 g used on input line 37.
 (pdftex.def)             Requested size: 181.5pt x 107.11617pt.
 
-<ZAppendixA/figures/astra/tiltingorientation_astra_z.png, id=1274, 320.69812pt 
+<ZAppendixA/figures/astra/tiltingorientation_astra_z.png, id=1275, 320.69812pt 
 x 187.45032pt>
 File: ZAppendixA/figures/astra/tiltingorientation_astra_z.png Graphic file (typ
 e png)
@@ -2653,7 +2649,7 @@ Package pdftex.def Info: ZAppendixA/figures/astra/tiltingorientation_astra_z.pn
 g used on input line 43.
 (pdftex.def)             Requested size: 181.5pt x 106.08981pt.
 
-<ZAppendixA/figures/real/constantorientation_real_x.png, id=1276, 307.1475pt x 
+<ZAppendixA/figures/real/constantorientation_real_x.png, id=1277, 307.1475pt x 
 178.41656pt>
 File: ZAppendixA/figures/real/constantorientation_real_x.png Graphic file (type
  png)
@@ -2662,7 +2658,7 @@ Package pdftex.def Info: ZAppendixA/figures/real/constantorientation_real_x.png
  used on input line 57.
 (pdftex.def)             Requested size: 181.5pt x 105.43091pt.
 
-<ZAppendixA/figures/real/constantorientation_real_y.png, id=1278, 314.67563pt x
+<ZAppendixA/figures/real/constantorientation_real_y.png, id=1279, 314.67563pt x
  190.46156pt>
 File: ZAppendixA/figures/real/constantorientation_real_y.png Graphic file (type
  png)
@@ -2671,7 +2667,7 @@ Package pdftex.def Info: ZAppendixA/figures/real/constantorientation_real_y.png
  used on input line 62.
 (pdftex.def)             Requested size: 181.5pt x 109.85455pt.
 
-<ZAppendixA/figures/real/constantorientation_real_z.png, id=1280, 319.94531pt x
+<ZAppendixA/figures/real/constantorientation_real_z.png, id=1281, 319.94531pt x
  190.46156pt>
 File: ZAppendixA/figures/real/constantorientation_real_z.png Graphic file (type
  png)
@@ -2680,7 +2676,7 @@ Package pdftex.def Info: ZAppendixA/figures/real/constantorientation_real_z.png
  used on input line 68.
 (pdftex.def)             Requested size: 181.5pt x 108.04689pt.
 
-<ZAppendixA/figures/real/tiltingorientation_real_x.png, id=1282, 319.1925pt x 1
+<ZAppendixA/figures/real/tiltingorientation_real_x.png, id=1283, 319.1925pt x 1
 89.70876pt>
 File: ZAppendixA/figures/real/tiltingorientation_real_x.png Graphic file (type 
 png)
@@ -2689,7 +2685,7 @@ Package pdftex.def Info: ZAppendixA/figures/real/tiltingorientation_real_x.png
 used on input line 78.
 (pdftex.def)             Requested size: 181.5pt x 107.87169pt.
 
-<ZAppendixA/figures/real/tiltingorientation_real_y.png, id=1284, 321.45094pt x 
+<ZAppendixA/figures/real/tiltingorientation_real_y.png, id=1285, 321.45094pt x 
 189.70876pt>
 File: ZAppendixA/figures/real/tiltingorientation_real_y.png Graphic file (type 
 png)
@@ -2698,7 +2694,7 @@ Package pdftex.def Info: ZAppendixA/figures/real/tiltingorientation_real_y.png
 used on input line 83.
 (pdftex.def)             Requested size: 181.5pt x 107.11617pt.
 
-<ZAppendixA/figures/real/tiltingorientation_real_z.png, id=1286, 320.69812pt x 
+<ZAppendixA/figures/real/tiltingorientation_real_z.png, id=1287, 320.69812pt x 
 187.45032pt>
 File: ZAppendixA/figures/real/tiltingorientation_real_z.png Graphic file (type 
 png)
@@ -2756,10 +2752,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 122.
  ) 
 Here is how much of TeX's memory you used:
- 21814 strings out of 493029
- 380140 string characters out of 6136234
+ 21813 strings out of 493029
+ 380128 string characters out of 6136234
  496122 words of memory out of 5000000
- 24420 multiletter control sequences out of 15000+600000
+ 24419 multiletter control sequences out of 15000+600000
  119088 words of font info for 159 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,18n,58p,10357b,981s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2778,10 +2774,10 @@ texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/l
 mtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
 am10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msb
 m10.pfb>
-Output written on thesis.pdf (85 pages, 30690048 bytes).
+Output written on thesis.pdf (85 pages, 30690022 bytes).
 PDF statistics:
- 1458 PDF objects out of 1728 (max. 8388607)
- 1182 compressed objects within 12 object streams
+ 1459 PDF objects out of 1728 (max. 8388607)
+ 1183 compressed objects within 12 object streams
  306 named destinations out of 1000 (max. 500000)
  33376 words of extra memory for PDF output out of 35830 (max. 10000000)
 
