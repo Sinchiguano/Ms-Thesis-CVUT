@@ -2,7 +2,7 @@
 \chapter{Background}
 \label{chap:back}
 
-This chapter presents a brief theoretical background as to mathematical tools and basics of computer vision. In addition, the API and tools used in this thesis. A reference is given for each topic described ahead.
+This chapter presents a brief theoretical background of mathematical tools and basics of computer vision. In addition, the API and tools used in this thesis. A reference is given for each topic described ahead.
 
 
 \section{ Mathematical Tools}
@@ -55,7 +55,6 @@ $$R=exp(\theta J(\omega))=I+\sin \theta J(\omega)+(1-\cos \theta)J(\hat{\omega})
 $$(u_{0},u)=(\cos(\frac{\theta}{2}),\sin(\frac{\theta}{2})\hat{\omega})$$
 \end{itemize}
 
-
 \section{Basics of 3D Computer Vision}
 \subsection{ RGB-D sensors} \label{rgbdcamera}
 Nowadays novel camera systems like the Astra Orbbec and RealSense which provide both color and depth images have become readily available. Therefore, there are great expectations that such sensory devices will lead to a boost of new 3D perception-based applications in the fields of robotics. We are specifically interested in using RGB-D sensors for recognition and localization of an isolated part. In this thesis, both cameras are used. See Figure \ref{fig:mycam} in order to be acquainted with them.
@@ -82,15 +81,15 @@ Nowadays novel camera systems like the Astra Orbbec and RealSense which provide 
 \subsubsection{Point Cloud}
 
  The received measurement data from the sensory device is converted into a more generic data structure called point cloud, which is a set of vertices in a three-dimensional coordinate system usually defined by X, Y, and Z coordinates. The vertices are typically intended to represent the external surface of an object.
- Point clouds can be acquired from hardware sensors such as stereo cameras, 3D scanners, or time-of-flight cameras, or generated from a computer program synthetically. In this thesis, the point cloud is acquired from the sensory devices briefly described above in \ref{rgbdcamera}.
+ Point clouds can be acquired from hardware sensors such as stereo cameras, 3D scanners, or time-of-flight cameras, or generated from a computer program synthetically. In this thesis, the point cloud is acquired from the sensory devices briefly described above in \ref{rgbdcamera}. Figure \ref{fig2:fer1} shows an overview of a point cloud data.
 
 
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=4in]{figures02/pcd.png}
 \caption{Overview of a point cloud (from MathWorks documentation)}%\cite{temp2}}
+\label{fig2:fer1}
 \end{center}
-\label{fig2:mypicture3}
 \end{figure}
 
 
@@ -200,7 +199,7 @@ For this thesis The Robotic Operating System (ROS) is used as main platform. In 
 \section{Open-source Libraries}
 \subsection{PCL}
 
-The PCL\cite{pcl} framework contains numerous state-of-the art algorithms including filtering, feature estimation, surface reconstruction, registration, model fitting and segmentation. These algorithms can be used, for example, to filter outliers from noisy data, align 3D point clouds together, segment relevant parts of a scene, extract keypoints and compute descriptors to recognize objects in the world based on their geometric appearance, and create surfaces from point clouds and visualize them. 
+The PCL framework \cite{pcl} contains numerous state-of-the art algorithms including filtering, feature estimation, surface reconstruction, registration, model fitting and segmentation. These algorithms can be used, for example, to filter outliers from noisy data, align 3D point clouds together, segment relevant parts of a scene, extract keypoints and compute descriptors to recognize objects in the world based on their geometric appearance, and create surfaces from point clouds and visualize them. 
 
 For different processing steps, a Python bindings for the Point Cloud Library (PCL) is used. This is a released with few capabilities of PCL designed for python developers. At present the following features of PCL, using PointXYZ point clouds, are available;
 

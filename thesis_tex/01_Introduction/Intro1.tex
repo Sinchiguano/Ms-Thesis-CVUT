@@ -1,13 +1,13 @@
 \chapter{Introduction}
 \label{chap:intro}
 
-Within this chapter, the reader receives an outline of the general context which surrounds this thesis. Starting with the motivation section and the ultimate goal to be accomplished, and a summary of the thesis' structure follows. 
+Within this chapter, the reader receives an outline of the general context which surrounds this thesis. It starts with the motivation section and the ultimate goal to be accomplished, and a summary of the thesis' structure follows. 
 %And finally, an overview of related work is presented.
 
 \section{Motivation}
 
 For years, the industrial robot has undergone enormous development. A robot nowadays not only receives a command from the computer, but also has the ability to make decisions itself. Such abilities are well known in the world of the computer vision as recognizing and determining the 6D pose of a rigid body (3D translation and 3D rotation). \\
-However, finding the object of interest or determining its pose in either 2D or 3D scenes is still a challenging task for computer vision. There are many researchers working on it with methods that go from state-of-the-art to deep learning ones where the object is usually represented with a CAD model or object's 3D reconstruction and typical task is the detection of this particular object in the scene captured with RBGD or depth camera. Detection considers determining the location of the object in the input image. This is typical in robotics and machine vision applications where the robot usually does a task like pick-and-place object. However, localization and pose estimation is a difficult task due to the high dimensiona of the workspace. In addition, the object of interest is usually sought in cluttered scenes under occlusion with the requirement of real-time performance which makes the entire task much more difficult.
+However, finding the object of interest or determining its pose in either 2D or 3D scenes is still a challenging task for computer vision. There are many researchers working on it with methods that go from state-of-the-art to deep learning ones where the object is usually represented with a CAD model or object's 3D reconstruction and typical task is the detection of this particular object in the scene captured with RBGD or depth camera. Detection considers determining the location of the object in the input image. This is typical in robotics and machine vision applications where the robot usually does a task like pick-and-place object. However, localization and pose estimation is a difficult task due to the high dimension of the workspace. In addition, the object of interest is usually sought in cluttered scenes under occlusion with the requirement of real-time performance which makes the entire task much more difficult.
 
 \section{Goal}
 \iffalse
@@ -23,5 +23,5 @@ The goal is to develop a suitable pipeline to localize an isolated object where 
 
 \section{Thesis structure}
 
-The thesis consists of eight chapters, References and Appendix. Chapter 2 gives a brief introduction to related work, Chapter 3 gives a theoretical background to camera calibration and a gentle description to the main tools used in this thesis such as OpenCV, Open3D, ROS, and software where the CAD model is rendered. Chapter 4 presents the theory as well as every individual step in details of the robot-camera calibration. Chapter 5 presents the theory as well as every individual step in details of the implemented system, and chapter 6 describes the evaluation of the system. Chapter 7 concludes the thesis and showcases possible future works. 
+The thesis consists of eight chapters, References and Appendix. Chapter \ref{chap:relwork} gives a brief introduction to related work, Chapter 3 gives a theoretical background to camera calibration and a gentle description to the main tools used in this thesis such as OpenCV, Open3D, ROS, and software where the CAD model is rendered. Chapter 4 presents the theory as well as every individual step in details of the robot-camera calibration. Chapter 5 presents the theory as well as every individual step in details of the implemented system, and chapter 6 describes the evaluation of the system. Chapter 7 concludes the thesis and showcases possible future works. 
 
